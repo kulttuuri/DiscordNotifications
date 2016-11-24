@@ -1,0 +1,78 @@
+{
+	"name": "Discord Notifications",
+	"version": "1.0",
+	"author": "Aleksi Postari",
+	"url": "https://github.com/kulttuuri/discord_mediawiki",
+	"description": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
+	"type": "other",
+	"AutoloadClasses": {
+		"DiscordNotifications": "DiscordNotificationsCore.php"
+	},
+	"Hooks": {
+		"ArticleSaveComplete": [
+			[
+				"DiscordNotifications::discord_article_saved"
+			]
+		],
+		"ArticleInsertComplete": [
+			[
+				"DiscordNotifications::discord_article_inserted"
+			]
+		],
+		"ArticleDeleteComplete": [
+			[
+				"DiscordNotifications::discord_article_deleted"
+			]
+		],
+		"TitleMoveComplete": [
+			[
+				"DiscordNotifications::discord_article_moved"
+			]
+		],
+		"AddNewAccount": [
+			[
+				"DiscordNotifications::discord_new_user_account"
+			]
+		],
+		"BlockIpComplete": [
+			[
+				"DiscordNotifications::discord_user_blocked"
+			]
+		],
+		"UploadComplete": [
+			[
+				"DiscordNotifications::discord_file_uploaded"
+			]
+		]
+	},
+	"config": {
+		"DiscordIncomingWebhookUrl": "",
+		"DiscordFromName": "",
+		"DiscordSendMethod": "curl",
+		"DiscordIncludePageUrls": true,
+		"DiscordIncludeUserUrls": true,
+		"DiscordIgnoreMinorEdits": false,
+		"ExcludedPermission": "",
+		"WikiUrl": "",
+		"WikiUrlEnding": "index.php?title=",
+		"WikiUrlEndingUserRights": "Special%3AUserRights&user=",
+		"WikiUrlEndingBlockUser": "Special:Block/",
+		"WikiUrlEndingUserPage": "User:",
+		"WikiUrlEndingUserTalkPage": "User_talk:",
+		"WikiUrlEndingUserContributions": "Special:Contributions/",
+		"WikiUrlEndingBlockList": "Special:BlockList",
+		"WikiUrlEndingEditArticle": "action=edit",
+		"WikiUrlEndingDeleteArticle": "action=delete",
+		"WikiUrlEndingHistory": "action=history",
+		"WikiUrlEndingDiff": "diff=prev&oldid=",
+		"DiscordNotificationNewUser": true,
+		"DiscordNotificationBlockedUser": true,
+		"DiscordNotificationAddedArticle": true,
+		"DiscordNotificationRemovedArticle": true,
+		"DiscordNotificationMovedArticle": true,
+		"DiscordNotificationEditedArticle": true,
+		"DiscordNotificationFileUpload": true,
+		"DiscordIncludeDiffSize": true
+	},
+	"manifest_version": 1
+}
