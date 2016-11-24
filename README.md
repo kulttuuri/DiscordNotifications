@@ -4,7 +4,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 > Looking for extension that can send notifications to [HipChat](https://github.com/kulttuuri/hipchat_mediawiki) or [Slack](https://github.com/kulttuuri/slack_mediawiki)?.
 
-![Screenshot](http://i.imgur.com/4SG64a3.jpg)
+![Screenshot](http://i.imgur.com/ZL46PJO.jpg)
 
 ## Supported MediaWiki operations to send notifications
 
