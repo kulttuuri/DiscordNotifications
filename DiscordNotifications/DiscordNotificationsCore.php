@@ -1,6 +1,9 @@
 <?php
 class DiscordNotifications
 {
+	/**
+	 * Replaces spaces with %20 on links. This has to be done as Discord webhook api does not accept urlencoded text.
+	 */
 	private static function parseurl($url)
 	{
 		return str_replace(" ", "%20", $url);
