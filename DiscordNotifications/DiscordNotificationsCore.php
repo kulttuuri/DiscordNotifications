@@ -216,7 +216,7 @@ class DiscordNotifications
 		$realname = "";
 		$ipaddress = "";
 		try { $email = $user->getEmail(); } catch (Exception $e) {}
-		try { $realname = $user->getEmail(); } catch (Exception $e) {}
+		try { $realname = $user->getName(); } catch (Exception $e) {}
 		try { $ipaddress = $user->getRequest()->getIP(); } catch (Exception $e) {}
 
 		$message = sprintf(
