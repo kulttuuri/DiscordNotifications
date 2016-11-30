@@ -212,11 +212,19 @@ class DiscordNotifications
 		global $wgDiscordNotificationNewUser;
 		if (!$wgDiscordNotificationNewUser) return;
 
+		$email = "";
+		$realname = "";
+		$ipaddress = "";
+		try { $email = $user->getEmail(); } catch (Exception $e) {}
+		try { $realname = $user->getEmail(); } catch (Exception $e) {}
+		try { $ipaddress = $user->getRequest()->getIP(); } catch (Exception $e) {}
+
 		$message = sprintf(
-			"New user account %s was just created (email: %s, real name: %s)",
+			"New user account %s was just created (email: %s, real name: %s, IP: %s)",
 			self::getDiscordUserText($user),
-			$user->getEmail(),
-			$user->getRealName());
+			$email,
+			$realname,
+			$ipaddress);
 		self::push_discord_notify($message, $user);
 		return true;
 	}
