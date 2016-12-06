@@ -8,18 +8,15 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 ## Supported MediaWiki operations to send notifications
 
-* When article is added.
-* When article is removed.
-* When article is moved.
-* When article is edited.
-* When new user is added.
-* When user is blocked.
-* When file is uploaded.
+* Article is added, removed, moved or edited.
+* New user is added.
+* User is blocked.
+* File is uploaded.
 
 ## Requirements
 
-* [cURL](http://curl.haxx.se/). This extension also supports using file_get_contents for sending the data. See the configuration parameter $wgDiscordSendMethod below to change this.
-* MediaWiki 1.8+ (tested with version 1.8, also tested and works with 1.25+)
+* [cURL](http://curl.haxx.se/). This extension also supports using `file_get_content` for sending the data. See the configuration parameter `$wgDiscordSendMethod` below to change this.
+* MediaWiki 1.25+
 * Apache should have NE (NoEscape) flag on to prevent issues in URLs. By default you should have this enabled.
 
 ## How to install
