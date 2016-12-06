@@ -209,7 +209,7 @@ class DiscordNotifications
 	 */
 	static function discord_new_user_account($user, $byEmail)
 	{
-		global $wgDiscordNotificationNewUser;
+		global $wgDiscordNotificationNewUser, $wgDiscordShowNewUserEmail, $wgDiscordShowNewUserFullName, $wgDiscordShowNewUserIP;
 		if (!$wgDiscordNotificationNewUser) return;
 
 		$email = "";
@@ -219,12 +219,20 @@ class DiscordNotifications
 		try { $realname = $user->getRealName(); } catch (Exception $e) {}
 		try { $ipaddress = $user->getRequest()->getIP(); } catch (Exception $e) {}
 
+		$messageExtra = "";
+		if ($wgDiscordShowNewUserEmail || $wgDiscordShowNewUserFullName || $wgDiscordShowNewUserIP) {
+			$messageExtra = "(";
+			if ($wgDiscordShowNewUserEmail) $messageExtra .= $email . ", ";
+			if ($wgDiscordShowNewUserFullName) $messageExtra .= $realname . ", ";
+			if ($wgDiscordShowNewUserIP) $messageExtra .= $ipaddress . ", ";
+			$messageExtra = substr($messageExtra, 0, -2); // Remove trailing , 
+			$messageExtra .= ")";
+		}
+
 		$message = sprintf(
-			"New user account %s was just created (email: %s, real name: %s, IP: %s)",
+			"New user account %s was just created %s",
 			self::getDiscordUserText($user),
-			$email,
-			$realname,
-			$ipaddress);
+			$messageExtra);
 		self::push_discord_notify($message, $user);
 		return true;
 	}
