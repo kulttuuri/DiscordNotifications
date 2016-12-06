@@ -28,7 +28,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 2) After setting up the Webhook you will get a Webhook URL. Copy that URL as you will need it in step 4.
 
-3) Send folder DiscordNotifications into your `mediawiki_installation/extensions` folder.
+3) [Download latest release of this extension](https://github.com/kulttuuri/discord_mediawiki/archive/master.zip), uncompress the archive and move folder `DiscordNotifications` into your `mediawiki_installation/extensions` folder.
 
 4) Add settings listed below in your `localSettings.php`. Note that it is mandatory to set these settings for this extension to work:
 
