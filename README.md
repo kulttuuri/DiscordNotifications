@@ -12,6 +12,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 * New user is added.
 * User is blocked.
 * File is uploaded.
+* ... and each notification can be individually enabled or disabled :)
 
 ## Requirements
 
