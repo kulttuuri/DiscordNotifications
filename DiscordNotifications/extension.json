@@ -1,6 +1,6 @@
 {
 	"name": "Discord Notifications",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "Aleksi Postari",
 	"url": "https://github.com/kulttuuri/discord_mediawiki",
 	"description": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
@@ -43,6 +43,11 @@
 			[
 				"DiscordNotifications::discord_file_uploaded"
 			]
+		],
+		"ArticleProtectComplete": [
+			[
+				"DiscordNotifications::discord_article_protected"
+			]
 		]
 	},
 	"config": {
@@ -72,6 +77,7 @@
 		"DiscordNotificationMovedArticle": true,
 		"DiscordNotificationEditedArticle": true,
 		"DiscordNotificationFileUpload": true,
+		"DiscordNotificationProtectedArticle": true,
 		"DiscordIncludeDiffSize": true,
 		"DiscordShowNewUserEmail": true,
 		"DiscordShowNewUserFullName": true,

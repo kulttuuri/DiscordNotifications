@@ -9,6 +9,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 ## Supported MediaWiki operations to send notifications
 
 * Article is added, removed, moved or edited.
+* Article protection settings are changed.
 * New user is added.
 * User is blocked.
 * File is uploaded.
@@ -112,8 +113,10 @@ $wgDiscordNotificationMovedArticle = true;
 $wgDiscordNotificationEditedArticle = true;
 // File uploaded
 $wgDiscordNotificationFileUpload = true;
+// Article protection settings changed
+$wgDiscordNotificationProtectedArticle = true;
 ```
-	
+
 ## Additional MediaWiki URL Settings
 
 Should any of these default MediaWiki system page URLs differ in your installation, change them here.

@@ -204,6 +204,25 @@ class DiscordNotifications
 	}
 
 	/**
+	 * Occurs after the protect article request has been processed.
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ArticleProtectComplete
+	 */
+	static function discord_article_protected($article, $user, $protect, $reason, $moveonly)
+	{
+		global $wgDiscordNotificationProtectedArticle;
+		if (!$wgDiscordNotificationProtectedArticle) return;
+
+		$message = sprintf(
+			"%s has %s article %s. Reason: %s",
+			self::getDiscordUserText($user),
+			$protect ? "changed protection of" : "removed protection of",
+			self::getDiscordArticleText($article),
+			$reason);
+		self::push_discord_notify($message, $user);
+		return true;
+	}
+
+	/**
 	 * Called after a user account is created.
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/AddNewAccount
 	 */
