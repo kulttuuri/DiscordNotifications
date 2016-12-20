@@ -17,7 +17,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 ## Requirements
 
-* [cURL](http://curl.haxx.se/). This extension also supports using `file_get_content` for sending the data. See the configuration parameter `$wgDiscordSendMethod` below to change this.
+* [cURL](http://curl.haxx.se/). This extension also supports using `file_get_contents` for sending the data. See the configuration parameter `$wgDiscordSendMethod` below to change this.
 * MediaWiki 1.25+
 * Apache should have NE (NoEscape) flag on to prevent issues in URLs. By default you should have this enabled.
 
