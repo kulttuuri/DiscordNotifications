@@ -9,12 +9,12 @@
 		"DiscordNotifications": "DiscordNotificationsCore.php"
 	},
 	"Hooks": {
-		"ArticleSaveComplete": [
+		"PageContentSaveComplete": [
 			[
 				"DiscordNotifications::discord_article_saved"
 			]
 		],
-		"ArticleInsertComplete": [
+		"PageContentInsertComplete": [
 			[
 				"DiscordNotifications::discord_article_inserted"
 			]
