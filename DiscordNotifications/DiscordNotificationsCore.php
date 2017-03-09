@@ -8,7 +8,6 @@ class DiscordNotifications
 	{
 		return str_replace(" ", "%20", $url);
 	}
-
 	/**
 	 * Gets nice HTML text for user containing the link to user page
 	 * and also links to user site, groups editing, talk and contribs pages.
@@ -124,7 +123,7 @@ class DiscordNotifications
 		if ($isMinor && $wgDiscordIgnoreMinorEdits) return;
 		
 		$message = sprintf(
-			"%s has %s article %s %s",
+			"📝 %s has %s article %s %s",
 			self::getDiscordUserText($user),
 			$isMinor == true ? "made minor edit to" : "edited",
 			self::getDiscordArticleText($article, true),
@@ -135,7 +134,7 @@ class DiscordNotifications
 				" (%+d bytes)",
 				$article->getRevision()->getSize() - $article->getRevision()->getPrevious()->getSize());
 		}
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'article_saved');
 		return true;
 	}
 
@@ -152,7 +151,7 @@ class DiscordNotifications
 		if ($article->getTitle()->getNsText() == "File") return true;
 		
 		$message = sprintf(
-			"%s has created article %s %s",
+			"📄 %s has created article %s %s",
 			self::getDiscordUserText($user),
 			self::getDiscordArticleText($article),
 			$summary == "" ? "" : "Summary: $summary");
@@ -162,7 +161,7 @@ class DiscordNotifications
 				" (%d bytes)",
 				$article->getRevision()->getSize());
 		}
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'article_inserted');
 		return true;
 	}
 
@@ -176,11 +175,11 @@ class DiscordNotifications
 		if (!$wgDiscordNotificationRemovedArticle) return;
 
 		$message = sprintf(
-			"%s has deleted article %s Reason: %s",
+			"❌ %s has deleted article %s Reason: %s",
 			self::getDiscordUserText($user),
 			self::getDiscordArticleText($article),
 			$reason);
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'article_deleted');
 		return true;
 	}
 
@@ -194,12 +193,12 @@ class DiscordNotifications
 		if (!$wgDiscordNotificationMovedArticle) return;
 
 		$message = sprintf(
-			"%s has moved article %s to %s. Reason: %s",
+			"➡ %s has moved article %s to %s. Reason: %s",
 			self::getDiscordUserText($user),
 			self::getDiscordTitleText($title),
 			self::getDiscordTitleText($newtitle),
 			$reason);
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'article_moved');
 		return true;
 	}
 
@@ -213,12 +212,12 @@ class DiscordNotifications
 		if (!$wgDiscordNotificationProtectedArticle) return;
 
 		$message = sprintf(
-			"%s has %s article %s. Reason: %s",
+			"🔒 %s has %s article %s. Reason: %s",
 			self::getDiscordUserText($user),
 			$protect ? "changed protection of" : "removed protection of",
 			self::getDiscordArticleText($article),
 			$reason);
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'article_protected');
 		return true;
 	}
 
@@ -249,10 +248,10 @@ class DiscordNotifications
 		}
 
 		$message = sprintf(
-			"New user account %s was just created %s",
+			"👥 New user account %s was just created %s",
 			self::getDiscordUserText($user),
 			$messageExtra);
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'new_user_account');
 		return true;
 	}
 
@@ -267,15 +266,15 @@ class DiscordNotifications
 
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgUser;
 		$message = sprintf(
-			"%s has uploaded file <%s|%s> (format: %s, size: %s MB, summary: %s)",
+			"📤 %s has uploaded file <%s|%s> (format: %s, size: %s MB, summary: %s)",
 			self::getDiscordUserText($wgUser->mName),
-			$wgWikiUrl . $wgWikiUrlEnding . $image->getLocalFile()->getTitle(),
+			self::parseurl($wgWikiUrl . $wgWikiUrlEnding . $image->getLocalFile()->getTitle()),
 			$image->getLocalFile()->getTitle(),
 			$image->getLocalFile()->getMimeType(),
 			round($image->getLocalFile()->size / 1024 / 1024, 3),
 			$image->getLocalFile()->getDescription());
 
-		self::push_discord_notify($message, $wgUser);
+		self::push_discord_notify($message, $wgUser, 'file_uploaded');
 		return true;
 	}
 
@@ -290,13 +289,13 @@ class DiscordNotifications
 
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgWikiUrlEndingBlockList;
 		$message = sprintf(
-			"%s has blocked %s %s Block expiration: %s. %s",
+			"🚫 %s has blocked %s %s Block expiration: %s. %s",
 			self::getDiscordUserText($user),
 			self::getDiscordUserText($block->getTarget()),
 			$block->mReason == "" ? "" : "with reason '".$block->mReason."'.",
 			$block->mExpiry,
 			"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingBlockList)."|List of all blocks>.");
-		self::push_discord_notify($message, $user);
+		self::push_discord_notify($message, $user, 'user_blocked');
 		return true;
 	}
 
@@ -305,7 +304,7 @@ class DiscordNotifications
 	 * @param message Message to be sent.
 	 * @see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
 	 */
-	static function push_discord_notify($message, $user)
+	static function push_discord_notify($message, $user, $action)
 	{
 		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename;
 		
@@ -327,8 +326,39 @@ class DiscordNotifications
 
 		$message = preg_replace("~(<)(http)([^|]*)(\|)([^\>]*)(>)~", "[$5]($2$3)", $message);
 		$message = str_replace(array("\r", "\n"), '', $message);
+    
+    $colour = 11777212;
+    switch($action){
+      case 'article_saved':
+        $colour = 2993970;
+        break;
+      case 'article_inserted':
+        $colour = 3580392;
+        break;
+      case 'article_deleted':
+        $colour = 15217973;
+        break;
+      case 'article_moved':
+        $colour = 14038504;
+        break;
+      case 'article_protected':
+        $colour = 3493864;
+        break;
+      case 'new_user_account':
+        $colour = 3580392;
+        break;
+      case 'file_uploaded':
+        $colour = 3580392;
+        break;
+      case 'user_blocked':
+        $colour = 15217973;
+        break;
+      default:
+        $colour = 11777212;
+        break;
+    }
 
-		$post = sprintf('{"content": "%s", "username": "%s"',
+		$post = sprintf('{"embeds": [{ "color" : "'.$colour.'" ,"description" : "%s"}], "username": "%s"',
 		$message,
 		$discordFromName);
 		$post .= '}';
@@ -360,4 +390,7 @@ class DiscordNotifications
 		}
 	}
 }
+
+// some modifications by uzalu
+
 ?>
