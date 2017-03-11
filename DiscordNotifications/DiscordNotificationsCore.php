@@ -391,6 +391,4 @@ class DiscordNotifications
 	}
 }
 
-// some modifications by uzalu
-
 ?>
