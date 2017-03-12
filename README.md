@@ -134,6 +134,10 @@ $wgWikiUrlEndingHistory             = "action=history";
 $wgWikiUrlEndingDiff                = "diff=prev&oldid=";
 ```
 
+## Contributors
+
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu)
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
