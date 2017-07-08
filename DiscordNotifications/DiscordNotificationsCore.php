@@ -2,11 +2,14 @@
 class DiscordNotifications
 {
 	/**
-	 * Replaces spaces with %20 on links. This has to be done as Discord webhook api does not accept urlencoded text.
+	 * Replaces some special characters on urls. This has to be done as Discord webhook api does not accept urlencoded text.
 	 */
 	private static function parseurl($url)
 	{
-		return str_replace(" ", "%20", $url);
+		$url = str_replace(" ", "%20", $url);
+		$url = str_replace("(", "%28", $url);
+		$url = str_replace(")", "%29", $url);
+		return $url;
 	}
 	/**
 	 * Gets nice HTML text for user containing the link to user page
