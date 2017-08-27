@@ -125,6 +125,11 @@ class DiscordNotifications
 		// Skip minor edits if user wanted to ignore them
 		if ($isMinor && $wgDiscordIgnoreMinorEdits) return;
 		
+		// Skip edits that are just refreshing the page
+		if ($article->getRevision()->getPrevious() == NULL) {
+			return;
+		}
+
 		$message = sprintf(
 			"📝 %s has %s article %s %s",
 			self::getDiscordUserText($user),
