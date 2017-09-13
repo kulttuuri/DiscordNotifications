@@ -214,7 +214,7 @@ class DiscordNotifications
 	 * Occurs after the protect article request has been processed.
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ArticleProtectComplete
 	 */
-	static function discord_article_protected($article, $user, $protect, $reason, $moveonly)
+	static function discord_article_protected($article = null, $user = null, $protect = false, $reason = "", $moveonly = false)
 	{
 		global $wgDiscordNotificationProtectedArticle;
 		if (!$wgDiscordNotificationProtectedArticle) return;
