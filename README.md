@@ -96,7 +96,7 @@ $wgExcludedPermission = "";
 
 ### Disable notifications from certain pages / namespaces
 
-You can exclude notifications from certain namespaces / articles by adding them into this array.
+You can exclude notifications from certain namespaces / articles by adding them into this array. Note: This targets all pages starting with the name.
 
 ```php
 // Actions (add, edit, modify) won't be notified to Discord room from articles starting with these names
