@@ -94,6 +94,15 @@ By default notifications from all users will be sent to your Discord room. If yo
 $wgExcludedPermission = "";
 ```
 
+### Disable notifications from certain pages / namespaces
+
+You can exclude notifications from certain namespaces / articles by adding them into this array.
+
+```php
+// Actions (add, edit, modify) won't be notified to Discord room from articles starting with these names
+$wgDiscordExcludeNotificationsFrom = ["User:", "Weirdgroup"];
+```
+
 ### Actions to notify of
 
 MediaWiki actions that will be sent notifications of into Discord. Set desired options to false to disable notifications of those actions.

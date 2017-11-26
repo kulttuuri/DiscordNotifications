@@ -115,6 +115,14 @@ class DiscordNotifications
 		global $wgDiscordIgnoreMinorEdits, $wgDiscordIncludeDiffSize;
 		if (!$wgDiscordNotificationEditedArticle) return;
 
+		// Discard notifications from excluded pages
+		global $wgDiscordExcludeNotificationsFrom;
+		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
+				if (0 === strpos($article->getTitle(), $currentExclude)) return;
+			}
+		}
+
 		// Skip new articles that have view count below 1. Adding new articles is already handled in article_added function and
 		// calling it also here would trigger two notifications!
 		$isNew = $status->value['new']; // This is 1 if article is new
@@ -155,6 +163,14 @@ class DiscordNotifications
 		global $wgDiscordNotificationAddedArticle, $wgDiscordIncludeDiffSize;
 		if (!$wgDiscordNotificationAddedArticle) return;
 
+		// Discard notifications from excluded pages
+		global $wgDiscordExcludeNotificationsFrom;
+		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
+				if (0 === strpos($article->getTitle(), $currentExclude)) return;
+			}
+		}
+
 		// Do not announce newly added file uploads as articles...
 		if ($article->getTitle()->getNsText() == "File") return true;
 		
@@ -181,6 +197,14 @@ class DiscordNotifications
 	{
 		global $wgDiscordNotificationRemovedArticle;
 		if (!$wgDiscordNotificationRemovedArticle) return;
+
+		// Discard notifications from excluded pages
+		global $wgDiscordExcludeNotificationsFrom;
+		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
+				if (0 === strpos($article->getTitle(), $currentExclude)) return;
+			}
+		}
 
 		$message = sprintf(
 			"❌ %s has deleted article %s Reason: %s",
