@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Felten"
+		]
+	},
+	"discordnotifications-block": "Blockieren",
+	"discordnotifications-groups": "Gruppen",
+	"discordnotifications-talk": "Diskussion",
+	"discordnotifications-contribs": "Bearbeiter",
+	"discordnotifications-edit": "Bearbeiten",
+	"discordnotifications-delete": "Löschen",
+	"discordnotifications-history": "Versionen",
+	"discordnotifications-diff": "Änderungen",
+	"discordnotifications-bytes": "Bytes",
+	"discordnotifications-article-saved": "📝 %1$s hat den Artikel %3$s %2$s %4$s",
+	"discordnotifications-article-saved-minor-edits": "ein wenig bearbeitet.",
+	"discordnotifications-article-saved-edit": "bearbeitet.",
+	"discordnotifications-article-created": "📄 %s hat den Artikel %s erstellt. %s",
+	"discordnotifications-file-namespace": "Datei",
+	"discordnotifications-article-deleted": "❌ %s hat den Artikel %s gelöscht. Begründung: %s",
+	"discordnotifications-article-moved": "➡ %s hat den Artikel %s nach %s verschoben. Begründung: %s",
+	"discordnotifications-article-protected": "🔒 %1$s hat den Schutz von Artikel %3$s %2$s. Begründung: %4$s",
+	"discordnotifications-article-protected-change": "geändert",
+	"discordnotifications-article-protected-remove": "entfernt",
+	"discordnotifications-new-user": "👥 Neuer Benutzer %s wurde erstellt %s",
+	"discordnotifications-file-uploaded": "📤 %s hat die Datei <%s|%s> hochgeladen (Format: %s, Größe: %s MB, Zusammenfassung: %s)",
+	"discordnotifications-block-user": "🚫 %s sperrt %s %s Sperrung läuft aus: %s. %s",
+	"discordnotifications-block-user-reason": "mit der Begründung",
+	"discordnotifications-block-user-list": "Liste aller Sperrungen",
+	"discordnotifications-summary": "Zusammenfassung: "
+}

@@ -1,0 +1,32 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aleksi Postari"
+        ]
+    },
+    "discordnotifications-block": "block",
+    "discordnotifications-groups": "groups",
+    "discordnotifications-talk": "talk",
+    "discordnotifications-contribs": "contribs",
+    "discordnotifications-edit": "edit",
+    "discordnotifications-delete": "delete",
+    "discordnotifications-history": "history",
+    "discordnotifications-diff": "diff",
+    "discordnotifications-bytes": "bytes",
+    "discordnotifications-article-saved": "📝 %s has %s article %s %s",
+    "discordnotifications-article-saved-minor-edits": "made minor edit to",
+    "discordnotifications-article-saved-edit": "edited",
+    "discordnotifications-article-created": "📄 %s has created article %s %s",
+    "discordnotifications-file-namespace": "File",
+    "discordnotifications-article-deleted": "❌ %s has deleted article %s Reason: %s",
+    "discordnotifications-article-moved": "➡ %s has moved article %s to %s. Reason: %s",
+    "discordnotifications-article-protected": "🔒 %s has %s article %s. Reason: %s",
+    "discordnotifications-article-protected-change": "changed protection of",
+    "discordnotifications-article-protected-remove": "removed protection of",
+    "discordnotifications-new-user": "👥 New user account %s was just created %s",
+    "discordnotifications-file-uploaded": "📤 %s has uploaded file <%s|%s> (format: %s, size: %s MB, summary: %s)",
+    "discordnotifications-block-user": "🚫 %s has blocked %s %s Block expiration: %s. %s",
+    "discordnotifications-block-user-reason": "with reason",
+    "discordnotifications-block-user-list": "List of all blocks",
+    "discordnotifications-summary": "Summary: "
+}

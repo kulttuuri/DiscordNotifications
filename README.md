@@ -15,9 +15,15 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 * File is uploaded.
 * ... and each notification can be individually enabled or disabled :)
 
+## Language Support
+
+This extension supports *english*, *finnish*, *german*. Notifications are being sent in the language set to your localSettings.php file in the variable wgLanguageCode.
+
+Want to translate this extension to your language? Just clone this repository, make a copy of the i18n/en.json file to your language, make the translations and create a issue or pull request linking to your translation in your repository! :)
+
 ## Requirements
 
-* [cURL](http://curl.haxx.se/). This extension also supports using `file_get_contents` for sending the data. See the configuration parameter `$wgDiscordSendMethod` below to change this.
+* [cURL](http://curl.haxx.se/) or ability to use PHP function `file_get_contents` for sending the data. Defaults to cURL. See the configuration parameter `$wgDiscordSendMethod` below to switch between cURL and file_get_contents.
 * MediaWiki 1.25+
 * Apache should have NE (NoEscape) flag on to prevent issues in URLs. By default you should have this enabled.
 
@@ -50,6 +56,14 @@ $wgDiscordSendMethod = "curl";
 ## Additional options
 
 These options can be set after including your plugin in your `localSettings.php` file.
+
+### Send notifications to multiple channels
+
+You can add more webhook urls that you want to send notifications to by adding them in this array:
+
+```php
+$wgDiscordAdditionalIncomingWebhookUrls = ["https://yourUrlOne.com", "https://yourUrlTwo..."];
+´´´
 
 ### Remove additional links from user and article pages
 
@@ -145,7 +159,7 @@ $wgWikiUrlEndingDiff                = "diff=prev&oldid=";
 
 ## Contributors
 
-[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu)
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten)
 
 ## License
 

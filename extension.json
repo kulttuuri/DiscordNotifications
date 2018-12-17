@@ -1,12 +1,17 @@
 {
 	"name": "Discord Notifications",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"author": "Aleksi Postari",
 	"url": "https://github.com/kulttuuri/discord_mediawiki",
 	"description": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
 	"type": "other",
 	"AutoloadClasses": {
 		"DiscordNotifications": "DiscordNotificationsCore.php"
+	},
+	"MessagesDirs": {
+		"DiscordNotifications": [
+			"i18n"
+		]
 	},
 	"Hooks": {
 		"PageContentSaveComplete": [
@@ -52,6 +57,7 @@
 	},
 	"config": {
 		"DiscordIncomingWebhookUrl": "",
+		"wgDiscordAdditionalIncomingWebhookUrls": [],
 		"DiscordFromName": "",
 		"DiscordSendMethod": "curl",
 		"DiscordIncludePageUrls": true,

@@ -1,6 +1,7 @@
 <?php
 if ( function_exists( 'wfLoadExtension' ) ) {
 	wfLoadExtension( 'DiscordNotifications' );
+	$wgMessagesDirs['DiscordNotifications'] = __DIR__ . '/i18n';
 	wfWarn(
 		'Deprecated PHP entry point used for DiscordNotifications extension. ' .
 		'Please use wfLoadExtension instead, ' .

@@ -1,0 +1,32 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aleksi Postari"
+        ]
+    },
+    "discordnotifications-block": "estä",
+    "discordnotifications-groups": "ryhmät",
+    "discordnotifications-talk": "puhe",
+    "discordnotifications-contribs": "avustajat",
+    "discordnotifications-edit": "muokkaa",
+    "discordnotifications-delete": "poista",
+    "discordnotifications-history": "historia",
+    "discordnotifications-diff": "eroavaisuudet",
+    "discordnotifications-bytes": "bittiä",
+    "discordnotifications-article-saved": "📝 %s %s artikkelia %s %s",
+    "discordnotifications-article-saved-minor-edits": "teki pienen muutoksen",
+    "discordnotifications-article-saved-edit": "muokkasi",
+    "discordnotifications-article-created": "📄 %s loi artikkelin %s %s",
+    "discordnotifications-file-namespace": "Tiedosto",
+    "discordnotifications-article-deleted": "❌ %s poisti artikkelin %s Syy: %s",
+    "discordnotifications-article-moved": "➡ %s siirsi artikkelin %s artikkeliksi %s. Syy: %s",
+    "discordnotifications-article-protected": "🔒 %s %s %s. Syy: %s",
+    "discordnotifications-article-protected-change": "vaihtoi suojaustason artikkelille",
+    "discordnotifications-article-protected-remove": "poisti suojauksen artikkelilta",
+    "discordnotifications-new-user": "👥 Uusi tunnus %s luotiin juuri %s",
+    "discordnotifications-file-uploaded": "📤 %s on ladannut tiedoston <%s|%s> (muoto: %s, koko: %s MB, yhteenveto: %s)",
+    "discordnotifications-block-user": "🚫 %s on estänyt käyttäjän %s %s Esto erääntyy: %s. %s",
+    "discordnotifications-block-user-reason": "syy",
+    "discordnotifications-block-user-list": "Näytä kaikki estot",
+    "discordnotifications-summary": "Yhteenveto: "
+}
