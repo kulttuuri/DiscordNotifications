@@ -63,7 +63,7 @@ You can add more webhook urls that you want to send notifications to by adding t
 
 ```php
 $wgDiscordAdditionalIncomingWebhookUrls = ["https://yourUrlOne.com", "https://yourUrlTwo..."];
-´´´
+```
 
 ### Remove additional links from user and article pages
 
