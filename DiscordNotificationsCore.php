@@ -407,7 +407,7 @@ class DiscordNotifications
 		else {
 			self::send_curl_request($wgDiscordIncomingWebhookUrl, $post);
 			for ($i = 0; $i < count($wgDiscordAdditionalIncomingWebhookUrls); ++$i) {
-				self::send_http_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
+				self::send_curl_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
 			}
 		}
 	}
