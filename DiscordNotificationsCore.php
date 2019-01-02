@@ -437,7 +437,7 @@ class DiscordNotifications
 		$result = file_get_contents($url, false, $context);
 	}
 
-    private function getMessage($key) {
+    private static function getMessage($key) {
 		return wfMessage( $key)->text();
     }
 }
