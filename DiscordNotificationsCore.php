@@ -412,7 +412,7 @@ class DiscordNotifications
 		}
 	}
 
-	private function send_curl_request($url, $postData) {
+	private static function send_curl_request($url, $postData) {
 		$h = curl_init();
 		curl_setopt($h, CURLOPT_URL, $url);
 		curl_setopt($h, CURLOPT_POST, 1);
@@ -425,7 +425,7 @@ class DiscordNotifications
 		curl_close($h);
 	}
 
-	private function send_http_request($url, $postData) {
+	private static function send_http_request($url, $postData) {
 		$extradata = array(
 			'http' => array(
 			'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
@@ -437,7 +437,7 @@ class DiscordNotifications
 		$result = file_get_contents($url, false, $context);
 	}
 
-    private function getMessage($key) {
+    private static function getMessage($key) {
 		return wfMessage( $key)->text();
     }
 }
