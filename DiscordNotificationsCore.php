@@ -417,11 +417,12 @@ class DiscordNotifications
 		curl_setopt($h, CURLOPT_URL, $url);
 		curl_setopt($h, CURLOPT_POST, 1);
 		curl_setopt($h, CURLOPT_POSTFIELDS, $postData);
+		curl_setopt($h, CURLOPT_RETURNTRANSFER, true);
 		// I know this shouldn't be done, but because it wouldn't otherwise work because of SSL...
 		curl_setopt ($h, CURLOPT_SSL_VERIFYHOST, 0);
 		curl_setopt ($h, CURLOPT_SSL_VERIFYPEER, 0);
 		// ... Aaand execute the curl script!
-		curl_exec($h);
+		$curl_output = curl_exec($h);
 		curl_close($h);
 	}
 
@@ -438,7 +439,7 @@ class DiscordNotifications
 	}
 
     private static function getMessage($key) {
-		return wfMessage( $key)->text();
+		return wfMessage( $key)->inContentLanguage()->text();
     }
 }
 ?>
