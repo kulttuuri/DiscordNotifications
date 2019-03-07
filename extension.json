@@ -1,6 +1,6 @@
 {
 	"name": "Discord Notifications",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"author": "Aleksi Postari",
 	"url": "https://github.com/kulttuuri/discord_mediawiki",
 	"description": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
@@ -53,6 +53,11 @@
 			[
 				"DiscordNotifications::discord_article_protected"
 			]
+		],
+		"UserGroupsChanged": [
+			[
+				"DiscordNotifications::discord_user_groups_changed"
+			]
 		]
 	},
 	"config": {
@@ -72,7 +77,6 @@
 		"WikiUrlEndingUserPage": "User:",
 		"WikiUrlEndingUserTalkPage": "User_talk:",
 		"WikiUrlEndingUserContributions": "Special:Contributions/",
-		"WikiUrlEndingBlockList": "Special:BlockList",
 		"WikiUrlEndingEditArticle": "action=edit",
 		"WikiUrlEndingDeleteArticle": "action=delete",
 		"WikiUrlEndingHistory": "action=history",
@@ -85,6 +89,7 @@
 		"DiscordNotificationEditedArticle": true,
 		"DiscordNotificationFileUpload": true,
 		"DiscordNotificationProtectedArticle": true,
+		"DiscordNotificationUserGroupsChanged": true,
 		"DiscordIncludeDiffSize": true,
 		"DiscordShowNewUserEmail": true,
 		"DiscordShowNewUserFullName": true,

@@ -12,6 +12,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 * Article protection settings are changed.
 * New user is added.
 * User is blocked.
+* User groups are changed.
 * File is uploaded.
 * ... and each notification can be individually enabled or disabled :)
 
@@ -126,6 +127,8 @@ MediaWiki actions that will be sent notifications of into Discord. Set desired o
 $wgDiscordNotificationNewUser = true;
 // User or IP blocked in MediaWiki
 $wgDiscordNotificationBlockedUser = true;
+// User groups changed in MediaWiki
+$wgDiscordNotificationUserGroupsChanged
 // Article added to MediaWiki
 $wgDiscordNotificationAddedArticle = true;
 // Article removed from MediaWiki

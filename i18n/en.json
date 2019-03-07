@@ -28,5 +28,7 @@
     "discordnotifications-block-user": "🚫 %s has blocked %s %s Block expiration: %s. %s",
     "discordnotifications-block-user-reason": "with reason",
     "discordnotifications-block-user-list": "List of all blocks",
-    "discordnotifications-summary": "Summary: "
+    "discordnotifications-summary": "Summary: ",
+    "discordnotifications-view-user-rights": "View or manage user rights",
+    "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s"
 }

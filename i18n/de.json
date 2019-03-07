@@ -28,5 +28,7 @@
 	"discordnotifications-block-user": "🚫 %s sperrt %s %s Sperrung läuft aus: %s. %s",
 	"discordnotifications-block-user-reason": "mit der Begründung",
 	"discordnotifications-block-user-list": "Liste aller Sperrungen",
-	"discordnotifications-summary": "Zusammenfassung: "
+	"discordnotifications-summary": "Zusammenfassung: ",
+	"discordnotifications-view-user-rights": "View or manage user rights",
+	"discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s"
 }

@@ -333,6 +333,26 @@ class DiscordNotifications
 	}
 
 	/**
+	 * Occurs after the user groups (rights) have been changed
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/UserGroupsChanged
+	 */
+	static function discord_user_groups_changed(User $user, array $added, array $removed, $performer, $reason, $oldUGMs, $newUGMs)
+	{
+		global $wgDiscordNotificationUserGroupsChanged;
+		if (!$wgDiscordNotificationUserGroupsChanged) return;
+
+		global $wgWikiUrl, $wgWikiUrlEnding, $wgWikiUrlEndingUserRights;
+		$message = sprintf(
+            self::getMessage('discordnotifications-change-user-groups'),
+			self::getDiscordUserText($performer),
+			self::getDiscordUserText($user),
+			implode(", ", $user->getGroups()),
+			"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserRights.self::getDiscordUserText($performer))."|" . self::getMessage('discordnotifications-view-user-rights') . ">.");
+		self::push_discord_notify($message, $user, 'user_groups_changed');
+		return true;
+	}
+
+	/**
 	 * Sends the message into Discord room.
 	 * @param message Message to be sent.
 	 * @see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
@@ -365,6 +385,9 @@ class DiscordNotifications
       case 'article_saved':
         $colour = 2993970;
         break;
+      case 'user_groups_changed':
+          $colour = 2993970;
+          break;
       case 'article_inserted':
         $colour = 3580392;
         break;

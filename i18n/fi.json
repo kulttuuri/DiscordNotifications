@@ -28,5 +28,7 @@
     "discordnotifications-block-user": "🚫 %s on estänyt käyttäjän %s %s Esto erääntyy: %s. %s",
     "discordnotifications-block-user-reason": "syy",
     "discordnotifications-block-user-list": "Näytä kaikki estot",
-    "discordnotifications-summary": "Yhteenveto: "
+    "discordnotifications-summary": "Yhteenveto: ",
+    "discordnotifications-view-user-rights": "Näytä tai muokkaa käyttäjän oikeuksia",
+    "discordnotifications-change-user-groups": "%s vaihtoi ryhmät käyttäjälle %s. Uudet ryhmät: %s"
 }
