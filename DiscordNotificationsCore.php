@@ -441,9 +441,9 @@ class DiscordNotifications
 		curl_setopt($h, CURLOPT_POST, 1);
 		curl_setopt($h, CURLOPT_POSTFIELDS, $postData);
 		curl_setopt($h, CURLOPT_RETURNTRANSFER, true);
-		// I know this shouldn't be done, but because it wouldn't otherwise work because of SSL...
-		curl_setopt ($h, CURLOPT_SSL_VERIFYHOST, 0);
-		curl_setopt ($h, CURLOPT_SSL_VERIFYPEER, 0);
+		// Commented out lines below. Using default curl settings for host and peer verification.
+		//curl_setopt ($h, CURLOPT_SSL_VERIFYHOST, 0);
+		//curl_setopt ($h, CURLOPT_SSL_VERIFYPEER, 0);
 		// ... Aaand execute the curl script!
 		$curl_output = curl_exec($h);
 		curl_close($h);
