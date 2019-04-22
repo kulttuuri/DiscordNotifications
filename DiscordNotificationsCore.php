@@ -194,10 +194,13 @@ class DiscordNotifications
 	 * Occurs after the delete article request has been processed.
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/ArticleDeleteComplete
 	 */
-	static function discord_article_deleted(WikiPage $article, $user, $reason, $id)
+	static function discord_article_deleted(WikiPage $article, User $user, $reason, $id, $content, ManualLogEntry $logEntry )
 	{
 		global $wgDiscordNotificationRemovedArticle;
-		if (!$wgDiscordNotificationRemovedArticle) return;
+		if ( !$wgDiscordNotificationRemovedArticle ) return;
+
+		global $wgDiscordNotificationShowSuppressed;
+		if ( !$wgDiscordNotificationShowSuppressed && $logEntry->getType() != 'delete' ) return;
 
 		// Discard notifications from excluded pages
 		global $wgDiscordExcludeNotificationsFrom;
