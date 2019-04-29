@@ -89,6 +89,7 @@
 		"DiscordNotificationEditedArticle": true,
 		"DiscordNotificationFileUpload": true,
 		"DiscordNotificationProtectedArticle": true,
+		"DiscordNotificationShowSuppressed": true,
 		"DiscordNotificationUserGroupsChanged": true,
 		"DiscordIncludeDiffSize": true,
 		"DiscordShowNewUserEmail": true,
