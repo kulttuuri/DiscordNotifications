@@ -126,6 +126,14 @@ You can exclude notifications from certain namespaces / articles by adding them 
 $wgDiscordExcludeNotificationsFrom = ["User:", "Weirdgroup"];
 ```
 
+### Show non-public article deletions
+
+By default we do not show non-public article deletion notifications. You can change this using the parameter below.
+
+```php
+$wgDiscordNotificationShowSuppressed = true;
+```
+
 ### Actions to notify of
 
 MediaWiki actions that will be sent notifications of into Discord. Set desired options to false to disable notifications of those actions.
