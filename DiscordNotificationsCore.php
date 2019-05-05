@@ -27,11 +27,11 @@ class DiscordNotifications
 		{
 			return sprintf(
 				"%s (%s | %s | %s | %s)",
-				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserPage.$user->getName())."|$user->getName()>",
-				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingBlockUser.$user->getName())."|" . self::getMessage('discordnotifications-block') . ">",
-				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserRights.$user->getName())."|" . self::getMessage('discordnotifications-groups') . ">",
-				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserTalkPage.$user->getName())."|" . self::getMessage('discordnotifications-talk') . ">",
-				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserContributions.$user->getName())."|" . self::getMessage('discordnotifications-contribs') . ">");
+				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserPage.$user)."|$user>",
+				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingBlockUser.$user)."|" . self::getMessage('discordnotifications-block') . ">",
+				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserRights.$user)."|" . self::getMessage('discordnotifications-groups') . ">",
+				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserTalkPage.$user)."|" . self::getMessage('discordnotifications-talk') . ">",
+				"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserContributions.$user)."|" . self::getMessage('discordnotifications-contribs') . ">");
 		}
 		else
 		{
@@ -141,7 +141,7 @@ class DiscordNotifications
 
 		$message = sprintf(
             self::getMessage('discordnotifications-article-saved'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			$isMinor == true ? self::getMessage('discordnotifications-article-saved-minor-edits') : self::getMessage('discordnotifications-article-saved-edit'),
 			self::getDiscordArticleText($article, true),
 			$summary == "" ? "" : self::getMessage('discordnotifications-summary') . $summary);
@@ -177,7 +177,7 @@ class DiscordNotifications
 		
 		$message = sprintf(
             self::getMessage('discordnotifications-article-created'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			self::getDiscordArticleText($article),
 			$summary == "" ? "" : self::getMessage('discordnotifications-summary') . $summary);
 		if ($wgDiscordIncludeDiffSize)
@@ -194,7 +194,7 @@ class DiscordNotifications
 	 * Occurs after the delete article request has been processed.
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/ArticleDeleteComplete
 	 */
-	static function discord_article_deleted(WikiPage $article, $user, $reason, $id, $content, ManualLogEntry $logEntry )
+	static function discord_article_deleted(WikiPage $article, User $user, $reason, $id, $content, ManualLogEntry $logEntry )
 	{
 		global $wgDiscordNotificationRemovedArticle;
 		if ( !$wgDiscordNotificationRemovedArticle ) return;
@@ -212,7 +212,7 @@ class DiscordNotifications
 
 		$message = sprintf(
             self::getMessage('discordnotifications-article-deleted'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			self::getDiscordArticleText($article),
 			$reason);
 		self::push_discord_notify($message, $user, 'article_deleted');
@@ -230,7 +230,7 @@ class DiscordNotifications
 
 		$message = sprintf(
             self::getMessage('discordnotifications-article-moved'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			self::getDiscordTitleText($title),
 			self::getDiscordTitleText($newtitle),
 			$reason);
@@ -249,7 +249,7 @@ class DiscordNotifications
 
 		$message = sprintf(
             self::getMessage('discordnotifications-article-protected'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			$protect ? self::getMessage('discordnotifications-article-protected-change') : self::getMessage('discordnotifications-article-protected-remove'),
 			self::getDiscordArticleText($article),
 			$reason);
@@ -285,7 +285,7 @@ class DiscordNotifications
 
 		$message = sprintf(
             self::getMessage('discordnotifications-new-user'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			$messageExtra);
 		self::push_discord_notify($message, $user, 'new_user_account');
 		return true;
@@ -326,7 +326,7 @@ class DiscordNotifications
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgWikiUrlEndingBlockList;
 		$message = sprintf(
             self::getMessage('discordnotifications-block-user'),
-			self::getDiscordUserText($user->getName()),
+			self::getDiscordUserText($user),
 			self::getDiscordUserText($block->getTarget()),
 			$block->mReason == "" ? "" : self::getMessage('discordnotifications-block-user-reason') . " '".$block->mReason."'.",
 			$block->mExpiry,
