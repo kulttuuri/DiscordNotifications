@@ -339,7 +339,7 @@ class DiscordNotifications
 	 * Occurs after the user groups (rights) have been changed
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/UserGroupsChanged
 	 */
-	static function discord_user_groups_changed(User $user, array $added, array $removed, $performer, $reason, $oldUGMs, $newUGMs)
+	static function discord_user_groups_changed($user, array $added, array $removed, $performer, $reason, $oldUGMs, $newUGMs)
 	{
 		global $wgDiscordNotificationUserGroupsChanged;
 		if (!$wgDiscordNotificationUserGroupsChanged) return;
