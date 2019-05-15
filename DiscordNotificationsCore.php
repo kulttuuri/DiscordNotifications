@@ -425,15 +425,19 @@ class DiscordNotifications
 		// Use file_get_contents to send the data. Note that you will need to have allow_url_fopen enabled in php.ini for this to work.
 		if ($wgDiscordSendMethod == "file_get_contents") {
 			self::send_http_request($wgDiscordIncomingWebhookUrl, $post);
-			for ($i = 0; $i < count($wgDiscordAdditionalIncomingWebhookUrls); ++$i) {
-				self::send_http_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
+			if ($wgDiscordAdditionalIncomingWebhookUrls && is_array($wgDiscordAdditionalIncomingWebhookUrls)) {
+				for ($i = 0; $i < count($wgDiscordAdditionalIncomingWebhookUrls); ++$i) {
+					self::send_http_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
+				}
 			}
 		}
 		// Call the Discord API through cURL (default way). Note that you will need to have cURL enabled for this to work.
 		else {
 			self::send_curl_request($wgDiscordIncomingWebhookUrl, $post);
-			for ($i = 0; $i < count($wgDiscordAdditionalIncomingWebhookUrls); ++$i) {
-				self::send_curl_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
+			if ($wgDiscordAdditionalIncomingWebhookUrls && is_array($wgDiscordAdditionalIncomingWebhookUrls)) {
+				for ($i = 0; $i < count($wgDiscordAdditionalIncomingWebhookUrls); ++$i) {
+					self::send_curl_request($wgDiscordAdditionalIncomingWebhookUrls[$i], $post);
+				}
 			}
 		}
 	}
