@@ -339,7 +339,7 @@ class DiscordNotifications
 	 * Occurs after the user groups (rights) have been changed
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/UserGroupsChanged
 	 */
-	static function discord_user_groups_changed(User $user, array $added, array $removed, $performer, $reason, $oldUGMs, $newUGMs)
+	static function discord_user_groups_changed($user, array $added, array $removed, $performer, $reason, $oldUGMs, $newUGMs)
 	{
 		global $wgDiscordNotificationUserGroupsChanged;
 		if (!$wgDiscordNotificationUserGroupsChanged) return;
@@ -348,7 +348,7 @@ class DiscordNotifications
 		$message = sprintf(
             self::getMessage('discordnotifications-change-user-groups'),
 			self::getDiscordUserText($performer),
-			self::getDiscordUserText($user),
+			self::getDiscordUserText($user->getName()),
 			implode(", ", $user->getGroups()),
 			"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$wgWikiUrlEndingUserRights.self::getDiscordUserText($performer))."|" . self::getMessage('discordnotifications-view-user-rights') . ">.");
 		self::push_discord_notify($message, $user, 'user_groups_changed');
