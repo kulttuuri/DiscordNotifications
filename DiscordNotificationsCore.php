@@ -135,7 +135,7 @@ class DiscordNotifications
 		if ($isMinor && $wgDiscordIgnoreMinorEdits) return;
 		
 		// Skip edits that are just refreshing the page
-		if ($article->getRevision()->getPrevious() == NULL || $revision->getPrevious() == NULL) {
+		if ($article->getRevision()->getPrevious() == NULL || $revision->getPrevious() == NULL || !$revision || is_null( $status->getValue()['revision'])) {
 			return;
 		}
 
