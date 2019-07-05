@@ -19,10 +19,10 @@ class DiscordNotifications
 	static function getDiscordUserText($user)
 	{
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgWikiUrlEndingUserPage,
-			$wgWikiUrlEndingBlockUser, $wgWikiUrlEndingUserRights, 
+			$wgWikiUrlEndingBlockUser, $wgWikiUrlEndingUserRights,
 			$wgWikiUrlEndingUserTalkPage, $wgWikiUrlEndingUserContributions,
 			$wgDiscordIncludeUserUrls;
-		
+
 		if ($wgDiscordIncludeUserUrls)
 		{
 			return sprintf(
@@ -133,7 +133,7 @@ class DiscordNotifications
 
 		// Skip minor edits if user wanted to ignore them
 		if ($isMinor && $wgDiscordIgnoreMinorEdits) return;
-		
+
 		// Skip edits that are just refreshing the page
 		if ($article->getRevision()->getPrevious() == NULL || $revision->getPrevious() == NULL || !$revision || is_null( $status->getValue()['revision'])) {
 			return;
@@ -146,7 +146,7 @@ class DiscordNotifications
 			self::getDiscordArticleText($article, true),
 			$summary == "" ? "" : self::getMessage('discordnotifications-summary') . $summary);
 		if ($wgDiscordIncludeDiffSize)
-		{		
+		{
 			$message .= sprintf(
 				" (%+d " . self::getMessage('discordnotifications-bytes') . ")",
 				$article->getRevision()->getSize() - $article->getRevision()->getPrevious()->getSize());
@@ -174,14 +174,14 @@ class DiscordNotifications
 
 		// Do not announce newly added file uploads as articles...
 		if ($article->getTitle()->getNsText() == self::getMessage('discordnotifications-file-namespace')) return true;
-		
+
 		$message = sprintf(
             self::getMessage('discordnotifications-article-created'),
 			self::getDiscordUserText($user),
 			self::getDiscordArticleText($article),
 			$summary == "" ? "" : self::getMessage('discordnotifications-summary') . $summary);
 		if ($wgDiscordIncludeDiffSize)
-		{		
+		{
 			$message .= sprintf(
 				" (%d " . self::getMessage('discordnotifications-bytes') . ")",
 				$article->getRevision()->getSize());
@@ -279,7 +279,7 @@ class DiscordNotifications
 			if ($wgDiscordShowNewUserEmail) $messageExtra .= $email . ", ";
 			if ($wgDiscordShowNewUserFullName) $messageExtra .= $realname . ", ";
 			if ($wgDiscordShowNewUserIP) $messageExtra .= $ipaddress . ", ";
-			$messageExtra = substr($messageExtra, 0, -2); // Remove trailing , 
+			$messageExtra = substr($messageExtra, 0, -2); // Remove trailing ,
 			$messageExtra .= ")";
 		}
 
@@ -356,6 +356,95 @@ class DiscordNotifications
 	}
 
 	/**
+	 * Occurs after the execute() method of an Flow API module
+	 */
+	static function discord_api_flow_after_execute(APIBase $module)
+	{
+		global $wgDiscordNotificationFlow;
+		if (!$wgDiscordNotificationFlow || !ExtensionRegistry::getInstance()->isLoaded('Flow')) return;
+
+		global $wgRequest;
+		$action = $module->getModuleName();
+		$request = $wgRequest->getValues();
+		$result = $module->getResult()->getResultData()['flow'][$action];
+		if ( $result['status'] != 'ok' ) return;
+
+		// Discard notifications from excluded pages
+		global $wgDiscordExcludeNotificationsFrom;
+		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
+				if (0 === strpos($request['page'], $currentExclude)) return;
+			}
+		}
+
+		global $wgWikiUrl, $wgWikiUrlEnding, $wgUser;
+		switch ( $action ) {
+			case 'edit-header':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-edit-header"),
+					self::getDiscordUserText($wgUser),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$request['page'])."|".$request['page'].">");
+				break;
+			case 'edit-post':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-edit-post"),
+					self::getDiscordUserText($wgUser),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding."Topic:".$result['workflow'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'edit-title':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-edit-title"),
+					self::getDiscordUserText($wgUser),
+					$request['etcontent'],
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.'Topic:'.$result['workflow'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'edit-topic-summary':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-edit-topic-summary"),
+					self::getDiscordUserText($wgUser),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.'Topic:'.$result['workflow'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'lock-topic':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-lock-topic"),
+					self::getDiscordUserText($wgUser),
+					self::getMessage("discordnotifications-flow-lock-topic-".$request['cotmoderationState']),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$request['page'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'moderate-post':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-moderate-post"),
+					self::getDiscordUserText($wgUser),
+					self::getMessage("discordnotifications-flow-moderate-".$request['mpmoderationState']),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$request['page'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'moderate-topic':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-moderate-topic"),
+					self::getDiscordUserText($wgUser),
+					self::getMessage("discordnotifications-flow-moderate-".$request['mtmoderationState']),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$request['page'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			case 'new-topic':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-new-topic"),
+					self::getDiscordUserText($wgUser),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding."Topic:".$result['committed']['topiclist']['topic-id'])."|".$request['nttopic'].">",
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.$request['page'])."|".$request['page'].">");
+				break;
+			case 'reply':
+				$message = sprintf(
+					self::getMessage("discordnotifications-flow-reply"),
+					self::getDiscordUserText($wgUser),
+					"<".self::parseurl($wgWikiUrl.$wgWikiUrlEnding.'Topic:'.$result['workflow'])."|".self::flowUUIDToTitleText($result['workflow']).">");
+				break;
+			default:
+				return;
+		}
+		self::push_discord_notify($message, $wgUser, 'flow');
+	}
+
+	/**
 	 * Sends the message into Discord room.
 	 * @param message Message to be sent.
 	 * @see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
@@ -363,7 +452,7 @@ class DiscordNotifications
 	static function push_discord_notify($message, $user, $action)
 	{
 		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
-		
+
 		if ( $wgExcludedPermission != "" ) {
 			if ( $user->isAllowed( $wgExcludedPermission ) )
 			{
@@ -382,7 +471,7 @@ class DiscordNotifications
 
 		$message = preg_replace("~(<)(http)([^|]*)(\|)([^\>]*)(>)~", "[$5]($2$3)", $message);
 		$message = str_replace(array("\r", "\n"), '', $message);
-    
+
     $colour = 11777212;
     switch($action){
       case 'article_saved':
@@ -411,6 +500,9 @@ class DiscordNotifications
         break;
       case 'user_blocked':
         $colour = 15217973;
+        break;
+      case 'flow':
+        $colour = 2993970;
         break;
       default:
         $colour = 11777212;
@@ -470,6 +562,11 @@ class DiscordNotifications
 
     private static function getMessage($key) {
 		return wfMessage( $key)->inContentLanguage()->text();
-    }
+		}
+
+	private static function flowUUIDToTitleText($UUID) {
+		// TODO
+		return 'Topic:'.$UUID;
+	}
 }
 ?>

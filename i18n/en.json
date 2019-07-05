@@ -30,5 +30,22 @@
     "discordnotifications-block-user-list": "List of all blocks",
     "discordnotifications-summary": "Summary: ",
     "discordnotifications-view-user-rights": "View or manage user rights",
-    "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s"
+    "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s",
+    "discordnotifications-flow-edit-header": "💬 %s has edited a board description %s",
+    "discordnotifications-flow-edit-post": "💬 %s has edited a post on %s",
+    "discordnotifications-flow-edit-title": "💬 %s has changed the topic title to %s on %s",
+    "discordnotifications-flow-edit-topic-summary": "💬 %s has edited topic summary on %s",
+    "discordnotifications-flow-lock-topic": "💬 %s has %s the topic %s",
+    "discordnotifications-flow-lock-topic-lock": "resolved",
+    "discordnotifications-flow-lock-topic-unlock": "reopened",
+    "discordnotifications-flow-moderate-post": "💬 %s has %s a post on topic %s",
+    "discordnotifications-flow-moderate-topic": "💬 %s has %s the topic %s",
+    "discordnotifications-flow-moderate-hide": "hidden",
+    "discordnotifications-flow-moderate-unhide": "unhidden",
+    "discordnotifications-flow-moderate-suppress": "suppressed",
+    "discordnotifications-flow-moderate-unsuppress": "unsuppressed",
+    "discordnotifications-flow-moderate-delete": "deleted",
+    "discordnotifications-flow-moderate-undelete": "undeleted",
+    "discordnotifications-flow-new-topic": "💬 %s has created topic %s on %s",
+    "discordnotifications-flow-reply": "💬 %s has replied in %s"
 }

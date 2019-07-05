@@ -53,7 +53,7 @@ $wgDiscordSendMethod = "curl";
 ```
 
 5) Enjoy the notifications in your Discord room!
-	
+
 ## Additional options
 
 These options can be set after including your plugin in your `localSettings.php` file.
@@ -157,6 +157,8 @@ $wgDiscordNotificationEditedArticle = true;
 $wgDiscordNotificationFileUpload = true;
 // Article protection settings changed
 $wgDiscordNotificationProtectedArticle = true;
+// Action on Flow Boards (experimental)
+$wgDiscordNotificationFlow = true;
 ```
 
 ## Additional MediaWiki URL Settings
