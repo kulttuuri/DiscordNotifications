@@ -18,7 +18,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 ## Language Support
 
-This extension supports *english*, *finnish*, *german*. Notifications are being sent in the language set to your localSettings.php file in the variable wgLanguageCode.
+This extension supports *english*, *finnish*, *german* and *spanish*. Notifications are being sent in the language set to your localSettings.php file in the variable wgLanguageCode.
 
 Want to translate this extension to your language? Just clone this repository, make a copy of the i18n/en.json file to your language, make the translations and create a issue or pull request linking to your translation in your repository! :)
 
