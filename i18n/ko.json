@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "lens0021"
+        ]
+    },
+    "discordnotifications-block": "차단",
+    "discordnotifications-groups": "권한",
+    "discordnotifications-talk": "토론",
+    "discordnotifications-contribs": "기여",
+    "discordnotifications-edit": "편집",
+    "discordnotifications-delete": "삭제",
+    "discordnotifications-history": "역사",
+    "discordnotifications-diff": "차이",
+    "discordnotifications-bytes": "바이트",
+    "discordnotifications-article-saved": "📝 %s 님이 %s: %s %s",
+    "discordnotifications-article-saved-minor-edits": "사소하게 편집함",
+    "discordnotifications-article-saved-edit": "편집함",
+    "discordnotifications-article-created": "📄 %s 님이 %s 문서를 새로 만듦. %s",
+    "discordnotifications-file-namespace": "파일",
+    "discordnotifications-article-deleted": "❌ %s 님이 %s 문서를 삭제함. 이유: %s",
+    "discordnotifications-article-moved": "➡ %s 님이 %s 문서를 %s 문서로 이동함. 이유: %s",
+    "discordnotifications-article-protected": "🔒 %s 님이 %s 문서의 %s. 이유: %s",
+    "discordnotifications-article-protected-change": "보호 수준을 변경함",
+    "discordnotifications-article-protected-remove": "보호를 제거함",
+    "discordnotifications-new-user": "👥 새 사용자 %s 님이 가입함. %s",
+    "discordnotifications-file-uploaded": "📤 %s 님이 새 파일 <%s|%s>을 업로드함. (포맷: %s, 크기: %s MB, 요약: %s)",
+    "discordnotifications-block-user": "🚫 %s 님이 %s을 차단함(%s). 차단 기한: %s. %s",
+    "discordnotifications-block-user-reason": "이유:",
+    "discordnotifications-block-user-list": "차단 목록",
+    "discordnotifications-summary": "요약: ",
+    "discordnotifications-view-user-rights": "View or manage user rights",
+    "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s"
+}
