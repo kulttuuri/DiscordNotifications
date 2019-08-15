@@ -118,7 +118,7 @@ class DiscordNotifications
 
 		// Discard notifications from excluded pages
 		global $wgDiscordExcludeNotificationsFrom;
-		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+		if (is_array($wgDiscordExcludeNotificationsFrom) && count($wgDiscordExcludeNotificationsFrom) > 0) {
 			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
 				if (0 === strpos($article->getTitle(), $currentExclude)) return;
 			}
@@ -166,7 +166,7 @@ class DiscordNotifications
 
 		// Discard notifications from excluded pages
 		global $wgDiscordExcludeNotificationsFrom;
-		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+		if (is_array($wgDiscordExcludeNotificationsFrom) && count($wgDiscordExcludeNotificationsFrom) > 0) {
 			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
 				if (0 === strpos($article->getTitle(), $currentExclude)) return;
 			}
@@ -204,7 +204,7 @@ class DiscordNotifications
 
 		// Discard notifications from excluded pages
 		global $wgDiscordExcludeNotificationsFrom;
-		if (count($wgDiscordExcludeNotificationsFrom) > 0) {
+		if (is_array($wgDiscordExcludeNotificationsFrom) && count($wgDiscordExcludeNotificationsFrom) > 0) {
 			foreach ($wgDiscordExcludeNotificationsFrom as &$currentExclude) {
 				if (0 === strpos($article->getTitle(), $currentExclude)) return;
 			}
@@ -448,6 +448,8 @@ class DiscordNotifications
 		curl_setopt($h, CURLOPT_POST, 1);
 		curl_setopt($h, CURLOPT_POSTFIELDS, $postData);
 		curl_setopt($h, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($h, CURLOPT_CONNECTTIMEOUT, 10); // Set 10 second timeout to connection
+		curl_setopt($h, CURLOPT_TIMEOUT, 10); // Set global 10 second timeout to handle all data
 		// Commented out lines below. Using default curl settings for host and peer verification.
 		//curl_setopt ($h, CURLOPT_SSL_VERIFYHOST, 0);
 		//curl_setopt ($h, CURLOPT_SSL_VERIFYPEER, 0);
