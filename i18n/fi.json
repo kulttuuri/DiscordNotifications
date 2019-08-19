@@ -30,5 +30,22 @@
     "discordnotifications-block-user-list": "Näytä kaikki estot",
     "discordnotifications-summary": "Yhteenveto: ",
     "discordnotifications-view-user-rights": "Näytä tai muokkaa käyttäjän oikeuksia",
-    "discordnotifications-change-user-groups": "%s vaihtoi ryhmät käyttäjälle %s. Uudet ryhmät: %s"
+    "discordnotifications-change-user-groups": "%s vaihtoi ryhmät käyttäjälle %s. Uudet ryhmät: %s",
+    "discordnotifications-flow-edit-header": "💬 %s vaihtoi laudan kuvausta %s",
+    "discordnotifications-flow-edit-post": "💬 %s muokkasi kirjoitusta sijainnissa %s",
+    "discordnotifications-flow-edit-title": "💬 %s on muuttanut otsikoksi %s sijainnissa %s",
+    "discordnotifications-flow-edit-topic-summary": "💬 %s on muuttanut otsikon kuvausta sijainnissa %s",
+    "discordnotifications-flow-lock-topic": "💬 %s on %s otsikoksi %s",
+    "discordnotifications-flow-lock-topic-lock": "selvittänyt",
+    "discordnotifications-flow-lock-topic-unlock": "uudelleenavannut",
+    "discordnotifications-flow-moderate-post": "💬 %s on %s kirjoituksen otsikkoon %s",
+    "discordnotifications-flow-moderate-topic": "💬 %s on %s otsikkoa %s",
+    "discordnotifications-flow-moderate-hide": "piilottanut",
+    "discordnotifications-flow-moderate-unhide": "asettanut näkyväksi",
+    "discordnotifications-flow-moderate-suppress": "vaimentanut",
+    "discordnotifications-flow-moderate-unsuppress": "poistanut vaimennuksen",
+    "discordnotifications-flow-moderate-delete": "poistanut",
+    "discordnotifications-flow-moderate-undelete": "tuonut takaisin",
+    "discordnotifications-flow-new-topic": "💬 %s on luonut otsikon %s sijainnissa %s",
+    "discordnotifications-flow-reply": "💬 %s on vastannut sijainnissa %s"
 }

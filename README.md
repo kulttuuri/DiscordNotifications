@@ -157,6 +157,8 @@ $wgDiscordNotificationEditedArticle = true;
 $wgDiscordNotificationFileUpload = true;
 // Article protection settings changed
 $wgDiscordNotificationProtectedArticle = true;
+// Action on Flow Boards (experimental)
+$wgDiscordNotificationFlow = true;
 ```
 
 ## Additional MediaWiki URL Settings
@@ -178,7 +180,7 @@ $wgWikiUrlEndingDiff                = "diff=prev&oldid=";
 
 ## Contributors
 
-[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten)
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021)
 
 ## License
 
