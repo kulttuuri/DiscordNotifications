@@ -1,0 +1,34 @@
+{
+    "@metadata": {
+        "authors": [
+            "Giovanni Garciliano Díaz"
+        ]
+    },
+    "discordnotifications-block": "bloquear",
+    "discordnotifications-groups": "grupos",
+    "discordnotifications-talk": "discusión",
+    "discordnotifications-contribs": "contribuciones",
+    "discordnotifications-edit": "editar",
+    "discordnotifications-delete": "borrar",
+    "discordnotifications-history": "historial",
+    "discordnotifications-diff": "dif",
+    "discordnotifications-bytes": "bytes",
+    "discordnotifications-article-saved": "📝 %s %s el artículo %s %s",
+    "discordnotifications-article-saved-minor-edits": "hizo una edición menor en",
+    "discordnotifications-article-saved-edit": "editó",
+    "discordnotifications-article-created": "📄 %s creó el artículo %s %s",
+    "discordnotifications-file-namespace": "Archivo",
+    "discordnotifications-article-deleted": "❌ %s borró el artículo %s Motivo: %s",
+    "discordnotifications-article-moved": "➡ %s movió el artícle %s a %s. Motivo: %s",
+    "discordnotifications-article-protected": "🔒 %s %s artículo %s. Motivo: %s",
+    "discordnotifications-article-protected-change": "cambió la protección del",
+    "discordnotifications-article-protected-remove": "quitó la protección del",
+    "discordnotifications-new-user": "👥 La cuenta de usuario %s fue creada %s",
+    "discordnotifications-file-uploaded": "📤 %s subió un archivo <%s|%s> (formato: %s, tamaño: %s MB, resumen: %s)",
+    "discordnotifications-block-user": "🚫 %s bloqueó a %s %s Expiración del bloqueo: %s. %s",
+    "discordnotifications-block-user-reason": "con motivo",
+    "discordnotifications-block-user-list": "Lista de todos los bloqueos",
+    "discordnotifications-summary": "Resumen: ",
+    "discordnotifications-view-user-rights": "Ver o administrar derechos del usuario",
+    "discordnotifications-change-user-groups": "%s cambió los grupos a los que pertenece el usuario por %s. Nuevos grupos: %s"
+}
