@@ -9,6 +9,7 @@ class DiscordNotifications
 		$url = str_replace(" ", "%20", $url);
 		$url = str_replace("(", "%28", $url);
 		$url = str_replace(")", "%29", $url);
+                $url = str_replace("&", "%26", $url);
 		return $url;
 	}
 
