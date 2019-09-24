@@ -180,7 +180,7 @@ $wgWikiUrlEndingDiff                = "diff=prev&oldid=";
 
 ## Contributors
 
-[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021)
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021) [@The-Voidwalker](https://github.com/The-Voidwalker)
 
 ## License
 
