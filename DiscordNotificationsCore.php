@@ -455,7 +455,7 @@ class DiscordNotifications
 	 */
 	static function push_discord_notify($message, $user, $action)
 	{
-		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
+		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarURL, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 		
 		if ( $wgExcludedPermission != "" ) {
 			if ( $user->isAllowed( $wgExcludedPermission ) )
@@ -516,6 +516,9 @@ class DiscordNotifications
 		$post = sprintf('{"embeds": [{ "color" : "'.$colour.'" ,"description" : "%s"}], "username": "%s"',
 		$message,
 		$discordFromName);
+		if (isset($wgDiscordAvatarURL) && !empty($wgDiscordAvatarURL)) {
+			$post .= ', "avatar_url": "'.$wgDiscordAvatarURL.'"';
+		}
 		$post .= '}';
 
 		// Use file_get_contents to send the data. Note that you will need to have allow_url_fopen enabled in php.ini for this to work.
