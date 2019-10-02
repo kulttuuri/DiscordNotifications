@@ -472,7 +472,7 @@ class DiscordNotifications
 	 */
 	static function push_discord_notify($message, $user, $action)
 	{
-		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarURL, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
+		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 		
 		if ( $wgExcludedPermission != "" ) {
 			if ( $user->isAllowed( $wgExcludedPermission ) )
@@ -533,8 +533,8 @@ class DiscordNotifications
 		$post = sprintf('{"embeds": [{ "color" : "'.$colour.'" ,"description" : "%s"}], "username": "%s"',
 		$message,
 		$discordFromName);
-		if (isset($wgDiscordAvatarURL) && !empty($wgDiscordAvatarURL)) {
-			$post .= ', "avatar_url": "'.$wgDiscordAvatarURL.'"';
+		if (isset($wgDiscordAvatarUrl) && !empty($wgDiscordAvatarUrl)) {
+			$post .= ', "avatar_url": "'.$wgDiscordAvatarUrl.'"';
 		}
 		$post .= '}';
 
