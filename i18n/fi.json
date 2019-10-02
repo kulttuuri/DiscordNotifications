@@ -24,7 +24,7 @@
     "discordnotifications-article-protected-change": "vaihtoi suojaustason artikkelille",
     "discordnotifications-article-protected-remove": "poisti suojauksen artikkelilta",
     "discordnotifications-new-user": "👥 Uusi tunnus %s luotiin juuri %s",
-    "discordnotifications-file-uploaded": "📤 %s on ladannut tiedoston <%s|%s> (muoto: %s, koko: %s MB, yhteenveto: %s)",
+    "discordnotifications-file-uploaded": "📤 %s on ladannut tiedoston <%s|%s> (muoto: %s, koko: %s %s, yhteenveto: %s)",
     "discordnotifications-block-user": "🚫 %s on estänyt käyttäjän %s %s Esto erääntyy: %s. %s",
     "discordnotifications-block-user-reason": "syy",
     "discordnotifications-block-user-list": "Näytä kaikki estot",

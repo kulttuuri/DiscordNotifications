@@ -24,7 +24,7 @@
     "discordnotifications-article-protected-change": "cambió la protección del",
     "discordnotifications-article-protected-remove": "quitó la protección del",
     "discordnotifications-new-user": "👥 La cuenta de usuario %s fue creada %s",
-    "discordnotifications-file-uploaded": "📤 %s subió un archivo <%s|%s> (formato: %s, tamaño: %s MB, resumen: %s)",
+    "discordnotifications-file-uploaded": "📤 %s subió un archivo <%s|%s> (formato: %s, tamaño: %s %s, resumen: %s)",
     "discordnotifications-block-user": "🚫 %s bloqueó a %s %s Expiración del bloqueo: %s. %s",
     "discordnotifications-block-user-reason": "con motivo",
     "discordnotifications-block-user-list": "Lista de todos los bloqueos",
