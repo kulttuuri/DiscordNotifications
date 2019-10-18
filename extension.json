@@ -100,7 +100,8 @@
 		"DiscordIncludeDiffSize": true,
 		"DiscordShowNewUserEmail": true,
 		"DiscordShowNewUserFullName": true,
-		"DiscordShowNewUserIP": true
+		"DiscordShowNewUserIP": true,
+		"DiscordAvatarUrl": ""
 	},
 	"manifest_version": 1
 }
