@@ -305,14 +305,31 @@ class DiscordNotifications
 		if (!$wgDiscordNotificationFileUpload) return;
 
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgUser;
+		$localFile = $image->getLocalFile();
+
+		# Use bytes, KiB, and MiB, rounded to two decimal places.
+		$fsize = $localFile->size;
+		$funits = '';
+		if ($localFile->size < 2048) {
+			$funits = 'bytes';
+		} else if ($localFile->size < 2048*1024) {
+			$fsize /= 1024;
+			$fsize = round($fsize, 2);
+			$funits = 'KiB';
+		} else {
+			$fsize /= 1024*1024;
+			$fsize = round($fsize, 2);
+			$funits = 'MiB';
+		}
+
 		$message = sprintf(
 			self::getMessage('discordnotifications-file-uploaded'),
 			self::getDiscordUserText($wgUser->mName),
 			self::parseurl($wgWikiUrl . $wgWikiUrlEnding . $image->getLocalFile()->getTitle()),
-			$image->getLocalFile()->getTitle(),
-			$image->getLocalFile()->getMimeType(),
-			round($image->getLocalFile()->size / 1024 / 1024, 3),
-			$image->getLocalFile()->getDescription());
+			$localFile->getTitle(),
+			$localFile->getMimeType(),
+			$fsize, $funits,
+			$localFile->getDescription());
 
 		self::push_discord_notify($message, $wgUser, 'file_uploaded');
 		return true;
@@ -455,7 +472,7 @@ class DiscordNotifications
 	 */
 	static function push_discord_notify($message, $user, $action)
 	{
-		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
+		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 		
 		if ( $wgExcludedPermission != "" ) {
 			if ( $user->isAllowed( $wgExcludedPermission ) )
@@ -516,6 +533,9 @@ class DiscordNotifications
 		$post = sprintf('{"embeds": [{ "color" : "'.$colour.'" ,"description" : "%s"}], "username": "%s"',
 		$message,
 		$discordFromName);
+		if (isset($wgDiscordAvatarUrl) && !empty($wgDiscordAvatarUrl)) {
+			$post .= ', "avatar_url": "'.$wgDiscordAvatarUrl.'"';
+		}
 		$post .= '}';
 
 		// Use file_get_contents to send the data. Note that you will need to have allow_url_fopen enabled in php.ini for this to work.

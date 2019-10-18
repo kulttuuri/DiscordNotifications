@@ -24,7 +24,7 @@
     "discordnotifications-article-protected-change": "changed protection of",
     "discordnotifications-article-protected-remove": "removed protection of",
     "discordnotifications-new-user": "👥 New user account %s was just created %s",
-    "discordnotifications-file-uploaded": "📤 %s has uploaded file <%s|%s> (format: %s, size: %s MB, summary: %s)",
+    "discordnotifications-file-uploaded": "📤 %s has uploaded file <%s|%s> (format: %s, size: %s %s, summary: %s)",
     "discordnotifications-block-user": "🚫 %s has blocked %s %s Block expiration: %s. %s",
     "discordnotifications-block-user-reason": "with reason",
     "discordnotifications-block-user-list": "List of all blocks",

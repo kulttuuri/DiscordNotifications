@@ -24,7 +24,7 @@
 	"discordnotifications-article-protected-change": "geändert",
 	"discordnotifications-article-protected-remove": "entfernt",
 	"discordnotifications-new-user": "👥 Neuer Benutzer %s wurde erstellt %s",
-	"discordnotifications-file-uploaded": "📤 %s hat die Datei <%s|%s> hochgeladen (Format: %s, Größe: %s MB, Zusammenfassung: %s)",
+	"discordnotifications-file-uploaded": "📤 %s hat die Datei <%s|%s> hochgeladen (Format: %s, Größe: %s %s, Zusammenfassung: %s)",
 	"discordnotifications-block-user": "🚫 %s sperrt %s %s Sperrung läuft aus: %s. %s",
 	"discordnotifications-block-user-reason": "mit der Begründung",
 	"discordnotifications-block-user-list": "Liste aller Sperrungen",
