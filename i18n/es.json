@@ -30,5 +30,6 @@
     "discordnotifications-block-user-list": "Lista de todos los bloqueos",
     "discordnotifications-summary": "Resumen: ",
     "discordnotifications-view-user-rights": "Ver o administrar derechos del usuario",
-    "discordnotifications-change-user-groups": "%s cambió los grupos a los que pertenece el usuario por %s. Nuevos grupos: %s"
+    "discordnotifications-change-user-groups": "%s cambió los grupos a los que pertenece el usuario por %s. Nuevos grupos: %s",
+    "discordnotifications-change-user-groups-with-old": "%s cambió los grupos a los que pertenece el usuario por %s. Grupos antiguos: %s. Nuevos grupos: %s"
 }

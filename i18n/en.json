@@ -31,6 +31,7 @@
     "discordnotifications-summary": "Summary: ",
     "discordnotifications-view-user-rights": "View or manage user rights",
     "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s",
+    "discordnotifications-change-user-groups-with-old": "%s has changed user groups for %s. Old groups: %s. New groups: %s",
     "discordnotifications-flow-edit-header": "💬 %s has edited a board description %s",
     "discordnotifications-flow-edit-post": "💬 %s has edited a post on %s",
     "discordnotifications-flow-edit-title": "💬 %s has changed the topic title to %s on %s",

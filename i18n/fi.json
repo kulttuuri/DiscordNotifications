@@ -31,6 +31,7 @@
     "discordnotifications-summary": "Yhteenveto: ",
     "discordnotifications-view-user-rights": "Näytä tai muokkaa käyttäjän oikeuksia",
     "discordnotifications-change-user-groups": "%s vaihtoi ryhmät käyttäjälle %s. Uudet ryhmät: %s",
+    "discordnotifications-change-user-groups-with-old": "%s vaihtoi ryhmät käyttäjälle %s. Vanhat ryhmät: %s. Uudet ryhmät: %s",
     "discordnotifications-flow-edit-header": "💬 %s vaihtoi laudan kuvausta %s",
     "discordnotifications-flow-edit-post": "💬 %s muokkasi kirjoitusta sijainnissa %s",
     "discordnotifications-flow-edit-title": "💬 %s on muuttanut otsikoksi %s sijainnissa %s",

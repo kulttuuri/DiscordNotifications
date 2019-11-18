@@ -345,9 +345,10 @@ class DiscordNotificationsCore {
 
 		global $wgWikiUrl, $wgWikiUrlEnding, $wgWikiUrlEndingUserRights;
 		$message = sprintf(
-			self::getMessage( 'discordnotifications-change-user-groups' ),
+			self::getMessage( 'discordnotifications-change-user-groups-with-old' ),
 			self::getDiscordUserText( $performer ),
 			self::getDiscordUserText( $user->getName() ),
+			implode(", ", array_keys($oldUGMs)),
 			implode( ", ", $user->getGroups() ),
 			"<" . self::parseurl( $wgWikiUrl . $wgWikiUrlEnding . $wgWikiUrlEndingUserRights . self::getDiscordUserText( $performer ) ) . "|" . self::getMessage( 'discordnotifications-view-user-rights' ) . ">." );
 		self::pushDiscordNotify( $message, $user, 'user_groups_changed' );

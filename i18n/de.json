@@ -30,5 +30,6 @@
 	"discordnotifications-block-user-list": "Liste aller Sperrungen",
 	"discordnotifications-summary": "Zusammenfassung: ",
 	"discordnotifications-view-user-rights": "View or manage user rights",
-	"discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s"
+	"discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s",
+	"discordnotifications-change-user-groups-with-old": "%s has changed user groups for %s. Old groups: %s. New groups: %s"
 }

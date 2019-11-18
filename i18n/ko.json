@@ -31,6 +31,7 @@
     "discordnotifications-summary": "요약:",
     "discordnotifications-view-user-rights": "사용자 권한을 보거나 관리",
     "discordnotifications-change-user-groups": "%s 님이 %s 님의 사용자 그룹을 변경했습니다 (새 그룹:%s)",
+    "discordnotifications-change-user-groups-with-old": "%s has changed user groups for %s. Old groups: %s. New groups: %s",
     "discordnotifications-flow-edit-header": "💬 %s 님이 %s의 설명을 편집했습니다",
     "discordnotifications-flow-edit-post": "💬 %s 님이 %s의 게시글을 편집했습니다",
     "discordnotifications-flow-edit-title": "💬 %s 님이 주제 제목을 %s로 바꿨습니다 (%s)",
