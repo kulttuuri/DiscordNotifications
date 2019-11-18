@@ -182,7 +182,7 @@ $wgWikiUrlEndingDiff                = "diff=prev&oldid=";
 
 ## Contributors
 
-[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021) [@The-Voidwalker](https://github.com/The-Voidwalker) [@GerbilSoft](https://github.com/GerbilSoft)
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021) [@The-Voidwalker](https://github.com/The-Voidwalker) [@GerbilSoft](https://github.com/GerbilSoft) [@Lens0021](https://github.com/Lens0021)
 
 ## License
 
