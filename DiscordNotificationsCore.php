@@ -540,7 +540,7 @@ class DiscordNotificationsCore {
 		curl_setopt( $h, CURLOPT_RETURNTRANSFER, true );
 		curl_setopt( $h, CURLOPT_CONNECTTIMEOUT, 10 ); // Set 10 second timeout to connection
 		curl_setopt( $h, CURLOPT_TIMEOUT, 10 ); // Set global 10 second timeout to handle all data
-		curl_setopt($h, CURLOPT_HTTPHEADER, array(  
+		curl_setopt( $h, CURLOPT_HTTPHEADER, array(  
 			'Content-Type: application/json',
 			'Content-Length: ' . strlen($postData)
 		    )    
