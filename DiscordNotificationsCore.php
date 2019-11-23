@@ -551,7 +551,7 @@ class DiscordNotificationsCore {
 	private static function sendHttpRequest( $url, $postData ) {
 		$extradata = [
 			'http' => [
-			'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+			'header'  => "Content-type: application/json",
 			'method'  => 'POST',
 			'content' => $postData,
 			],
