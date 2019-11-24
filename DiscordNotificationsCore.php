@@ -570,7 +570,9 @@ class DiscordNotificationsCore {
 	}
 
 	private static function flowUUIDToTitleText( $UUID ) {
-		// TODO: Not implemented yet.
-		return 'Topic:' . $UUID;
+		$UUID = \Flow\Model\UUID::create( $UUID );
+		$collection = \Flow\Collection\PostCollection::newFromId( $UUID );
+		$revision = $collection->getLastRevision();
+		return $revision->getContent( 'topic-title-plaintext' );
 	}
 }
