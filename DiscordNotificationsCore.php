@@ -542,6 +542,7 @@ class DiscordNotifications
 		$h = curl_init();
 		curl_setopt($h, CURLOPT_URL, $url);
 		curl_setopt($h, CURLOPT_POST, 1);
+		curl_setopt($h, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
 		curl_setopt($h, CURLOPT_POSTFIELDS, $postData);
 		curl_setopt($h, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($h, CURLOPT_CONNECTTIMEOUT, 10); // Set 10 second timeout to connection
@@ -557,7 +558,7 @@ class DiscordNotifications
 	private static function send_http_request($url, $postData) {
 		$extradata = array(
 			'http' => array(
-			'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+			'header'  => "Content-type: application/json\r\n",
 			'method'  => 'POST',
 			'content' => $postData,
 			),
