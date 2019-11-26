@@ -4,6 +4,7 @@
             "Aleksi Postari"
         ]
     },
+    "discordnotifications-desc": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
     "discordnotifications-block": "block",
     "discordnotifications-groups": "groups",
     "discordnotifications-talk": "talk",

@@ -2,6 +2,7 @@
     "@metadata": {
         "authors": []
     },
+    "discordnotifications-desc": "{{desc|name=DiscordNotifications|url=https://www.mediawiki.org/wiki/Extension:DiscordNotifications}}",
     "discordnotifications-block": "Used as link text of the button that will (when clicked) block the user of the notifications.",
     "discordnotifications-groups": "Used as link text of the button .",
     "discordnotifications-talk": "Used as link text of the button.",

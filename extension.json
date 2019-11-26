@@ -3,7 +3,7 @@
 	"version": "1.1.1",
 	"author": "Aleksi Postari",
 	"url": "https://github.com/kulttuuri/discord_mediawiki",
-	"description": "Sends Discord notifications for selected actions that have occurred in your MediaWiki sites.",
+	"descriptionmsg": "discordnotifications-desc",
 	"type": "other",
 	"AutoloadClasses": {
 		"DiscordNotificationsCore": "DiscordNotificationsCore.php"
