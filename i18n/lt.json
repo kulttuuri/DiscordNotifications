@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"discordnotifications-block": "blokuoti",
+	"discordnotifications-groups": "grupės",
+	"discordnotifications-talk": "aptarimas",
+	"discordnotifications-edit": "redaguoti",
+	"discordnotifications-delete": "ištrinti",
+	"discordnotifications-history": "istorija",
+	"discordnotifications-article-saved-edit": "redaguota",
+	"discordnotifications-article-created": "📄 $1 sukūrė straipsnį $2 $3",
+	"discordnotifications-file-namespace": "Failas",
+	"discordnotifications-article-deleted": "❌ $1 ištryne straipsnį $2 Priežastis: $3",
+	"discordnotifications-article-moved": "➡ $1 perkėlė straipsnį $2 į $3. Priežastis: $4",
+	"discordnotifications-article-protected-change": "pakeitė apsaugą",
+	"discordnotifications-block-user": "🚫 $1 užblokavo $2 $3 Blokavimo pabaiga: $4. $5",
+	"discordnotifications-summary": "Santrauka: $1",
+	"discordnotifications-flow-lock-topic-lock": "Išspręsta",
+	"discordnotifications-flow-moderate-hide": "paslėpta",
+	"discordnotifications-flow-moderate-unhide": "nebeslepiama",
+	"discordnotifications-flow-moderate-delete": "ištrinta",
+	"discordnotifications-flow-moderate-undelete": "atkurta",
+	"discordnotifications-flow-reply": "💬 $1 atsakė $2"
+}

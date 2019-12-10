@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"ToJack"
+		]
+	},
+	"discordnotifications-block": "баста",
+	"discordnotifications-groups": "гурӯҳҳо",
+	"discordnotifications-talk": "баҳс",
+	"discordnotifications-contribs": "саҳмгузориҳо",
+	"discordnotifications-edit": "Вироиш",
+	"discordnotifications-delete": "ҳазф",
+	"discordnotifications-history": "таърих",
+	"discordnotifications-diff": "фарқ",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|байт}}",
+	"discordnotifications-article-saved-minor-edits": "вироиши хурд ба",
+	"discordnotifications-article-saved-edit": "вироишшуда",
+	"discordnotifications-file-namespace": "Парванда",
+	"discordnotifications-article-protected": "🔒 $1 мақолаи $3-ро $2 кард. Сабаб: $4",
+	"discordnotifications-block-user-reason": "бо сабаб",
+	"discordnotifications-block-user-list": "Феҳристи тамоми басташудаҳо",
+	"discordnotifications-summary": "Хулоса: $1",
+	"discordnotifications-flow-lock-topic-lock": "ҳалшуда",
+	"discordnotifications-flow-moderate-topic": "💬 $1 мавзӯи $3ро $2 кард",
+	"discordnotifications-flow-moderate-hide": "пинҳон",
+	"discordnotifications-flow-moderate-unhide": "пинҳоннашуда",
+	"discordnotifications-flow-moderate-delete": "ҳазф шуд",
+	"discordnotifications-flow-moderate-undelete": "ҳазфнашуда"
+}

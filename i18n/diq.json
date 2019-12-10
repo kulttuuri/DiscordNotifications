@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirzali"
+		]
+	},
+	"discordnotifications-block": "kılit ke",
+	"discordnotifications-groups": "grubi",
+	"discordnotifications-talk": "werênayış",
+	"discordnotifications-contribs": "iştıraki",
+	"discordnotifications-edit": "bıvurne",
+	"discordnotifications-delete": "bestere",
+	"discordnotifications-history": "tarix",
+	"discordnotifications-diff": "ferq",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|bayt|bayti}}",
+	"discordnotifications-article-saved-edit": "vurniya",
+	"discordnotifications-file-namespace": "Dosya",
+	"discordnotifications-article-protected-change": "sıtarnayışê cı vurriya",
+	"discordnotifications-block-user-reason": "ebe sebeb ra",
+	"discordnotifications-summary": "Xulasa: $1",
+	"discordnotifications-flow-lock-topic-lock": "agoziya",
+	"discordnotifications-flow-moderate-hide": "nımıte",
+	"discordnotifications-flow-moderate-suppress": "pawiyaye",
+	"discordnotifications-flow-moderate-delete": "esteriya"
+}

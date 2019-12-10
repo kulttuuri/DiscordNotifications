@@ -1,35 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daniel Felten"
+			"Daniel Felten",
+			"Killarnee"
 		]
 	},
 	"discordnotifications-block": "Blockieren",
 	"discordnotifications-groups": "Gruppen",
 	"discordnotifications-talk": "Diskussion",
-	"discordnotifications-contribs": "Bearbeiter",
+	"discordnotifications-contribs": "Beiträge",
 	"discordnotifications-edit": "Bearbeiten",
 	"discordnotifications-delete": "Löschen",
 	"discordnotifications-history": "Versionen",
 	"discordnotifications-diff": "Änderungen",
 	"discordnotifications-bytes": "Bytes",
-	"discordnotifications-article-saved": "📝 $1 hat den Artikel $3 $2 $4",
-	"discordnotifications-article-saved-minor-edits": "ein wenig bearbeitet.",
-	"discordnotifications-article-saved-edit": "bearbeitet.",
+	"discordnotifications-article-saved": "📝 $1 hat $2 Artikel $3 $4",
+	"discordnotifications-article-saved-minor-edits": "kleine Bearbeitung gemacht bei",
+	"discordnotifications-article-saved-edit": "bearbeitet",
 	"discordnotifications-article-created": "📄 $1 hat den Artikel $2 erstellt. $3",
 	"discordnotifications-file-namespace": "Datei",
 	"discordnotifications-article-deleted": "❌ $1 hat den Artikel $2 gelöscht. Begründung: $3",
 	"discordnotifications-article-moved": "➡ $1 hat den Artikel $2 nach $3 verschoben. Begründung: $4",
-	"discordnotifications-article-protected": "🔒 $1 hat den Schutz von Artikel $3 $2. Begründung: $4",
-	"discordnotifications-article-protected-change": "geändert",
-	"discordnotifications-article-protected-remove": "entfernt",
+	"discordnotifications-article-protected": "🔒 $1 hat $2 Artikel $3. Begründung: $4",
+	"discordnotifications-article-protected-change": "Schutz geändert von",
+	"discordnotifications-article-protected-remove": "Schutz entfernt von",
 	"discordnotifications-new-user": "👥 Neuer Benutzer $1 wurde erstellt $2",
 	"discordnotifications-file-uploaded": "📤 $1 hat die Datei <$2|$3> hochgeladen (Format: $4, Größe: $5 $6, Zusammenfassung: $7)",
-	"discordnotifications-block-user": "🚫 $1 sperrt $2 $3 Sperrung läuft aus: $4. $5",
+	"discordnotifications-block-user": "🚫 $1 sperrte $2 $3 Sperrung läuft aus: $4. $5",
 	"discordnotifications-block-user-reason": "mit der Begründung",
 	"discordnotifications-block-user-list": "Liste aller Sperrungen",
-	"discordnotifications-summary": "Zusammenfassung: ",
-	"discordnotifications-view-user-rights": "View or manage user rights",
+	"discordnotifications-summary": "Zusammenfassung: $1",
+	"discordnotifications-view-user-rights": "Benutzerrechte ansehen oder Bearbeiten",
 	"discordnotifications-change-user-groups": "$1 has changed user groups for $2. New groups: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 has changed user groups for $2. Old groups: $3. New groups: $4"
 }

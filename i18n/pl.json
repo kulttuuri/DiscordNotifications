@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"discordnotifications-desc": "Wysyłaj na Discorda powiadomienia o konkretnych akcjach podjętych na stronach MediaWiki.",
+	"discordnotifications-block": "zablokuj",
+	"discordnotifications-groups": "grupy",
+	"discordnotifications-talk": "dyskusja",
+	"discordnotifications-contribs": "wkład",
+	"discordnotifications-edit": "edytuj",
+	"discordnotifications-delete": "usuń",
+	"discordnotifications-history": "historia",
+	"discordnotifications-diff": "różn.",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|bajt|bajty|bajtów}}",
+	"discordnotifications-article-saved": "📝 $1 $2 artykuł $3 ($4)",
+	"discordnotifications-article-saved-minor-edits": "wykonał(a) drobną edycję w",
+	"discordnotifications-article-saved-edit": "edytował(a)",
+	"discordnotifications-article-created": "$1 stworzył(a) artykuł $2 ($3)",
+	"discordnotifications-file-namespace": "Plik",
+	"discordnotifications-article-deleted": "❌ $1 usunął artykuł $3. Powód: $3",
+	"discordnotifications-article-moved": "➡ $1 przeniósł artykuł $2 na $3. Powód: $3",
+	"discordnotifications-article-protected": "🔒 $1 $2 artykułu $3. Powód: $4",
+	"discordnotifications-article-protected-change": "zmienił(a) zabezpieczenie",
+	"discordnotifications-article-protected-remove": "usunął zabezpieczenie",
+	"discordnotifications-new-user": "👥 Konto użytkownika $1 zostało utworzone $2"
+}

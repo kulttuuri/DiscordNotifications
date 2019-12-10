@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"discordnotifications-block": "blokkeren",
+	"discordnotifications-groups": "groepen",
+	"discordnotifications-talk": "overleg",
+	"discordnotifications-contribs": "bijdragen",
+	"discordnotifications-edit": "bewerken",
+	"discordnotifications-delete": "verwijderen",
+	"discordnotifications-history": "geschiedenis",
+	"discordnotifications-diff": "wijz",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
+	"discordnotifications-article-saved": "📝 $1 heeft pagina $3 $2 $4",
+	"discordnotifications-article-saved-minor-edits": "een kleine bewerking gemaakt",
+	"discordnotifications-article-saved-edit": "bewerkt",
+	"discordnotifications-article-created": "📄 $1 heeft pagina $2 aangemaakt $3",
+	"discordnotifications-file-namespace": "Bestand",
+	"discordnotifications-article-deleted": "❌ $1 heeft pagina $2 verwijderd. Reden: $3",
+	"discordnotifications-article-moved": "➡ $1 heeft $2 naar $3 hernoemt. Reden: $4",
+	"discordnotifications-article-protected": "🔒 $1 heeft de beveiliging van $2 $3. Reden: $4",
+	"discordnotifications-article-protected-change": "gewijzigd",
+	"discordnotifications-article-protected-remove": "verwijderd",
+	"discordnotifications-file-uploaded": "📤 $1 heeft het bestand <$2|$3> geupload (formaat: $4, grootte: $5 $6, samenvatting: $7)",
+	"discordnotifications-block-user": "🚫 $1 heeft $2 geblokkeerd. $3. Veloopt op: $4. $5",
+	"discordnotifications-block-user-reason": "met reden",
+	"discordnotifications-block-user-list": "Lijst met alle blokkades",
+	"discordnotifications-summary": "Samenvatting: $1",
+	"discordnotifications-view-user-rights": "Gebruikerrechten beheren of bekijken",
+	"discordnotifications-flow-lock-topic-lock": "opgelost",
+	"discordnotifications-flow-lock-topic-unlock": "heropend",
+	"discordnotifications-flow-moderate-hide": "verborgen",
+	"discordnotifications-flow-moderate-delete": "verwijderd",
+	"discordnotifications-flow-moderate-undelete": "teruggeplaatst"
+}

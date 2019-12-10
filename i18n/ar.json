@@ -1,0 +1,53 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"discordnotifications-desc": "يرسل إخطارات Discord عن الإجراءات المحددة التي حدثت في مواقع ميدياويكي الخاصة بك.",
+	"discordnotifications-block": "منع",
+	"discordnotifications-groups": "المجموعات",
+	"discordnotifications-talk": "نقاش",
+	"discordnotifications-contribs": "مساهمات",
+	"discordnotifications-edit": "تعديل",
+	"discordnotifications-delete": "حذف",
+	"discordnotifications-history": "تاريخ",
+	"discordnotifications-diff": "فرق",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|بايت}}",
+	"discordnotifications-article-saved": "📝 $1 قد $2 مقالة $3 $4",
+	"discordnotifications-article-saved-minor-edits": "قام بتعديل طفيف ل",
+	"discordnotifications-article-saved-edit": "معدل",
+	"discordnotifications-article-created": "📄 $1 قد أنشأ مقالة $2 $3",
+	"discordnotifications-file-namespace": "ملف",
+	"discordnotifications-article-deleted": "❌ $1 قد حذف مقالة $3 السبب: $2",
+	"discordnotifications-article-moved": "➡ $1 قد نقل مقالة $2 إلى $3؛ السبب: $4",
+	"discordnotifications-article-protected": "🔒 $1 قد $2 مقالة $3؛ السبب: $4",
+	"discordnotifications-article-protected-change": "غير حماية",
+	"discordnotifications-article-protected-remove": "إزالة الحماية من",
+	"discordnotifications-new-user": "👥 تم إنشاء حساب المستخدم الجديد $1 للتو $2",
+	"discordnotifications-file-uploaded": "📤 $1 قد رفع الملف <$2|$3> (الصيغة: $4، الحجم: $5 $6، الملخص: $7)",
+	"discordnotifications-block-user": "🚫 $1 قد منع $2 $3 انتهاء الصلاحية المنع $4. $5",
+	"discordnotifications-block-user-reason": "بسبب",
+	"discordnotifications-block-user-list": "قائمة جميع عمليات المنع",
+	"discordnotifications-summary": "الملخص: $1",
+	"discordnotifications-view-user-rights": "عرض أو إدارة صلاحيات المستخدم",
+	"discordnotifications-change-user-groups": "%s قد غير مجموعات المستخدمين لـ%s، المجموعات الجديدة: %s",
+	"discordnotifications-change-user-groups-with-old": "$1 قد غير مجموعات المستخدمين لـ$2، المجموعات القديمة: $3، المجموعات الجديدة: $4",
+	"discordnotifications-flow-edit-header": "💬 $1 قد عدل وصف لوحة $2",
+	"discordnotifications-flow-edit-post": "💬 $1 قد عدل منشورا في $2",
+	"discordnotifications-flow-edit-title": "💬 $1 قد عدل عنوان الموضوع إلى $2 في $3",
+	"discordnotifications-flow-edit-topic-summary": "💬 $1 قد عدل ملخص الموضوع في $2",
+	"discordnotifications-flow-lock-topic": "💬 $1 قد $2 الموضوع $3",
+	"discordnotifications-flow-lock-topic-lock": "محلول",
+	"discordnotifications-flow-lock-topic-unlock": "معاد فتحه",
+	"discordnotifications-flow-moderate-post": "💬 $1 قد $2 منشورا في موضوع $3",
+	"discordnotifications-flow-moderate-topic": "💬 $1 قد $2 الموضوع $3",
+	"discordnotifications-flow-moderate-hide": "مخفي",
+	"discordnotifications-flow-moderate-unhide": "أظهر",
+	"discordnotifications-flow-moderate-suppress": "مخفي",
+	"discordnotifications-flow-moderate-unsuppress": "إلغاء الطمس",
+	"discordnotifications-flow-moderate-delete": "محذوف",
+	"discordnotifications-flow-moderate-undelete": "مسترجع",
+	"discordnotifications-flow-new-topic": "💬 $1 قد أنشأ الموضوع $2 في $3",
+	"discordnotifications-flow-reply": "💬 $1 قد رد في $2"
+}

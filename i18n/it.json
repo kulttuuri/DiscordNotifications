@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"discordnotifications-block": "blocca",
+	"discordnotifications-groups": "gruppi",
+	"discordnotifications-contribs": "contributi",
+	"discordnotifications-edit": "modifica",
+	"discordnotifications-delete": "cancella",
+	"discordnotifications-history": "cronologia",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte}}",
+	"discordnotifications-article-saved": "📝 $1 ha $2 la voce $3 $4",
+	"discordnotifications-article-saved-edit": "modificato",
+	"discordnotifications-article-created": "📄 $1 ha creato la voce $2 $3",
+	"discordnotifications-file-namespace": "File",
+	"discordnotifications-article-deleted": "❌ $1 ha cancellato la voce $2 Motivo: $3",
+	"discordnotifications-article-moved": "➡ $1 ha spostato la voce $2 a $3. Motivo: $4",
+	"discordnotifications-article-protected": "🔒 $1 ha $2 la voce $3. Motivo: $4",
+	"discordnotifications-article-protected-change": "ha cambiato la protezione di",
+	"discordnotifications-change-user-groups": "%s ha modificato i gruppi utente per %s. Nuovi gruppi: %s",
+	"discordnotifications-change-user-groups-with-old": "$1 ha modificato i gruppi utente per $2. Vecchi gruppi: $3. Nuovi gruppi: $4",
+	"discordnotifications-flow-lock-topic-lock": "risolto",
+	"discordnotifications-flow-moderate-topic": "💬 $1 ha $2 l'argomento $3",
+	"discordnotifications-flow-moderate-hide": "nascosto",
+	"discordnotifications-flow-moderate-delete": "cancellato"
+}
