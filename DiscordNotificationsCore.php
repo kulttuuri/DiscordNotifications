@@ -130,7 +130,7 @@ class DiscordNotificationsCore {
 			self::getDiscordUserText( $user ),
 			$isMinor == true ? self::msg( 'discordnotifications-article-saved-minor-edits' ) : self::msg( 'discordnotifications-article-saved-edit' ),
 			self::getDiscordArticleText( $article, true ),
-			$summary == "" ? "" : self::msg( 'discordnotifications-summary' ) . $summary );
+			$summary == "" ? "" : self::msg( 'discordnotifications-summary', $summary ) );
 		if ( $wgDiscordIncludeDiffSize ) {
 			$message .= ' (' . self::msg( 'discordnotifications-bytes',
 				$article->getRevision()->getSize() - $article->getRevision()->getPrevious()->getSize() ) . ')';
