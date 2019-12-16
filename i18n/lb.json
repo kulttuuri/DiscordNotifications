@@ -17,6 +17,8 @@
 	"discordnotifications-article-saved-edit": "geännert",
 	"discordnotifications-article-created": "📄 $1 huet den Artikel $2 ugeluecht. $3",
 	"discordnotifications-file-namespace": "Fichier",
+	"discordnotifications-article-deleted": "❌ $1 huet den Artikel $2 geläscht Grond: $3",
+	"discordnotifications-article-moved": "❌ $1 huet den Artikel $2 op $3 geréckelt Grond: $4",
 	"discordnotifications-block-user-reason": "mam Grond",
 	"discordnotifications-block-user-list": "Lëscht vun alle Spären",
 	"discordnotifications-summary": "Resumé: $1",
