@@ -3,7 +3,8 @@
 		"authors": [
 			"Giovanni Garciliano Díaz",
 			"Ciencia Al Poder",
-			"Ihojose"
+			"Ihojose",
+			"Fitoschido"
 		]
 	},
 	"discordnotifications-desc": "Envía notificaciones de Discord para una selección de acciones que ocurran en sitios MediaWiki.",
@@ -14,7 +15,7 @@
 	"discordnotifications-edit": "editar",
 	"discordnotifications-delete": "borrar",
 	"discordnotifications-history": "historial",
-	"discordnotifications-diff": "dif",
+	"discordnotifications-diff": "difs.",
 	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
 	"discordnotifications-article-saved": "📝 $1 $2 el artículo $3 $4",
 	"discordnotifications-article-saved-minor-edits": "hizo una edición menor en",

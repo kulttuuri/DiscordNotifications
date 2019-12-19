@@ -25,6 +25,7 @@
 	"discordnotifications-flow-lock-topic-lock": "geléist",
 	"discordnotifications-flow-lock-topic-unlock": "nees opgemaach",
 	"discordnotifications-flow-moderate-hide": "verstoppt",
+	"discordnotifications-flow-moderate-unhide": "nees gewisen",
 	"discordnotifications-flow-moderate-delete": "geläscht",
 	"discordnotifications-flow-moderate-undelete": "restauréiert"
 }

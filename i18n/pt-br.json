@@ -46,6 +46,7 @@
 	"discordnotifications-flow-moderate-suppress": "suprimido",
 	"discordnotifications-flow-moderate-unsuppress": "não suprimido",
 	"discordnotifications-flow-moderate-delete": "excluído",
+	"discordnotifications-flow-moderate-undelete": "restaurado",
 	"discordnotifications-flow-new-topic": "💬 $1 criou o tópico $2 em $3",
 	"discordnotifications-flow-reply": "💬 $1 respondeu em $2"
 }
