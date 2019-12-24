@@ -143,7 +143,7 @@ class DiscordNotificationsCore {
 	 * Occurs after a new article has been created.
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/ArticleInsertComplete
 	 */
-	public function onDiscordArticleInserted( WikiPage $article, $user, $text, $summary, $isminor, $iswatch, $section, $flags, $revision ) {
+	public static function onDiscordArticleInserted( WikiPage $article, $user, $text, $summary, $isminor, $iswatch, $section, $flags, $revision ) {
 		global $wgDiscordNotificationAddedArticle, $wgDiscordIncludeDiffSize;
 		if ( !$wgDiscordNotificationAddedArticle ) return;
 
