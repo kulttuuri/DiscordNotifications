@@ -4,7 +4,8 @@
 			"Aaribaud",
 			"Eihel",
 			"Verdy p",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Linedwell"
 		]
 	},
 	"discordnotifications-desc": "Envoie des notifications Discord pour les actions sélectionnées qui se sont produites sur vos sites MediaWiki.",
@@ -18,7 +19,7 @@
 	"discordnotifications-diff": "diff",
 	"discordnotifications-bytes": "$1 octet{{PLURAL:$1||s}}",
 	"discordnotifications-article-saved": "📝 $1 a $2 l’article « $3 ». $4",
-	"discordnotifications-article-saved-minor-edits": "a fait une modification mineure de",
+	"discordnotifications-article-saved-minor-edits": "fait une modification mineure de",
 	"discordnotifications-article-saved-edit": "modifié",
 	"discordnotifications-article-created": "📄 $1 a créé l’article « $2 ». $3",
 	"discordnotifications-file-namespace": "Fichier",
@@ -31,7 +32,7 @@
 	"discordnotifications-file-uploaded": "📤 $1 a téléversé le fichier <$2|$3> (format : $4, taille : $5 $6, résumé : $7)",
 	"discordnotifications-block-user": "🚫 $1 a bloqué « $2 ». $3. Expiration du blocage : $4. $5",
 	"discordnotifications-block-user-reason": "avec le motif",
-	"discordnotifications-block-user-list": "Liste de tous les blocage",
+	"discordnotifications-block-user-list": "Liste de tous les blocages",
 	"discordnotifications-summary": "Résumé : $1",
 	"discordnotifications-view-user-rights": "Afficher ou gérer les droits des utilisateurs",
 	"discordnotifications-change-user-groups": "%s a changé les groupes d’utilisateurs pour %s. Nouveaux groupes : %s",
