@@ -39,7 +39,7 @@
 	"discordnotifications-flow-edit-post": "💬 $1 님이 $2의 게시글을 편집했습니다",
 	"discordnotifications-flow-edit-title": "💬 $1 님이 주제 \"$3\"의 제목을 바꿨습니다 ($2)",
 	"discordnotifications-flow-edit-topic-summary": "💬 $1 님이 $2의 주제 요약을 편집했습니다",
-	"discordnotifications-flow-lock-topic": "💬 $1 님이 $3 주제를 $2",
+	"discordnotifications-flow-lock-topic": "💬 $1 님이 $3 주제를 $2으로 표시했습니다",
 	"discordnotifications-flow-lock-topic-lock": "해결됨",
 	"discordnotifications-flow-lock-topic-unlock": "다시 열림",
 	"discordnotifications-flow-moderate-post": "💬 $1 님이 게시글을 $2 ($3)",
