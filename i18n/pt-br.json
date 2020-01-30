@@ -43,6 +43,7 @@
 	"discordnotifications-flow-moderate-post": "💬 $1 $2 uma postagem no tópico $3",
 	"discordnotifications-flow-moderate-topic": "💬 $1 $2 o tópico $3",
 	"discordnotifications-flow-moderate-hide": "ocultado",
+	"discordnotifications-flow-moderate-unhide": "não oculto",
 	"discordnotifications-flow-moderate-suppress": "suprimido",
 	"discordnotifications-flow-moderate-unsuppress": "não suprimido",
 	"discordnotifications-flow-moderate-delete": "excluído",
