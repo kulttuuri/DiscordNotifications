@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"discordnotifications-desc": "Надсилає сповіщення у Discord щодо обраних дій, які сталися на ваших сайтах MediaWiki.",
@@ -19,8 +20,8 @@
 	"discordnotifications-article-saved-edit": "редагує",
 	"discordnotifications-article-created": "📄 $1 створює статтю $2 $3",
 	"discordnotifications-file-namespace": "Файл",
-	"discordnotifications-article-deleted": "❌ $1 вилучає статтю $3 Причина: $3",
-	"discordnotifications-article-moved": "➡ $1 перейменовує статтю $2 на $3. Причина: $3",
+	"discordnotifications-article-deleted": "❌ $1 вилучає статтю $2. Причина: $3",
+	"discordnotifications-article-moved": "➡ $1 перейменовує статтю $2 на $3. Причина: $4",
 	"discordnotifications-article-protected": "🔒 $1 $2 статті $3. Причина: $4",
 	"discordnotifications-article-protected-change": "змінює захист",
 	"discordnotifications-article-protected-remove": "знімає захист зі",
