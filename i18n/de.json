@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Daniel Felten",
-			"Killarnee"
+			"Killarnee",
+			"Masumrezarock100"
 		]
 	},
 	"discordnotifications-block": "Blockieren",
@@ -13,7 +14,7 @@
 	"discordnotifications-delete": "Löschen",
 	"discordnotifications-history": "Versionen",
 	"discordnotifications-diff": "Änderungen",
-	"discordnotifications-bytes": "Bytes",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|Byte|Bytes}}",
 	"discordnotifications-article-saved": "📝 $1 hat $2 Artikel $3 $4",
 	"discordnotifications-article-saved-minor-edits": "kleine Bearbeitung gemacht bei",
 	"discordnotifications-article-saved-edit": "bearbeitet",
