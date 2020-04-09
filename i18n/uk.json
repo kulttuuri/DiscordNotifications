@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"discordnotifications-desc": "Надсилає сповіщення у Discord щодо обраних дій, які сталися на ваших сайтах MediaWiki.",

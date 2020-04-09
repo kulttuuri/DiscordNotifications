@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giovanni Garciliano Díaz",
 			"Ciencia Al Poder",
-			"Ihojose",
-			"Fitoschido"
+			"Fitoschido",
+			"Giovanni Garciliano Díaz",
+			"Ihojose"
 		]
 	},
 	"discordnotifications-desc": "Envía notificaciones de Discord para una selección de acciones que ocurran en sitios MediaWiki.",
