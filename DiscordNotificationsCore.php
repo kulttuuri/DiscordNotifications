@@ -446,10 +446,10 @@ class DiscordNotificationsCore {
 	 * @see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
 	 */
 	private static function pushDiscordNotify( $message, $user, $action ) {
-		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
+		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgDiscordExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 
-		if ( isset( $wgExcludedPermission ) && $wgExcludedPermission != "" ) {
-			if ( $user->isAllowed( $wgExcludedPermission ) ) {
+		if ( isset( $wgDiscordExcludedPermission ) && $wgDiscordExcludedPermission != "" ) {
+			if ( $user->isAllowed( $wgDiscordExcludedPermission ) ) {
 				return; // Users with the permission suppress notifications
 			}
 		}
