@@ -73,7 +73,6 @@
 		"DiscordIncludePageUrls": true,
 		"DiscordIncludeUserUrls": true,
 		"DiscordIgnoreMinorEdits": false,
-		"ExcludedPermission": "",
 		"DiscordExcludeNotificationsFrom": [],
 		"WikiUrl": "",
 		"WikiUrlEnding": "index.php?title=",
