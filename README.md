@@ -116,7 +116,7 @@ By default notifications from all users will be sent to your Discord room. If yo
 
 ```php
 // If this is set, actions by users with this permission won't cause alerts
-$wgExcludedPermission = "";
+$wgDiscordExcludedPermission = "";
 ```
 
 ### Disable notifications from certain pages / namespaces
