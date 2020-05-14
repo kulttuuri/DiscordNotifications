@@ -22,6 +22,11 @@ This extension supports *english*, *finnish*, *german*, *spanish* and *korean*. 
 
 Want to translate this extension to your language? Just clone this repository, make a copy of the i18n/en.json file to your language, make the translations and create a issue or pull request linking to your translation in your repository! :)
 
+## Upgrading extension
+
+Upgrading from older version to 1.1.3 of this extension has one change that you need to take into account:
+- All configuration parameters now use the format `wgDiscord`. If you had configured any of the `wgNotificationWikiUrlEnding` parameters, you need to change these to format: `wgDiscordNotificationWikiUrlEnding`.
+
 ## Requirements
 
 * [cURL](http://curl.haxx.se/) or ability to use PHP function `file_get_contents` for sending the data. Defaults to cURL. See the configuration parameter `$wgDiscordSendMethod` below to switch between cURL and file_get_contents.
