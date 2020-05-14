@@ -67,7 +67,7 @@
 	},
 	"config": {
 		"DiscordIncomingWebhookUrl": "",
-		"wgDiscordAdditionalIncomingWebhookUrls": [],
+		"DiscordAdditionalIncomingWebhookUrls": [],
 		"DiscordFromName": "",
 		"DiscordSendMethod": "curl",
 		"DiscordIncludePageUrls": true,
