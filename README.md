@@ -47,9 +47,9 @@ $wgDiscordFromName = $wgSitename;
 // Avatar to use for messages. If blank, uses the webhook's default avatar.
 $wgDiscordAvatarUrl = "";
 // URL into your MediaWiki installation with the trailing /.
-$wgWikiUrl = "http://your_wiki_url/";
+$wgDiscordNotificationWikiUrl = "http://your_wiki_url/";
 // Wiki script name. Leave this to default one if you do not have URL rewriting enabled.
-$wgWikiUrlEnding = "index.php?title=";
+$wgDiscordNotificationWikiUrlEnding = "index.php?title=";
 // What method will be used to send the data to Discord server. By default this is "curl" which only works if you have the curl extension enabled. There have been cases where VisualEditor extension does not work with the curl method, so in that case the recommended solution is to use the file_get_contents method. This can be: "curl" or "file_get_contents". Default: "curl".
 $wgDiscordSendMethod = "curl";
 ```
@@ -168,16 +168,16 @@ $wgDiscordNotificationFlow = true;
 Should any of these default MediaWiki system page URLs differ in your installation, change them here.
 
 ```php
-$wgWikiUrlEndingUserRights          = "Special%3AUserRights&user=";
-$wgWikiUrlEndingBlockUser           = "Special:Block/";
-$wgWikiUrlEndingUserPage            = "User:";
-$wgWikiUrlEndingUserTalkPage        = "User_talk:";
-$wgWikiUrlEndingUserContributions   = "Special:Contributions/";
-$wgWikiUrlEndingBlockList           = "Special:BlockList";
-$wgWikiUrlEndingEditArticle         = "action=edit";
-$wgWikiUrlEndingDeleteArticle       = "action=delete";
-$wgWikiUrlEndingHistory             = "action=history";
-$wgWikiUrlEndingDiff                = "diff=prev&oldid=";
+$wgDiscordNotificationWikiUrlEndingUserRights          = "Special%3AUserRights&user=";
+$wgDiscordNotificationWikiUrlEndingBlockUser           = "Special:Block/";
+$wgDiscordNotificationWikiUrlEndingUserPage            = "User:";
+$wgDiscordNotificationWikiUrlEndingUserTalkPage        = "User_talk:";
+$wgDiscordNotificationWikiUrlEndingUserContributions   = "Special:Contributions/";
+$wgDiscordNotificationWikiUrlEndingBlockList           = "Special:BlockList";
+$wgDiscordNotificationWikiUrlEndingEditArticle         = "action=edit";
+$wgDiscordNotificationWikiUrlEndingDeleteArticle       = "action=delete";
+$wgDiscordNotificationWikiUrlEndingHistory             = "action=history";
+$wgDiscordNotificationWikiUrlEndingDiff                = "diff=prev&oldid=";
 ```
 
 ## Contributors
