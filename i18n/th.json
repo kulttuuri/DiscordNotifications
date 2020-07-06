@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patsagorn Y."
+		]
+	},
+	"discordnotifications-desc": "ส่งการแจ้งเตือนไปยังดิสคอร์ดที่ระบุเมื่อพบการกระทำที่ระบุในไซต์มีเดียวิกิของคุณ",
+	"discordnotifications-block": "บล็อก",
+	"discordnotifications-groups": "กลุ่มผู้ใช้",
+	"discordnotifications-talk": "คุย",
+	"discordnotifications-contribs": "ส่วนร่วม",
+	"discordnotifications-edit": "แก้ไข",
+	"discordnotifications-delete": "ลบ",
+	"discordnotifications-history": "ประวัติ",
+	"discordnotifications-diff": "ต่าง",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|ไบต์}}",
+	"discordnotifications-article-saved": "📝 $1 $2หน้า $3 ($4)",
+	"discordnotifications-article-saved-minor-edits": "แก้ไขเล็กน้อยใน",
+	"discordnotifications-article-saved-edit": "แก้ไข",
+	"discordnotifications-article-created": "📄 $1 สร้างหน้า $2 ($3)",
+	"discordnotifications-file-namespace": "ไฟล์",
+	"discordnotifications-article-deleted": "❌ $1 ลบหน้า $2 ($3)",
+	"discordnotifications-article-moved": "↪️ $1 ย้ายหน้า $2 ไปยัง $3 ($4)",
+	"discordnotifications-article-protected": "🔒 $1 $2หน้า $3 ($4)",
+	"discordnotifications-article-protected-change": "เปลี่ยนระดับการป้องกันของ",
+	"discordnotifications-article-protected-remove": "ลบการป้องกันของ",
+	"discordnotifications-new-user": "👤 บัญชีผู้ใช้ $1 ถูกสร้างขึ้น ($2)",
+	"discordnotifications-file-uploaded": "📤 $1 อัพโหลดไฟล์ <$2|$3> (รูปแบบ: $4 ขนาด: $5 $6 หมายเหตุ: $7)",
+	"discordnotifications-block-user": "🚫 $1 บล็อค $2 ($3) จนถึง $4 ($5)",
+	"discordnotifications-block-user-reason": "ด้วยเหตุผล",
+	"discordnotifications-block-user-list": "ผู้ใช้ที่ถูกบล็อคทั้งหมด",
+	"discordnotifications-summary": "$1",
+	"discordnotifications-view-user-rights": "ดูหรือจัดการสิทธิ์ผู้ใช้",
+	"discordnotifications-change-user-groups": "$1 แก้ไขกลุ่มผู้ใช้ของ $2 กลุ่มใหม่: $3",
+	"discordnotifications-change-user-groups-with-old": "$1 เปลี่ยนกลุ่มผู้ใช้ของ $2 กลุ่มเก่า: $3 กลุ่มใหม่: $4"
+}
