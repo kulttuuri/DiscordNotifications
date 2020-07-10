@@ -18,9 +18,9 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 ## Language Support
 
-This extension supports *english*, *finnish*, *german*, *spanish* and *korean*. Notifications are being sent in the language set to your localSettings.php file in the variable wgLanguageCode.
+This extension supports language localisation. Notifications are being sent in the language set to your localSettings.php file in the variable wgLanguageCode.
 
-Want to translate this extension to your language? Just clone this repository, make a copy of the i18n/en.json file to your language, make the translations and create a issue or pull request linking to your translation in your repository! :)
+Want to translate this extension to your language? Just visit [translatewiki.net](https://translatewiki.net/wiki/Special:Translate/mwgithub-discordnotifications) and follow the guides! :)
 
 ## Upgrading extension
 
@@ -187,7 +187,7 @@ $wgDiscordNotificationWikiUrlEndingDiff                = "diff=prev&oldid=";
 
 ## Contributors
 
-[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021) [@The-Voidwalker](https://github.com/The-Voidwalker) [@GerbilSoft](https://github.com/GerbilSoft) [@Lens0021](https://github.com/Lens0021)
+[@innosflew](https://github.com/innosflew) [@uzalu](https://github.com/uzalu) [@DFelten](https://github.com/DFelten) [@lens0021](https://github.com/lens0021) [@The-Voidwalker](https://github.com/The-Voidwalker) [@GerbilSoft](https://github.com/GerbilSoft)
 
 ## License
 
