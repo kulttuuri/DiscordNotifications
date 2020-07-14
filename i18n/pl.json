@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FunPL",
 			"Rail"
 		]
 	},
@@ -24,5 +25,7 @@
 	"discordnotifications-article-protected": "🔒 $1 $2 artykułu $3. Powód: $4",
 	"discordnotifications-article-protected-change": "zmienił(a) zabezpieczenie",
 	"discordnotifications-article-protected-remove": "usunął zabezpieczenie",
-	"discordnotifications-new-user": "👥 Konto użytkownika $1 zostało utworzone $2"
+	"discordnotifications-new-user": "👥 Konto użytkownika $1 zostało utworzone $2",
+	"discordnotifications-block-user": "$1 zablokował $2 $3 Wygasa: $4. $5",
+	"discordnotifications-block-user-list": "Wszystkie blokady"
 }
