@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Uncitoyen"
 		]
 	},
 	"discordnotifications-desc": "MediaWiki sitelerinizde gerçekleşen seçili eylemler için Discord bildirimleri gönderir.",
@@ -26,7 +27,7 @@
 	"discordnotifications-article-protected-remove": "korumayı kaldırıldı",
 	"discordnotifications-new-user": "👥 Yeni $1 kullanıcı hesabı oluşturuldu $2",
 	"discordnotifications-file-uploaded": "📤 $1 kullanıcısı <$2|$3> dosyayı yükledi (biçim: $4, boyut: $5 $6, özet: $7)",
-	"discordnotifications-block-user": "🚫 $1 kullanıcısı $2 kullanıcıya engelledi $3 Engel bitmesine: $4. $5",
+	"discordnotifications-block-user": "🚫 $1 kullanıcısı $2 kullanıcısını engelledi $3 Engel bitmesine: $4. $5",
 	"discordnotifications-block-user-reason": "sebeple",
 	"discordnotifications-block-user-list": "Tüm engelleri listesi",
 	"discordnotifications-summary": "Özet: $1",
