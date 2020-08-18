@@ -235,7 +235,12 @@ class DiscordNotificationsCore {
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/AddNewAccount
 	 */
 	public static function onDiscordNewUserAccount( $user, $byEmail ) {
-		global $wgDiscordNotificationNewUser, $wgDiscordShowNewUserEmail, $wgDiscordShowNewUserFullName, $wgDiscordShowNewUserIP;
+		global $wgDiscordNotificationNewUser, $wgDiscordShowNewUserFullName;
+		
+		// Disable reporting of new user email and IP address
+		//global $wgDiscordShowNewUserEmail, $wgDiscordShowNewUserIP;
+		$wgDiscordShowNewUserEmail = false;
+		$wgDiscordShowNewUserIP = false;
 		if ( !$wgDiscordNotificationNewUser ) return;
 
 		$email = "";

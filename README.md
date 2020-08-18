@@ -96,15 +96,11 @@ $wgDiscordIgnoreMinorEdits = false;
 
 ### Disable new user extra information
 
-By default we show full name, email and IP address of newly created user in the notification. You can individually disable each of these using the settings below. This is helpful for example in situation where you do not want to expose this information for users in your Discord channel.
+By default we show full name of newly created user in the notification. You can disable this setting using the settings below. This is helpful for example in situation where you do not want to expose this information for users in your Discord channel.
 
 ```php
-// If this is true, newly created user email address is added to notification.
-$wgDiscordShowNewUserEmail = true;
 // If this is true, newly created user full name is added to notification.
 $wgDiscordShowNewUserFullName = true;
-// If this is true, newly created user IP address is added to notification.
-$wgDiscordShowNewUserIP = true;
 ```
 
 ### Show edit size
