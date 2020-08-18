@@ -98,9 +98,7 @@
 		"DiscordNotificationUserGroupsChanged": true,
 		"DiscordNotificationFlow": true,
 		"DiscordIncludeDiffSize": true,
-		"DiscordShowNewUserEmail": true,
 		"DiscordShowNewUserFullName": true,
-		"DiscordShowNewUserIP": true,
 		"DiscordAvatarUrl": ""
 	},
 	"manifest_version": 1
