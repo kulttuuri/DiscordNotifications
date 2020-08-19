@@ -48,5 +48,6 @@
 	"discordnotifications-flow-moderate-delete": "poistanut",
 	"discordnotifications-flow-moderate-undelete": "tuonut takaisin",
 	"discordnotifications-flow-new-topic": "💬 $1 on luonut otsikon $2 sijainnissa $3",
-	"discordnotifications-flow-reply": "💬 $1 on vastannut sijainnissa $2"
+	"discordnotifications-flow-reply": "💬 $1 on vastannut sijainnissa $2",
+	"discordnotifications-import-complete": "⤵️ Artikkeli $1 on tuotu."
 }

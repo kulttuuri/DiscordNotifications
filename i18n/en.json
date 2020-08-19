@@ -49,5 +49,6 @@
     "discordnotifications-flow-moderate-delete": "deleted",
     "discordnotifications-flow-moderate-undelete": "undeleted",
     "discordnotifications-flow-new-topic": "💬 $1 has created topic $2 on $3",
-    "discordnotifications-flow-reply": "💬 $1 has replied in $2"
+    "discordnotifications-flow-reply": "💬 $1 has replied in $2",
+    "discordnotifications-import-complete": "⤵️ Article $1 has been imported."
 }

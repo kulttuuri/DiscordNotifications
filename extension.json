@@ -63,6 +63,11 @@
 			[
 				"DiscordNotificationsCore::onDiscordApiFlowAfterExecute"
 			]
+		],
+		"AfterImportPage": [
+			[
+				"DiscordNotificationsCore::onDiscordAfterImportPage"
+			]
 		]
 	},
 	"config": {
@@ -97,6 +102,7 @@
 		"DiscordNotificationShowSuppressed": true,
 		"DiscordNotificationUserGroupsChanged": true,
 		"DiscordNotificationFlow": true,
+		"DiscordNotificationAfterImportPage": true,
 		"DiscordIncludeDiffSize": true,
 		"DiscordShowNewUserFullName": true,
 		"DiscordAvatarUrl": ""

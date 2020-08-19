@@ -10,6 +10,7 @@ This is a extension for [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) th
 
 * Article is added, removed, moved or edited.
 * Article protection settings are changed.
+* Article is imported.
 * New user is added.
 * User is blocked.
 * User groups are changed.
@@ -162,6 +163,8 @@ $wgDiscordNotificationFileUpload = true;
 $wgDiscordNotificationProtectedArticle = true;
 // Action on Flow Boards (experimental)
 $wgDiscordNotificationFlow = true;
+// Article has been imported
+$wgDiscordNotificationAfterImportPage = true;
 ```
 
 ## Additional MediaWiki URL Settings

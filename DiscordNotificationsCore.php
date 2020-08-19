@@ -231,6 +231,20 @@ class DiscordNotificationsCore {
 	}
 
 	/**
+	 * Occurs after page has been imported into wiki.
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/AfterImportPage
+	 */
+	public static function onDiscordAfterImportPage( $title = null, $origTitle = Null, $revCount = null, $sRevCount = null, $pageInfo = null ) {
+		global $wgDiscordNotificationAfterImportPage;
+		if ( !$wgDiscordNotificationAfterImportPage ) return;
+		
+		$message = self::msg( 'discordnotifications-import-complete',
+			self::getDiscordTitleText( $title ));
+		self::pushDiscordNotify( $message, null, 'import_complete' );
+		return true;
+	}
+
+	/**
 	 * Called after a user account is created.
 	 * @see http://www.mediawiki.org/wiki/Manual:Hooks/AddNewAccount
 	 */
@@ -454,7 +468,7 @@ class DiscordNotificationsCore {
 		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgDiscordExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 
 		if ( isset( $wgDiscordExcludedPermission ) && $wgDiscordExcludedPermission != "" ) {
-			if ( $user->isAllowed( $wgDiscordExcludedPermission ) ) {
+			if ($user && $user->isAllowed( $wgDiscordExcludedPermission ) ) {
 				return; // Users with the permission suppress notifications
 			}
 		}
@@ -473,6 +487,9 @@ class DiscordNotificationsCore {
 		$colour = 11777212;
 		switch ( $action ) {
 			case 'article_saved':
+				$colour = 2993970;
+				break;
+			case 'import_complete':
 				$colour = 2993970;
 				break;
 			case 'user_groups_changed':
