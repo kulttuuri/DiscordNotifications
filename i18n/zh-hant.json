@@ -50,5 +50,6 @@
 	"discordnotifications-flow-moderate-delete": "已刪除",
 	"discordnotifications-flow-moderate-undelete": "已取消刪除",
 	"discordnotifications-flow-new-topic": "💬 $1已在$3上建立話題$2",
-	"discordnotifications-flow-reply": "💬 $1已回應$2"
+	"discordnotifications-flow-reply": "💬 $1已回應$2",
+	"discordnotifications-import-complete": "⤵️ 條目$1已匯入。"
 }

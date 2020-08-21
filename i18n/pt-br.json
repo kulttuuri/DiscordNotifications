@@ -49,5 +49,6 @@
 	"discordnotifications-flow-moderate-delete": "excluído",
 	"discordnotifications-flow-moderate-undelete": "restaurado",
 	"discordnotifications-flow-new-topic": "💬 $1 criou o tópico $2 em $3",
-	"discordnotifications-flow-reply": "💬 $1 respondeu em $2"
+	"discordnotifications-flow-reply": "💬 $1 respondeu em $2",
+	"discordnotifications-import-complete": "⤵️ O artigo $1 foi importado."
 }

@@ -5,7 +5,8 @@
 			"Eihel",
 			"Linedwell",
 			"Thibaut120094",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"discordnotifications-desc": "Envoie des notifications Discord pour les actions sélectionnées qui se sont produites sur vos sites MediaWiki.",
@@ -53,5 +54,6 @@
 	"discordnotifications-flow-moderate-delete": "supprimé",
 	"discordnotifications-flow-moderate-undelete": "restauré",
 	"discordnotifications-flow-new-topic": "💬 $1 a créé le sujet $2 sur $3",
-	"discordnotifications-flow-reply": "💬 $1 a répondu dans $2"
+	"discordnotifications-flow-reply": "💬 $1 a répondu dans $2",
+	"discordnotifications-import-complete": "⤵️ l'article $1 a été importé."
 }

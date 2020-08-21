@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"Uncitoyen"
 		]
 	},
@@ -50,5 +51,6 @@
 	"discordnotifications-flow-moderate-delete": "silindi",
 	"discordnotifications-flow-moderate-undelete": "silinmesi geri alındı",
 	"discordnotifications-flow-new-topic": "💬 $1 kullanıcısı $2 konuyu $3 tartışma sayfası oluşturdu",
-	"discordnotifications-flow-reply": "💬 $1 kullanıcısı $2 konusuna yanıt verdi"
+	"discordnotifications-flow-reply": "💬 $1 kullanıcısı $2 konusuna yanıt verdi",
+	"discordnotifications-import-complete": "⤵️ $1 maddesi aktarıldı."
 }
