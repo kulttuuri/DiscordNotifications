@@ -49,5 +49,6 @@
 	"discordnotifications-flow-moderate-delete": "избриша",
 	"discordnotifications-flow-moderate-undelete": "поврати",
 	"discordnotifications-flow-new-topic": "💬 $1 ја создаде темата $2 на $3",
-	"discordnotifications-flow-reply": "💬 $1 одговори на $2"
+	"discordnotifications-flow-reply": "💬 $1 одговори на $2",
+	"discordnotifications-import-complete": "⤵️ Статијата $1 е увезена."
 }

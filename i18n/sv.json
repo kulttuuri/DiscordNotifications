@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -49,5 +50,6 @@
 	"discordnotifications-flow-moderate-delete": "raderat",
 	"discordnotifications-flow-moderate-undelete": "återskapat",
 	"discordnotifications-flow-new-topic": "💬 $1 skapade ämnet $2 på $3",
-	"discordnotifications-flow-reply": "💬 $1 svarade på $2"
+	"discordnotifications-flow-reply": "💬 $1 svarade på $2",
+	"discordnotifications-import-complete": "⤵️ Artikeln $1 har importerats."
 }
