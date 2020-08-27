@@ -49,5 +49,6 @@
 	"discordnotifications-flow-moderate-delete": "slettet",
 	"discordnotifications-flow-moderate-undelete": "gjenopprettet",
 	"discordnotifications-flow-new-topic": "💬 $1 har opprettet emnet $2 på $3",
-	"discordnotifications-flow-reply": "💬 $1 har svart i $2"
+	"discordnotifications-flow-reply": "💬 $1 har svart i $2",
+	"discordnotifications-import-complete": "⤵️ Artikkelen $1 har blitt importert."
 }
