@@ -27,5 +27,6 @@
 	"discordnotifications-flow-moderate-hide": "verstoppt",
 	"discordnotifications-flow-moderate-unhide": "nees gewisen",
 	"discordnotifications-flow-moderate-delete": "geläscht",
-	"discordnotifications-flow-moderate-undelete": "restauréiert"
+	"discordnotifications-flow-moderate-undelete": "restauréiert",
+	"discordnotifications-import-complete": "⤵️ Artikel $1 gouf importéiert."
 }
