@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Daniel Felten",
+			"Elliot",
 			"Killarnee",
 			"Masumrezarock100"
 		]
@@ -33,5 +34,6 @@
 	"discordnotifications-summary": "Zusammenfassung: $1",
 	"discordnotifications-view-user-rights": "Benutzerrechte ansehen oder Bearbeiten",
 	"discordnotifications-change-user-groups": "$1 has changed user groups for $2. New groups: $3",
-	"discordnotifications-change-user-groups-with-old": "$1 has changed user groups for $2. Old groups: $3. New groups: $4"
+	"discordnotifications-change-user-groups-with-old": "$1 has changed user groups for $2. Old groups: $3. New groups: $4",
+	"discordnotifications-import-complete": "⤵️ Article $1 wurde importiert."
 }
