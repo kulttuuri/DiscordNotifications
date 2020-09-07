@@ -45,5 +45,6 @@
 	"discordnotifications-flow-moderate-topic": "💬 $1 ha $2 el tema $3",
 	"discordnotifications-flow-moderate-hide": "oculto",
 	"discordnotifications-flow-moderate-delete": "eliminado",
-	"discordnotifications-flow-moderate-undelete": "restaurado"
+	"discordnotifications-flow-moderate-undelete": "restaurado",
+	"discordnotifications-import-complete": "⤵️ Se importó el artículo $1."
 }
