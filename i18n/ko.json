@@ -51,5 +51,6 @@
 	"discordnotifications-flow-moderate-delete": "삭제했습니다",
 	"discordnotifications-flow-moderate-undelete": "삭제를 취소했습니다",
 	"discordnotifications-flow-new-topic": "💬 $1 님이 $2 주제를 만들었습니다 ($3)",
-	"discordnotifications-flow-reply": "💬 $1 님이 $2 주제에 댓글을 남겼습니다"
+	"discordnotifications-flow-reply": "💬 $1 님이 $2 주제에 댓글을 남겼습니다",
+	"discordnotifications-import-complete": "⤵️ $1 문서를 가져왔습니다."
 }
