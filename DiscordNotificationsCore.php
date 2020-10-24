@@ -334,10 +334,17 @@ class DiscordNotificationsCore {
 		if ( !$wgDiscordNotificationBlockedUser ) return;
 
 		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding, $wgDiscordNotificationWikiUrlEndingBlockList;
+		$mReason = "";
+		if (defined('MW_VERSION') && version_compare(MW_VERSION, '1.35', '>=')) {  //DatabaseBlock::$mReason was made protected in MW 1.35
+			$mReason = $block->getReasonComment()->text;
+		} else {
+			$mReason = $block->mReason;
+		}
+
 		$message = self::msg( 'discordnotifications-block-user',
 			self::getDiscordUserText( $user ),
 			self::getDiscordUserText( $block->getTarget() ),
-			$block->mReason == "" ? "" : self::msg( 'discordnotifications-block-user-reason' ) . " '" . $block->mReason . "'.",
+			$mReason == "" ? "" : self::msg( 'discordnotifications-block-user-reason' ) . " '" . $mReason . "'.",
 			$block->mExpiry,
 			"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingBlockList ) . "|" . self::msg( 'discordnotifications-block-user-list' ) . ">." );
 		self::pushDiscordNotify( $message, $user, 'user_blocked' );
