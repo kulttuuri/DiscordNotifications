@@ -234,12 +234,12 @@ class DiscordNotificationsCore {
 	 * Occurs after page has been imported into wiki.
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/AfterImportPage
 	 */
-	public static function onDiscordAfterImportPage( $title = null, $origTitle = Null, $revCount = null, $sRevCount = null, $pageInfo = null ) {
+	public static function onDiscordAfterImportPage( $title = null, $origTitle = null, $revCount = null, $sRevCount = null, $pageInfo = null ) {
 		global $wgDiscordNotificationAfterImportPage;
 		if ( !$wgDiscordNotificationAfterImportPage ) return;
-		
+
 		$message = self::msg( 'discordnotifications-import-complete',
-			self::getDiscordTitleText( $title ));
+			self::getDiscordTitleText( $title ) );
 		self::pushDiscordNotify( $message, null, 'import_complete' );
 		return true;
 	}
@@ -250,7 +250,7 @@ class DiscordNotificationsCore {
 	 */
 	public static function onDiscordNewUserAccount( $user, $byEmail ) {
 		global $wgDiscordNotificationNewUser, $wgDiscordShowNewUserFullName;
-		
+
 		// Disable reporting of new user email and IP address
 		//global $wgDiscordShowNewUserEmail, $wgDiscordShowNewUserIP;
 		$wgDiscordShowNewUserEmail = false;
@@ -335,7 +335,7 @@ class DiscordNotificationsCore {
 
 		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding, $wgDiscordNotificationWikiUrlEndingBlockList;
 		$mReason = "";
-		if (defined('MW_VERSION') && version_compare(MW_VERSION, '1.35', '>=')) {  //DatabaseBlock::$mReason was made protected in MW 1.35
+		if ( defined( 'MW_VERSION' ) && version_compare( MW_VERSION, '1.35', '>=' ) ) {  // DatabaseBlock::$mReason was made protected in MW 1.35
 			$mReason = $block->getReasonComment()->text;
 		} else {
 			$mReason = $block->mReason;
@@ -475,7 +475,7 @@ class DiscordNotificationsCore {
 		global $wgDiscordIncomingWebhookUrl, $wgDiscordFromName, $wgDiscordAvatarUrl, $wgDiscordSendMethod, $wgDiscordExcludedPermission, $wgSitename, $wgDiscordAdditionalIncomingWebhookUrls;
 
 		if ( isset( $wgDiscordExcludedPermission ) && $wgDiscordExcludedPermission != "" ) {
-			if ($user && $user->isAllowed( $wgDiscordExcludedPermission ) ) {
+			if ( $user && $user->isAllowed( $wgDiscordExcludedPermission ) ) {
 				return; // Users with the permission suppress notifications
 			}
 		}
@@ -566,11 +566,10 @@ class DiscordNotificationsCore {
 		curl_setopt( $h, CURLOPT_RETURNTRANSFER, true );
 		curl_setopt( $h, CURLOPT_CONNECTTIMEOUT, 10 ); // Set 10 second timeout to connection
 		curl_setopt( $h, CURLOPT_TIMEOUT, 10 ); // Set global 10 second timeout to handle all data
-		curl_setopt( $h, CURLOPT_HTTPHEADER, array(  
+		curl_setopt( $h, CURLOPT_HTTPHEADER, [
 			'Content-Type: application/json',
-			'Content-Length: ' . strlen($postData)
-		    )    
-		); // Set Content-Type to application/json
+			'Content-Length: ' . strlen( $postData )
+		] ); // Set Content-Type to application/json
 		// Commented out lines below. Using default curl settings for host and peer verification.
 		//curl_setopt ($h, CURLOPT_SSL_VERIFYHOST, 0);
 		//curl_setopt ($h, CURLOPT_SSL_VERIFYPEER, 0);
