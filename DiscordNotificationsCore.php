@@ -592,9 +592,9 @@ class DiscordNotificationsCore {
 
 	private static function msg( $key, ...$params ) {
 		if ( $params ) {
-			return wfMessage( $key, ...$params )->inContentLanguage()->text();
+			return wfMessage( $key, ...$params )->inContentLanguage()->plain();
 		} else {
-			return wfMessage( $key )->inContentLanguage()->text();
+			return wfMessage( $key )->inContentLanguage()->plain();
 		}
 	}
 
