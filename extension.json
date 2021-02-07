@@ -83,6 +83,7 @@
 		"DiscordNotificationWikiUrl": "",
 		"DiscordNotificationWikiUrlEnding": "index.php?title=",
 		"DiscordNotificationWikiUrlEndingUserRights": "Special%3AUserRights&user=",
+		"DiscordNotificationWikiUrlEndingBlockList": "Special:BlockList",
 		"DiscordNotificationWikiUrlEndingBlockUser": "Special:Block/",
 		"DiscordNotificationWikiUrlEndingUserPage": "User:",
 		"DiscordNotificationWikiUrlEndingUserTalkPage": "User_talk:",
