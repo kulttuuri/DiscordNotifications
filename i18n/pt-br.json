@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
 		]
 	},
 	"discordnotifications-desc": "Envia notificações de Discord para ações selecionadas que ocorreram nos sites do MediaWiki.",
