@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Emmanuel Fernandess",
 			"Patsagorn Y."
 		]
 	},
@@ -31,7 +32,7 @@
 	"discordnotifications-block-user-list": "ผู้ใช้ที่ถูกบล็อคทั้งหมด",
 	"discordnotifications-summary": "$1",
 	"discordnotifications-view-user-rights": "ดูหรือจัดการสิทธิ์ผู้ใช้",
-	"discordnotifications-change-user-groups": "%s แก้ไขกลุ่มผู้ใช้ของ %s กลุ่มใหม่: %s",
+	"discordnotifications-change-user-groups": "%s แก้ไขกลุ่มผู้ใช้ของ %s กลุ่มใหม่: %2",
 	"discordnotifications-change-user-groups-with-old": "$1 เปลี่ยนกลุ่มผู้ใช้ของ $2 กลุ่มเก่า: $3 กลุ่มใหม่: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 แก้ไขคำอธิบายบอร์ด $2",
 	"discordnotifications-flow-edit-post": "💬 $1 แก้ไขโพสต์ใน $2",
