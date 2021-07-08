@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Shbib Al-Subaie",
 			"ديفيد"
 		]
 	},
@@ -49,5 +50,6 @@
 	"discordnotifications-flow-moderate-delete": "محذوف",
 	"discordnotifications-flow-moderate-undelete": "مسترجع",
 	"discordnotifications-flow-new-topic": "💬 $1 قد أنشأ الموضوع $2 في $3",
-	"discordnotifications-flow-reply": "💬 $1 قد رد في $2"
+	"discordnotifications-flow-reply": "💬 $1 قد رد في $2",
+	"discordnotifications-import-complete": "تم استيراد المقالة $1."
 }
