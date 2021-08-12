@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion",
 			"Ата"
 		]
@@ -50,5 +51,6 @@
 	"discordnotifications-flow-moderate-delete": "вилучає",
 	"discordnotifications-flow-moderate-undelete": "скасовує вилучення",
 	"discordnotifications-flow-new-topic": "💬 $1 створює тему $2 на $3",
-	"discordnotifications-flow-reply": "💬 $1 відповідає у $2"
+	"discordnotifications-flow-reply": "💬 $1 відповідає у $2",
+	"discordnotifications-import-complete": "⤵️ Стаття $1 імпортується."
 }
