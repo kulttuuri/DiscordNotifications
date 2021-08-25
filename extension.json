@@ -13,17 +13,10 @@
 			"i18n"
 		]
 	},
+	"ExtensionFunctions": [
+		"DiscordNotificationsCore::registerExtraHooks"
+	],
 	"Hooks": {
-		"PageContentSaveComplete": [
-			[
-				"DiscordNotificationsCore::onDiscordArticleSaved"
-			]
-		],
-		"PageContentInsertComplete": [
-			[
-				"DiscordNotificationsCore::onDiscordArticleInserted"
-			]
-		],
 		"ArticleDeleteComplete": [
 			[
 				"DiscordNotificationsCore::onDiscordArticleDeleted"
