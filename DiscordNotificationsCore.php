@@ -137,6 +137,9 @@ class DiscordNotificationsCore {
 		if ( !$wgDiscordNotificationAddedArticle && $isNew ) return true;
 		if ( self::titleIsExcluded( $wikiPage->getTitle() ) ) return true;
 
+		// Do not announce newly added file uploads as articles...
+		if ( $wikiPage->getTitle()->getNsText() && $wikiPage->getTitle()->getNsText() == self::msg( 'discordnotifications-file-namespace' ) ) return true;
+
 		if ( $isNew ) {
 			$message = self::msg( 'discordnotifications-article-created',
 			self::getDiscordUserText( $user ),
