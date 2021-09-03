@@ -412,7 +412,7 @@ class DiscordNotificationsCore {
 			self::getDiscordUserText( $user ),
 			self::getDiscordUserText( $block->getTarget() ),
 			$mReason == "" ? "" : self::msg( 'discordnotifications-block-user-reason' ) . " '" . $mReason . "'.",
-			$block->mExpiry,
+			wfTimestamp( TS_ISO_8601, $block->getExpiry() ),
 			"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingBlockList ) . "|" . self::msg( 'discordnotifications-block-user-list' ) . ">." );
 		self::pushDiscordNotify( $message, $user, 'user_blocked' );
 		return true;
