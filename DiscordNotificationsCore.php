@@ -408,11 +408,16 @@ class DiscordNotificationsCore {
 			$mReason = $block->mReason;
 		}
 
+		$mExpiry = $block->getExpiry();
+		if ( $mExpiry != '' && $mExpiry !== 'infinity' ) {
+			$mExpiry = wfTimestamp( TS_ISO_8601, $mExpiry );
+		}
+
 		$message = self::msg( 'discordnotifications-block-user',
 			self::getDiscordUserText( $user ),
 			self::getDiscordUserText( $block->getTarget() ),
 			$mReason == "" ? "" : self::msg( 'discordnotifications-block-user-reason' ) . " '" . $mReason . "'.",
-			wfTimestamp( TS_ISO_8601, $block->getExpiry() ),
+			$mExpiry,
 			"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingBlockList ) . "|" . self::msg( 'discordnotifications-block-user-list' ) . ">." );
 		self::pushDiscordNotify( $message, $user, 'user_blocked' );
 		return true;
