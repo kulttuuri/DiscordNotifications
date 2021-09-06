@@ -4,7 +4,8 @@
 			"Ciencia Al Poder",
 			"Fitoschido",
 			"Giovanni Garciliano Díaz",
-			"Ihojose"
+			"Ihojose",
+			"Mnivar"
 		]
 	},
 	"discordnotifications-desc": "Envía notificaciones de Discord para una selección de acciones que ocurran en sitios MediaWiki.",
@@ -34,7 +35,7 @@
 	"discordnotifications-block-user-list": "Lista de todos los bloqueos",
 	"discordnotifications-summary": "Resumen: $1",
 	"discordnotifications-view-user-rights": "Ver o administrar permisos del usuario",
-	"discordnotifications-change-user-groups": "$1 cambió los grupos a los que pertenece el usuario por $2. Nuevos grupos: $3",
+	"discordnotifications-change-user-groups": "%s cambió los grupos de usuarios por %s. Nuevos grupos: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 cambió los grupos a los que pertenece el usuario por $2. Grupos antiguos: $3. Nuevos grupos: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 ha editado una tabla de descripción $2",
 	"discordnotifications-flow-edit-post": "💬 $1 ha editado una publicación en $2",
