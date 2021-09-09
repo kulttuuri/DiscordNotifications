@@ -4,6 +4,7 @@
 			"Aleksi Postari",
 			"Alliana",
 			"La",
+			"Omotecho",
 			"렌즈"
 		]
 	},
@@ -16,7 +17,7 @@
 	"discordnotifications-delete": "消去",
 	"discordnotifications-history": "変更履歴",
 	"discordnotifications-diff": "差分",
-	"discordnotifications-bytes": "$1 {{PLURAL:$1|バイト|バイト}}",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|バイト}}",
 	"discordnotifications-article-saved": "📝 $1 が $3 $2 しました。 $4",
 	"discordnotifications-article-saved-minor-edits": "の細部を編集",
 	"discordnotifications-article-saved-edit": "を編集",
@@ -44,7 +45,7 @@
 	"discordnotifications-flow-lock-topic-lock": "解決",
 	"discordnotifications-flow-lock-topic-unlock": "再開",
 	"discordnotifications-flow-moderate-post": "💬 $1 がトピック $3 $2 しました。",
-	"discordnotifications-flow-moderate-topic": "💬 $1 がトピック $3",
+	"discordnotifications-flow-moderate-topic": "💬 $1 がトピック $3 の状態を $2 にしました",
 	"discordnotifications-flow-moderate-hide": "を非表示化",
 	"discordnotifications-flow-moderate-unhide": "の非表示化を取り消",
 	"discordnotifications-flow-moderate-suppress": "を秘匿",
