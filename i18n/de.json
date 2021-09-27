@@ -5,6 +5,7 @@
 			"Elliot",
 			"Killarnee",
 			"Masumrezarock100",
+			"Umlaut",
 			"Wolfdo",
 			"Zabe"
 		]
@@ -38,6 +39,7 @@
 	"discordnotifications-view-user-rights": "Benutzerrechte ansehen oder bearbeiten",
 	"discordnotifications-change-user-groups": "$1 hat die Benutzergruppen von $2 geändert. Neue Gruppen: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 hat die Benutzergruppen von $2 geändert. Alte Gruppen: $3. Neue Gruppen: $4",
+	"discordnotifications-flow-lock-topic-unlock": "wieder geöffnet",
 	"discordnotifications-flow-moderate-hide": "versteckt",
 	"discordnotifications-flow-moderate-suppress": "unterdrückt",
 	"discordnotifications-flow-moderate-delete": "gelöscht",
