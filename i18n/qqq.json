@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Ajeje Brazorf"
+		]
 	},
 	"discordnotifications-desc": "{{desc|name=DiscordNotifications|url=https://www.mediawiki.org/wiki/Extension:DiscordNotifications}}",
 	"discordnotifications-block": "Used as link text of the button that will (when clicked) block the user of the notifications.",
@@ -8,7 +10,7 @@
 	"discordnotifications-talk": "Used as link text of the button.",
 	"discordnotifications-contribs": "Used as link text of the button.",
 	"discordnotifications-edit": "Used as link text of the button.",
-	"discordnotifications-delete": "Used as link text of the button.",
+	"discordnotifications-delete": "Used as link text of the button.\n\n{{Identical|delete}}",
 	"discordnotifications-history": "Used as link text of the button.",
 	"discordnotifications-diff": "Used as link text of the button.",
 	"discordnotifications-bytes": "Unit for size of a file",
