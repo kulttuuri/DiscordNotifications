@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"FunPL",
+			"Meddle",
 			"Rail"
 		]
 	},
@@ -26,6 +27,19 @@
 	"discordnotifications-article-protected-change": "zmienił(a) zabezpieczenie",
 	"discordnotifications-article-protected-remove": "usunął zabezpieczenie",
 	"discordnotifications-new-user": "👥 Konto użytkownika $1 zostało utworzone $2",
+	"discordnotifications-file-uploaded": "📤 $1 wgrał(a) plik <$2|$3> (format: $4, rozmiar: $5 $6, opis zmian: $7)",
 	"discordnotifications-block-user": "$1 zablokował $2 $3 Wygasa: $4. $5",
-	"discordnotifications-block-user-list": "Wszystkie blokady"
+	"discordnotifications-block-user-reason": "z powodem",
+	"discordnotifications-block-user-list": "Wszystkie blokady",
+	"discordnotifications-summary": "Opis zmian: $1",
+	"discordnotifications-view-user-rights": "Wyświetl lub zarządzaj uprawnieniami użytkowników",
+	"discordnotifications-change-user-groups": "%s zmienił grupy użytkowników dla %s. Nowe grupy: %s",
+	"discordnotifications-change-user-groups-with-old": "$1 zmienił(a) grupy użytkownika dla $2. Stare grupy: $3. Nowe grupy: $4",
+	"discordnotifications-flow-moderate-hide": "ukryty",
+	"discordnotifications-flow-moderate-unhide": "odkryty",
+	"discordnotifications-flow-moderate-delete": "usunięty",
+	"discordnotifications-flow-moderate-undelete": "odtworzony",
+	"discordnotifications-flow-new-topic": "💬 $1 utworzył(a) temat $2 w $3",
+	"discordnotifications-flow-reply": "💬 $1 odpowiedział(a) w $2",
+	"discordnotifications-import-complete": "⤵️ Artykuł $1 został zaimportowany."
 }
