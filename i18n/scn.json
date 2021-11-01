@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"discordnotifications-groups": "gruppi",
+	"discordnotifications-talk": "discussioni",
+	"discordnotifications-contribs": "cuntribbuti",
+	"discordnotifications-edit": "cancia",
+	"discordnotifications-delete": "cancella",
+	"discordnotifications-history": "crunuluggìa",
+	"discordnotifications-diff": "diff",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte}}",
+	"discordnotifications-article-saved": "📝 $1 havi $2 la vuci $3 $4",
+	"discordnotifications-article-saved-minor-edits": "fici nu canciamentu nicu a",
+	"discordnotifications-article-saved-edit": "canciatu",
+	"discordnotifications-file-namespace": "File",
+	"discordnotifications-article-deleted": "❌ $1 cancillau la vuci $2 Mutivu: $3",
+	"discordnotifications-article-protected": "🔒 $1 havi $2 la vuci $3. Mutivu: $4",
+	"discordnotifications-flow-moderate-hide": "ammucciatu",
+	"discordnotifications-flow-moderate-delete": "cancillatu"
+}
