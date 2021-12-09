@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16"
 		]
 	},
@@ -19,6 +20,7 @@
 	"discordnotifications-article-moved": "➡ $1 ha spostato la voce $2 a $3. Motivo: $4",
 	"discordnotifications-article-protected": "🔒 $1 ha $2 la voce $3. Motivo: $4",
 	"discordnotifications-article-protected-change": "ha cambiato la protezione di",
+	"discordnotifications-article-protected-remove": "rimosso la protezione di",
 	"discordnotifications-change-user-groups": "%s ha modificato i gruppi utente per %s. Nuovi gruppi: %s",
 	"discordnotifications-change-user-groups-with-old": "$1 ha modificato i gruppi utente per $2. Vecchi gruppi: $3. Nuovi gruppi: $4",
 	"discordnotifications-flow-lock-topic-lock": "risolto",
