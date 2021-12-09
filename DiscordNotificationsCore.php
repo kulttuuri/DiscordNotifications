@@ -362,7 +362,7 @@ class DiscordNotificationsCore {
 		global $wgDiscordNotificationFileUpload;
 		if ( !$wgDiscordNotificationFileUpload ) return;
 
-		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding, $wgUser;
+		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding;
 		$localFile = $image->getLocalFile();
 
 		# Use bytes, KiB, and MiB, rounded to two decimal places.
@@ -380,15 +380,17 @@ class DiscordNotificationsCore {
 			$funits = 'MiB';
 		}
 
+		$user = RequestContext::getMain()->getUser();
+
 		$message = self::msg( 'discordnotifications-file-uploaded',
-			self::getDiscordUserText( $wgUser->mName ),
+			self::getDiscordUserText( $user->getName() ),
 			self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $image->getLocalFile()->getTitle() ),
 			$localFile->getTitle(),
 			$localFile->getMimeType(),
 			$fsize, $funits,
 			$localFile->getDescription() );
 
-		self::pushDiscordNotify( $message, $wgUser, 'file_uploaded' );
+		self::pushDiscordNotify( $message, $user, 'file_uploaded' );
 		return true;
 	}
 
@@ -452,32 +454,35 @@ class DiscordNotificationsCore {
 
 		if ( self::titleIsExcluded( $request['page'] ) ) return;
 
-		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding, $wgUser;
+		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding;
+
+		$user = RequestContext::getMain()->getUser();
+
 		switch ( $action ) {
 			case 'edit-header':
 				$message = self::msg( "discordnotifications-flow-edit-header",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $request['page'] ) . "|" . $request['page'] . ">" );
 				break;
 			case 'edit-post':
 				$message = self::msg( "discordnotifications-flow-edit-post",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . "Topic:" . $result['workflow'] ) . "|" . self::flowUUIDToTitleText( $result['workflow'] ) . ">" );
 				break;
 			case 'edit-title':
 				$message = self::msg( "discordnotifications-flow-edit-title",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					$request['etcontent'],
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . 'Topic:' . $result['workflow'] ) . "|" . self::flowUUIDToTitleText( $result['workflow'] ) . ">" );
 				break;
 			case 'edit-topic-summary':
 				$message = self::msg( "discordnotifications-flow-edit-topic-summary",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . 'Topic:' . $result['workflow'] ) . "|" . self::flowUUIDToTitleText( $result['workflow'] ) . ">" );
 				break;
 			case 'lock-topic':
 				$message = self::msg( "discordnotifications-flow-lock-topic",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					// Messages that can be used here:
 					// * discordnotifications-flow-lock-topic-lock
 					// * discordnotifications-flow-lock-topic-unlock
@@ -486,7 +491,7 @@ class DiscordNotificationsCore {
 				break;
 			case 'moderate-post':
 				$message = self::msg( "discordnotifications-flow-moderate-post",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					// Messages that can be used here:
 					// * discordnotifications-flow-moderate-hide
 					// * discordnotifications-flow-moderate-unhide
@@ -499,7 +504,7 @@ class DiscordNotificationsCore {
 				break;
 			case 'moderate-topic':
 				$message = self::msg( "discordnotifications-flow-moderate-topic",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					// Messages that can be used here:
 					// * discordnotifications-flow-moderate-hide
 					// * discordnotifications-flow-moderate-unhide
@@ -512,19 +517,19 @@ class DiscordNotificationsCore {
 				break;
 			case 'new-topic':
 				$message = self::msg( "discordnotifications-flow-new-topic",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . "Topic:" . $result['committed']['topiclist']['topic-id'] ) . "|" . $request['nttopic'] . ">",
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $request['page'] ) . "|" . $request['page'] . ">" );
 				break;
 			case 'reply':
 				$message = self::msg( "discordnotifications-flow-reply",
-					self::getDiscordUserText( $wgUser ),
+					self::getDiscordUserText( $user ),
 					"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . 'Topic:' . $result['workflow'] ) . "|" . self::flowUUIDToTitleText( $result['workflow'] ) . ">" );
 				break;
 			default:
 				return;
 		}
-		self::pushDiscordNotify( $message, $wgUser, 'flow' );
+		self::pushDiscordNotify( $message, $user, 'flow' );
 	}
 
 	/**
