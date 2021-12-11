@@ -20,17 +20,18 @@ class DiscordNotificationsCore {
 			$wgDiscordNotificationWikiUrlEndingUserTalkPage, $wgDiscordNotificationWikiUrlEndingUserContributions,
 			$wgDiscordIncludeUserUrls;
 
-		$user_url = str_replace( "&", "%26", $user );
+		$userName = $user->getName();
+		$user_url = str_replace( "&", "%26", $userName );
 		if ( $wgDiscordIncludeUserUrls ) {
 			return sprintf(
 				"%s (%s | %s | %s | %s)",
-				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserPage . $user_url ) . "|$user>",
+				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserPage . $user_url ) . "|$userName>",
 				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingBlockUser . $user_url ) . "|" . self::msg( 'discordnotifications-block' ) . ">",
 				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserRights . $user_url ) . "|" . self::msg( 'discordnotifications-groups' ) . ">",
 				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserTalkPage . $user_url ) . "|" . self::msg( 'discordnotifications-talk' ) . ">",
 				"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserContributions . $user_url ) . "|" . self::msg( 'discordnotifications-contribs' ) . ">" );
 		} else {
-			return "<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserPage . $user_url ) . "|$user>";
+			return "<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserPage . $user_url ) . "|$userName>";
 		}
 	}
 
@@ -383,7 +384,7 @@ class DiscordNotificationsCore {
 		$user = RequestContext::getMain()->getUser();
 
 		$message = self::msg( 'discordnotifications-file-uploaded',
-			self::getDiscordUserText( $user->getName() ),
+			self::getDiscordUserText( $user ),
 			self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $image->getLocalFile()->getTitle() ),
 			$localFile->getTitle(),
 			$localFile->getMimeType(),
@@ -431,7 +432,7 @@ class DiscordNotificationsCore {
 		global $wgDiscordNotificationWikiUrl, $wgDiscordNotificationWikiUrlEnding, $wgDiscordNotificationWikiUrlEndingUserRights;
 		$message = self::msg( 'discordnotifications-change-user-groups-with-old',
 			self::getDiscordUserText( $performer ),
-			self::getDiscordUserText( $user->getName() ),
+			self::getDiscordUserText( $user ),
 			implode( ", ", array_keys( $oldUGMs ) ),
 			implode( ", ", $user->getGroups() ),
 			"<" . self::parseurl( $wgDiscordNotificationWikiUrl . $wgDiscordNotificationWikiUrlEnding . $wgDiscordNotificationWikiUrlEndingUserRights . self::getDiscordUserText( $performer ) ) . "|" . self::msg( 'discordnotifications-view-user-rights' ) . ">." );
