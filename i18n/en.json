@@ -31,7 +31,7 @@
     "discordnotifications-block-user-list": "List of all blocks",
     "discordnotifications-summary": "Summary: $1",
     "discordnotifications-view-user-rights": "View or manage user rights",
-    "discordnotifications-change-user-groups": "%s has changed user groups for %s. New groups: %s",
+    "discordnotifications-change-user-groups": "$1 has changed user groups for $2. New groups: $3",
     "discordnotifications-change-user-groups-with-old": "$1 has changed user groups for $2. Old groups: $3. New groups: $4",
     "discordnotifications-flow-edit-header": "💬 $1 has edited a board description $2",
     "discordnotifications-flow-edit-post": "💬 $1 has edited a post on $2",
