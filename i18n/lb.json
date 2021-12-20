@@ -22,6 +22,7 @@
 	"discordnotifications-block-user-reason": "mam Grond",
 	"discordnotifications-block-user-list": "Lëscht vun alle Spären",
 	"discordnotifications-summary": "Resumé: $1",
+	"discordnotifications-change-user-groups": "$1 huet d'Benotzergruppe fir $2 geännert. Nei Gruppen: $3",
 	"discordnotifications-flow-lock-topic-lock": "geléist",
 	"discordnotifications-flow-lock-topic-unlock": "nees opgemaach",
 	"discordnotifications-flow-moderate-hide": "verstoppt",

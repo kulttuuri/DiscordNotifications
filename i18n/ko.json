@@ -33,7 +33,7 @@
 	"discordnotifications-block-user-list": "모든 차단 목록",
 	"discordnotifications-summary": "요약: $1",
 	"discordnotifications-view-user-rights": "사용자 권한을 보거나 관리",
-	"discordnotifications-change-user-groups": "$1 님이 $2 님의 사용자 그룹을 변경했습니다 (새 그룹:$3)",
+	"discordnotifications-change-user-groups": "$1님이 $2님의 사용자 그룹을 변경했습니다. 새 그룹: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 님이 $2 님의 사용자 그룹을 변경했습니다. 예전 그룹: $3. 새 그룹: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 님이 $2의 설명을 편집했습니다",
 	"discordnotifications-flow-edit-post": "💬 $1 님이 $2의 게시글을 편집했습니다",

@@ -3,6 +3,7 @@
 		"authors": [
 			"Aaribaud",
 			"Eihel",
+			"Gomoko",
 			"Linedwell",
 			"Thibaut120094",
 			"Verdy p",
@@ -36,7 +37,7 @@
 	"discordnotifications-block-user-list": "Liste de tous les blocages",
 	"discordnotifications-summary": "Résumé : $1",
 	"discordnotifications-view-user-rights": "Afficher ou gérer les droits des utilisateurs",
-	"discordnotifications-change-user-groups": "%s a changé les groupes d’utilisateurs pour %s. Nouveaux groupes : %s",
+	"discordnotifications-change-user-groups": "$1 a modifié les groupes utilisateur pour $2. Nouveaux groupes : $3",
 	"discordnotifications-change-user-groups-with-old": "$1 a changé les groupes d’utilisateurs pour $2. Anciens groupes : $3. Nouveaux groupes : $4",
 	"discordnotifications-flow-edit-header": "💬 $1 a modifié une description de panneau $2",
 	"discordnotifications-flow-edit-post": "💬 $1 a modifié un billet sur $2",

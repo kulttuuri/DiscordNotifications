@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"01miki10",
-			"Aleksi Postari"
+			"Aleksi Postari",
+			"MITO"
 		]
 	},
 	"discordnotifications-desc": "Lähettää Discord-ilmoituksia valituista toiminnoista, jotka ovat tapahtuneet MediaWiki-sivustoillasi.",
@@ -32,7 +33,7 @@
 	"discordnotifications-block-user-list": "Näytä kaikki estot",
 	"discordnotifications-summary": "Yhteenveto: $1",
 	"discordnotifications-view-user-rights": "Näytä tai muokkaa käyttäjän oikeuksia",
-	"discordnotifications-change-user-groups": "%s muutti käyttäjän %s ryhmiä. Uudet ryhmät: %s",
+	"discordnotifications-change-user-groups": "$1 muutti käyttäjän $2 ryhmiä. Uudet ryhmät: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 muutti käyttäjän $2 ryhmiä. Vanhat ryhmät: $3. Uudet ryhmät: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 vaihtoi laudan kuvausta $2",
 	"discordnotifications-flow-edit-post": "💬 $1 muokkasi kirjoitusta sijainnissa $2",

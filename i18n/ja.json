@@ -4,6 +4,7 @@
 			"Aleksi Postari",
 			"Alliana",
 			"La",
+			"MirukuPC",
 			"Omotecho",
 			"렌즈"
 		]
@@ -35,7 +36,7 @@
 	"discordnotifications-block-user-list": "ブロックリストの一覧",
 	"discordnotifications-summary": "説明: $1",
 	"discordnotifications-view-user-rights": "ユーザー権限の表示と管理",
-	"discordnotifications-change-user-groups": "%s が %s のユーザーグループを変更しました。 変更後グループ: %s",
+	"discordnotifications-change-user-groups": "$1 が $2 のユーザーグループを変更しました。 新しいグループ： $3",
 	"discordnotifications-change-user-groups-with-old": "$1 が $2のユーザーグループを変更しました。 $3 から $4 へ",
 	"discordnotifications-flow-edit-header": "💬 $1 がディスカッション $2 の説明を編集しました。",
 	"discordnotifications-flow-edit-post": "💬 $1 がディスカッション $2 のトピックを編集しました。",
