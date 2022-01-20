@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"MuratTheTurkish",
+			"SaldırganSincap",
 			"Uncitoyen"
 		]
 	},
@@ -33,7 +34,7 @@
 	"discordnotifications-block-user-list": "Tüm engelleri listesi",
 	"discordnotifications-summary": "Özet: $1",
 	"discordnotifications-view-user-rights": "Kullanıcı haklarını görüntüleyin veya yönetin",
-	"discordnotifications-change-user-groups": "%s kullanıcısı %s için kullanıcı gruplarını değiştirdi. Yeni gruplar: %s",
+	"discordnotifications-change-user-groups": "$1, $2 için kullanıcı gruplarını değiştirdi. Yeni gruplar: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 kullanıcısı $2 için kullanıcı gruplarını değiştirdi. Eski gruplar: $3. Yeni gruplar: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 kullanıcısı $2 pano açıklaması düzenledi",
 	"discordnotifications-flow-edit-post": "💬 $1 kullanıcısı $2 bağlantısında bir gönderiyi düzenledi",
