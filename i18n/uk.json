@@ -33,7 +33,7 @@
 	"discordnotifications-block-user-list": "Перелік усіх блокувань",
 	"discordnotifications-summary": "Підсумок: $1",
 	"discordnotifications-view-user-rights": "Переглянути чи керувати правами користувача",
-	"discordnotifications-change-user-groups": "%s змінює групи користувача для %s. Нові групи: %s",
+	"discordnotifications-change-user-groups": "$1 змінює групи користувача для $2. Нові групи: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 змінює групи користувача для $2. Старі групи: $3. Нові групи: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 редагує опис дошки $2",
 	"discordnotifications-flow-edit-post": "💬 $1 редагує допис на $2",
