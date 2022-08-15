@@ -1,20 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"沈澄心"
+			"沈澄心",
+			"铁桶"
 		]
 	},
 	"discordnotifications-block": "封禁",
+	"discordnotifications-groups": "群组",
 	"discordnotifications-talk": "讨论",
 	"discordnotifications-contribs": "贡献",
 	"discordnotifications-edit": "编辑",
 	"discordnotifications-delete": "删除",
 	"discordnotifications-history": "历史",
 	"discordnotifications-diff": "差异",
+	"discordnotifications-bytes": "$1{{PLURAL:$1|字节}}",
+	"discordnotifications-article-saved": "📝 $1 $2 条目 $3 $4",
+	"discordnotifications-article-saved-minor-edits": "小编辑",
 	"discordnotifications-article-saved-edit": "已编辑",
+	"discordnotifications-article-created": "📝 $1创建了条目$2 $3",
 	"discordnotifications-file-namespace": "文件",
+	"discordnotifications-article-deleted": "❌ $1删除了条目$2。原因：$3",
+	"discordnotifications-article-moved": "➡ $1移动了条目$2至$3。原因：$4",
+	"discordnotifications-article-protected": "🔒 $1 $2条目$3。原因：$4",
+	"discordnotifications-block-user-list": "所有封禁列表",
+	"discordnotifications-summary": "摘要：$1",
+	"discordnotifications-view-user-rights": "查看或管理用户权限",
+	"discordnotifications-change-user-groups": "$1更改了$2的用户组。新群组：$3",
+	"discordnotifications-change-user-groups-with-old": "$1更改了$2的使用者群組。旧群组：$3；新群组：$4",
+	"discordnotifications-flow-edit-header": "💬 $1编辑了讨论板描述$2",
+	"discordnotifications-flow-edit-post": "💬 $1编辑了帖子$2",
 	"discordnotifications-flow-lock-topic-lock": "已解决",
 	"discordnotifications-flow-moderate-hide": "已隐藏",
+	"discordnotifications-flow-moderate-unhide": "取消隐藏",
+	"discordnotifications-flow-moderate-suppress": "已监督隐藏",
+	"discordnotifications-flow-moderate-unsuppress": "取消监督隐藏",
 	"discordnotifications-flow-moderate-delete": "已删除",
 	"discordnotifications-flow-moderate-undelete": "已还原"
 }
