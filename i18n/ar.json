@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"FShbib",
+			"Meno25",
 			"Shbib Al-Subaie",
 			"ديفيد"
 		]
@@ -33,7 +34,7 @@
 	"discordnotifications-block-user-list": "قائمة جميع عمليات المنع",
 	"discordnotifications-summary": "الملخص: $1",
 	"discordnotifications-view-user-rights": "عرض أو إدارة صلاحيات المستخدم",
-	"discordnotifications-change-user-groups": "%s قد غير مجموعات المستخدمين لـ%s، المجموعات الجديدة: %s",
+	"discordnotifications-change-user-groups": "قام $1 بتغيير مجموعات المستخدمين لـ $2 . مجموعات جديدة: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 قد غير مجموعات المستخدمين لـ$2، المجموعات القديمة: $3، المجموعات الجديدة: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 قد عدل وصف لوحة $2",
 	"discordnotifications-flow-edit-post": "💬 $1 قد عدل منشورا في $2",
