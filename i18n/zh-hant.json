@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
+			"Willy1018",
 			"Xiplus"
 		]
 	},
@@ -32,7 +33,7 @@
 	"discordnotifications-block-user-list": "所有封鎖清單",
 	"discordnotifications-summary": "摘要：$1",
 	"discordnotifications-view-user-rights": "檢視或管理使用者權限",
-	"discordnotifications-change-user-groups": "%s已修改%s的使用者群組，新群組為：%s",
+	"discordnotifications-change-user-groups": "$1已修改$2的使用者群組，新群組為：$3",
 	"discordnotifications-change-user-groups-with-old": "$1已修改$2的使用者群組，舊群組：$3，新群組：$4",
 	"discordnotifications-flow-edit-header": "💬 $1已修改討論版描述 $2",
 	"discordnotifications-flow-edit-post": "💬 $1已修改貼文 $2",
