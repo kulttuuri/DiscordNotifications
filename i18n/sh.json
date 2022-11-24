@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"discordnotifications-desc": "Šalje obavijesti na Discordu za izabrane radnje koje su se dogodile na vašim MediaWiki sajtovima.",
+	"discordnotifications-block": "blokiraj",
+	"discordnotifications-groups": "grupe",
+	"discordnotifications-talk": "razgovor",
+	"discordnotifications-contribs": "doprinosi",
+	"discordnotifications-edit": "uredi",
+	"discordnotifications-delete": "obriši",
+	"discordnotifications-history": "historija",
+	"discordnotifications-diff": "razl",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|bajt|bajta|bajtova}}",
+	"discordnotifications-article-saved-minor-edits": "napravio/la je manju izmjenu na",
+	"discordnotifications-article-saved-edit": "uredio/la je",
+	"discordnotifications-file-namespace": "Datoteka",
+	"discordnotifications-article-deleted": "❌ $1 obrisao/la je članak $2. Razlog: $3",
+	"discordnotifications-article-protected-change": "promijenio/la je zaštitu stranice",
+	"discordnotifications-article-protected-remove": "uklonio/la je zaštitu sa stranice",
+	"discordnotifications-new-user": "👥 Upravo je napravljen novi korisnički račun $1 $2"
+}
