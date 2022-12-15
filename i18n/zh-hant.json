@@ -3,7 +3,8 @@
 		"authors": [
 			"Kly",
 			"Willy1018",
-			"Xiplus"
+			"Xiplus",
+			"捍粵者"
 		]
 	},
 	"discordnotifications-desc": "在您的MediaWiki網站當選擇的動作發生時傳送Discord通知。",
@@ -17,7 +18,7 @@
 	"discordnotifications-diff": "差異",
 	"discordnotifications-bytes": "$1{{PLURAL:$1|位元組}}",
 	"discordnotifications-article-saved": "📝 $1已$2條目$3 $4",
-	"discordnotifications-article-saved-minor-edits": "進行了小編輯",
+	"discordnotifications-article-saved-minor-edits": "小編輯",
 	"discordnotifications-article-saved-edit": "已編輯",
 	"discordnotifications-article-created": "📝 $1已建立條目$2 $3",
 	"discordnotifications-file-namespace": "檔案",
