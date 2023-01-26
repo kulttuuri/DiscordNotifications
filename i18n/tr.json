@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"MuratTheTurkish",
+			"Rapsar",
 			"SaldırganSincap",
 			"Uncitoyen"
 		]
@@ -12,7 +13,7 @@
 	"discordnotifications-groups": "gruplar",
 	"discordnotifications-talk": "mesaj",
 	"discordnotifications-contribs": "katkılar",
-	"discordnotifications-edit": "düzenle",
+	"discordnotifications-edit": "değiştir",
 	"discordnotifications-delete": "sil",
 	"discordnotifications-history": "geçmiş",
 	"discordnotifications-diff": "fark",
