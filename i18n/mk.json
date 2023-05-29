@@ -31,7 +31,7 @@
 	"discordnotifications-block-user-list": "Список на сите блокови",
 	"discordnotifications-summary": "Опис: $1",
 	"discordnotifications-view-user-rights": "Погл. или раков. со кориснички права",
-	"discordnotifications-change-user-groups": "%s ги измени корисничките групи за %s. Нови групи: %s",
+	"discordnotifications-change-user-groups": "$1 ги измени корисничките групи за $2. Нови групи: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 ги измени корисничките групи за $2. Стари групи: $3. Нови групи: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 уреди опис на разговорница $2",
 	"discordnotifications-flow-edit-post": "💬 $1 уреди објава на $2",
