@@ -31,7 +31,7 @@
 	"discordnotifications-block-user-list": "Liste over alle blokkeringer",
 	"discordnotifications-summary": "Sammendrag: $1",
 	"discordnotifications-view-user-rights": "Vis eller behandle brukerrettigheter",
-	"discordnotifications-change-user-groups": "%s har endret brukergrupper for %s. Nye grupper: %s",
+	"discordnotifications-change-user-groups": "$1 har endret brukergrupper for $2. Nye grupper: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 har endret brukergrupper for $2. Gamle grupper: $3. Nye grupper: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 har redigert en tavlebeskrivelse $2",
 	"discordnotifications-flow-edit-post": "💬 $1 har redigert et innlegg på $2",
