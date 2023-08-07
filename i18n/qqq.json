@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"Verdy p"
 		]
 	},
@@ -50,5 +51,6 @@
 	"discordnotifications-flow-moderate-delete": "Clause of deleting a topic",
 	"discordnotifications-flow-moderate-undelete": "Clause of undeleting a topic",
 	"discordnotifications-flow-new-topic": "A notification text for when a user creates a now flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic\n* $3 - talk page",
-	"discordnotifications-flow-reply": "A notification text for when a user replies in a flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic"
+	"discordnotifications-flow-reply": "A notification text for when a user replies in a flow topic\n\nParameters:\n* $1 - the username\n* $2 - link of topic",
+	"discordnotifications-import-complete": "A notification text for when an article is imported.\n\nParameters:\n* $1 - article title"
 }
