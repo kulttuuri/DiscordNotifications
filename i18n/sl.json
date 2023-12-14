@@ -45,7 +45,7 @@
 	"discordnotifications-flow-moderate-topic": "💬 $1 je $2 temo $3",
 	"discordnotifications-flow-moderate-hide": "skril_a",
 	"discordnotifications-flow-moderate-unhide": "razkril_a",
-	"discordnotifications-flow-moderate-suppress": "ukinil/a",
+	"discordnotifications-flow-moderate-suppress": "ukinil_a",
 	"discordnotifications-flow-moderate-unsuppress": "odukinil_a",
 	"discordnotifications-flow-moderate-delete": "izbrisal/a",
 	"discordnotifications-flow-moderate-undelete": "odizbrisal_a",
