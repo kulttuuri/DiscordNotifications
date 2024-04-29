@@ -22,6 +22,8 @@
 	"discordnotifications-article-deleted": "❌ $1删除了条目$2。原因：$3",
 	"discordnotifications-article-moved": "➡ $1移动了条目$2至$3。原因：$4",
 	"discordnotifications-article-protected": "🔒 $1 $2条目$3。原因：$4",
+	"discordnotifications-article-protected-change": "更改保护",
+	"discordnotifications-article-protected-remove": "移除保护",
 	"discordnotifications-block-user-list": "所有封禁列表",
 	"discordnotifications-summary": "摘要：$1",
 	"discordnotifications-view-user-rights": "查看或管理用户权限",
@@ -35,5 +37,6 @@
 	"discordnotifications-flow-moderate-suppress": "已监督隐藏",
 	"discordnotifications-flow-moderate-unsuppress": "取消监督隐藏",
 	"discordnotifications-flow-moderate-delete": "已删除",
-	"discordnotifications-flow-moderate-undelete": "已还原"
+	"discordnotifications-flow-moderate-undelete": "已还原",
+	"discordnotifications-import-complete": "⤵️ 条目$1已导入。"
 }
