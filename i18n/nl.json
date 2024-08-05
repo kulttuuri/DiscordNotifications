@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
+	"discordnotifications-desc": "Stuurt Discord-meldingen voor geselecteerde handelingen die op uw MediaWiki-sites zijn verricht.",
 	"discordnotifications-block": "blokkeren",
 	"discordnotifications-groups": "groepen",
 	"discordnotifications-talk": "overleg",
@@ -23,15 +25,31 @@
 	"discordnotifications-article-protected": "🔒 $1 heeft de beveiliging van $2 $3. Reden: $4",
 	"discordnotifications-article-protected-change": "gewijzigd",
 	"discordnotifications-article-protected-remove": "verwijderd",
+	"discordnotifications-new-user": "👥 Nieuw gebruikersaccount $1 is zojuist aangemaakt $2",
 	"discordnotifications-file-uploaded": "📤 $1 heeft het bestand <$2|$3> geupload (formaat: $4, grootte: $5 $6, samenvatting: $7)",
 	"discordnotifications-block-user": "🚫 $1 heeft $2 geblokkeerd. $3. Veloopt op: $4. $5",
 	"discordnotifications-block-user-reason": "met reden",
 	"discordnotifications-block-user-list": "Lijst met alle blokkades",
 	"discordnotifications-summary": "Samenvatting: $1",
 	"discordnotifications-view-user-rights": "Gebruikerrechten beheren of bekijken",
+	"discordnotifications-change-user-groups": "$1 heeft gebruikersgroepen veranderd voor $2. Nieuwe groepen: $3",
+	"discordnotifications-change-user-groups-with-old": "$1 heeft gebruikersgroepen veranderd voor $2. Oude groepen: $3. Nieuwe groepen: $4",
+	"discordnotifications-flow-edit-header": "💬 $1 heeft een bordbeschrijving bewerkt $2",
+	"discordnotifications-flow-edit-post": "💬 $1 heeft een artikel bewerkt op $2",
+	"discordnotifications-flow-edit-title": "💬 $1 heeft de onderwerptitel in $2 veranderd op $3",
+	"discordnotifications-flow-edit-topic-summary": "💬 $1 heeft de onderwerpsamenvatting bewerkt op $2",
+	"discordnotifications-flow-lock-topic": "💬 $1 heeft het thema $3 $2",
 	"discordnotifications-flow-lock-topic-lock": "opgelost",
 	"discordnotifications-flow-lock-topic-unlock": "heropend",
+	"discordnotifications-flow-moderate-post": "$1 heeft een bericht over het onderwerp $3 $2",
+	"discordnotifications-flow-moderate-topic": "💬 $1 heeft het onderwerp $3 $2",
 	"discordnotifications-flow-moderate-hide": "verborgen",
+	"discordnotifications-flow-moderate-unhide": "weer zichtbaar gemaakt",
+	"discordnotifications-flow-moderate-suppress": "onderdrukt",
+	"discordnotifications-flow-moderate-unsuppress": "weer toegelaten",
 	"discordnotifications-flow-moderate-delete": "verwijderd",
-	"discordnotifications-flow-moderate-undelete": "teruggeplaatst"
+	"discordnotifications-flow-moderate-undelete": "teruggeplaatst",
+	"discordnotifications-flow-new-topic": "💬 $1 heeft het onderwerp $2 aangemaakt op $3",
+	"discordnotifications-flow-reply": "💬 $1 heeft gereageerd in $2",
+	"discordnotifications-import-complete": "⤵️ Het artikel $1 is geïmporteerd."
 }
