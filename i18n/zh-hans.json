@@ -6,7 +6,7 @@
 		]
 	},
 	"discordnotifications-block": "封禁",
-	"discordnotifications-groups": "群组",
+	"discordnotifications-groups": "用户组",
 	"discordnotifications-talk": "讨论",
 	"discordnotifications-contribs": "贡献",
 	"discordnotifications-edit": "编辑",
@@ -24,6 +24,7 @@
 	"discordnotifications-article-protected": "🔒 $1 $2条目$3。原因：$4",
 	"discordnotifications-article-protected-change": "更改保护",
 	"discordnotifications-article-protected-remove": "移除保护",
+	"discordnotifications-file-uploaded": "📤 $1已上传文件<$2|$3>（格式：$4，大小：$5 $6，摘要：$7）",
 	"discordnotifications-block-user-list": "所有封禁列表",
 	"discordnotifications-summary": "摘要：$1",
 	"discordnotifications-view-user-rights": "查看或管理用户权限",
@@ -32,11 +33,13 @@
 	"discordnotifications-flow-edit-header": "💬 $1编辑了讨论板描述$2",
 	"discordnotifications-flow-edit-post": "💬 $1编辑了帖子$2",
 	"discordnotifications-flow-lock-topic-lock": "已解决",
+	"discordnotifications-flow-lock-topic-unlock": "已重启",
 	"discordnotifications-flow-moderate-hide": "已隐藏",
 	"discordnotifications-flow-moderate-unhide": "取消隐藏",
 	"discordnotifications-flow-moderate-suppress": "已监督隐藏",
 	"discordnotifications-flow-moderate-unsuppress": "取消监督隐藏",
 	"discordnotifications-flow-moderate-delete": "已删除",
 	"discordnotifications-flow-moderate-undelete": "已还原",
+	"discordnotifications-flow-reply": "💬 $1已在$2中回复",
 	"discordnotifications-import-complete": "⤵️ 条目$1已导入。"
 }

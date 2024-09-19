@@ -4,7 +4,8 @@
 			"Kly",
 			"Willy1018",
 			"Xiplus",
-			"捍粵者"
+			"捍粵者",
+			"铁桶"
 		]
 	},
 	"discordnotifications-desc": "在您的MediaWiki網站當選擇的動作發生時傳送Discord通知。",
@@ -42,7 +43,7 @@
 	"discordnotifications-flow-edit-topic-summary": "💬 $1已修改$2上的話題摘要",
 	"discordnotifications-flow-lock-topic": "💬 $1已$2話題 $3",
 	"discordnotifications-flow-lock-topic-lock": "已解決",
-	"discordnotifications-flow-lock-topic-unlock": "重新開啟",
+	"discordnotifications-flow-lock-topic-unlock": "已重啟",
 	"discordnotifications-flow-moderate-post": "💬 $1已$2貼文在 $3 上",
 	"discordnotifications-flow-moderate-topic": "💬 $1已$2話題 $3",
 	"discordnotifications-flow-moderate-hide": "己隱藏",
@@ -52,6 +53,6 @@
 	"discordnotifications-flow-moderate-delete": "已刪除",
 	"discordnotifications-flow-moderate-undelete": "已取消刪除",
 	"discordnotifications-flow-new-topic": "💬 $1已在$3上建立話題$2",
-	"discordnotifications-flow-reply": "💬 $1已回應$2",
+	"discordnotifications-flow-reply": "💬 $1已在$2中回覆",
 	"discordnotifications-import-complete": "⤵️ 條目$1已匯入。"
 }
