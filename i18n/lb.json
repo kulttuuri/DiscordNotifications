@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"discordnotifications-block": "spären",
@@ -11,7 +12,7 @@
 	"discordnotifications-delete": "läschen",
 	"discordnotifications-history": "Versiounen",
 	"discordnotifications-diff": "Ënnerscheed",
-	"discordnotifications-bytes": "$1 {{PLURAL:$1|Byte|Byten}}",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|Byte}}",
 	"discordnotifications-article-saved": "📝 $1 huet den Artikel $3 $2 $4",
 	"discordnotifications-article-saved-minor-edits": "huet eng kleng Ännerung gemaach op",
 	"discordnotifications-article-saved-edit": "geännert",
