@@ -25,6 +25,7 @@
 	"discordnotifications-article-protected-change": "更改保护",
 	"discordnotifications-article-protected-remove": "移除保护",
 	"discordnotifications-file-uploaded": "📤 $1已上传文件<$2|$3>（格式：$4，大小：$5 $6，摘要：$7）",
+	"discordnotifications-block-user-reason": "附加原因",
 	"discordnotifications-block-user-list": "所有封禁列表",
 	"discordnotifications-summary": "摘要：$1",
 	"discordnotifications-view-user-rights": "查看或管理用户权限",
