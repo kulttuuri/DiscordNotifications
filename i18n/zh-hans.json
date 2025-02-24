@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lakejason0",
 			"沈澄心",
 			"铁桶"
 		]
 	},
+	"discordnotifications-desc": "为您所选的在指定MediaWiki站点发生的操作发送Discord通知。",
 	"discordnotifications-block": "封禁",
 	"discordnotifications-groups": "用户组",
 	"discordnotifications-talk": "讨论",
@@ -24,7 +26,9 @@
 	"discordnotifications-article-protected": "🔒 $1 $2条目$3。原因：$4",
 	"discordnotifications-article-protected-change": "更改保护",
 	"discordnotifications-article-protected-remove": "移除保护",
+	"discordnotifications-new-user": "👥 新用户账号$1被创建 $2",
 	"discordnotifications-file-uploaded": "📤 $1已上传文件<$2|$3>（格式：$4，大小：$5 $6，摘要：$7）",
+	"discordnotifications-block-user": "🚫 $1封禁了$2 $3 封禁期限：$4。$5",
 	"discordnotifications-block-user-reason": "附加原因",
 	"discordnotifications-block-user-list": "所有封禁列表",
 	"discordnotifications-summary": "摘要：$1",
@@ -33,14 +37,20 @@
 	"discordnotifications-change-user-groups-with-old": "$1更改了$2的使用者群組。旧群组：$3；新群组：$4",
 	"discordnotifications-flow-edit-header": "💬 $1编辑了讨论板描述$2",
 	"discordnotifications-flow-edit-post": "💬 $1编辑了帖子$2",
+	"discordnotifications-flow-edit-title": "💬 $1已修改$3上的话题标题为$2",
+	"discordnotifications-flow-edit-topic-summary": "💬 $1编辑了$2上的话题摘要",
+	"discordnotifications-flow-lock-topic": "💬 $1已$2话题$3",
 	"discordnotifications-flow-lock-topic-lock": "已解决",
 	"discordnotifications-flow-lock-topic-unlock": "已重启",
+	"discordnotifications-flow-moderate-post": "💬 $1已$2帖子在$3上",
+	"discordnotifications-flow-moderate-topic": "💬 $1已$2话题$3",
 	"discordnotifications-flow-moderate-hide": "已隐藏",
 	"discordnotifications-flow-moderate-unhide": "取消隐藏",
 	"discordnotifications-flow-moderate-suppress": "已监督隐藏",
 	"discordnotifications-flow-moderate-unsuppress": "取消监督隐藏",
 	"discordnotifications-flow-moderate-delete": "已删除",
 	"discordnotifications-flow-moderate-undelete": "已还原",
+	"discordnotifications-flow-new-topic": "💬 $1已在$3上创建话题$2",
 	"discordnotifications-flow-reply": "💬 $1已在$2中回复",
 	"discordnotifications-import-complete": "⤵️ 条目$1已导入。"
 }
