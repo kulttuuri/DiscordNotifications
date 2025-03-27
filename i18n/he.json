@@ -48,7 +48,7 @@
 	"discordnotifications-flow-moderate-suppress": "העלמה",
 	"discordnotifications-flow-moderate-unsuppress": "ביטול העלמה",
 	"discordnotifications-flow-moderate-delete": "נמחק",
-	"discordnotifications-flow-moderate-undelete": "ביטול מחיקה",
+	"discordnotifications-flow-moderate-undelete": "שחזור ממחיקה",
 	"discordnotifications-flow-new-topic": "💬 $1 {{GENDER:$1|יצר|יצרה}} את הנושא $2 ב{{GRAMMAR:תחילית|$3}}",
 	"discordnotifications-flow-reply": "💬 $1 השיב בנושא $2",
 	"discordnotifications-import-complete": "⤵️ הערך $1 יובא."
