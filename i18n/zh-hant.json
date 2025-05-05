@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
+			"U.T.",
 			"Willy1018",
 			"Xiplus",
 			"捍粵者",
@@ -46,7 +47,7 @@
 	"discordnotifications-flow-lock-topic-unlock": "已重啟",
 	"discordnotifications-flow-moderate-post": "💬 $1已$2貼文在 $3 上",
 	"discordnotifications-flow-moderate-topic": "💬 $1已$2話題 $3",
-	"discordnotifications-flow-moderate-hide": "己隱藏",
+	"discordnotifications-flow-moderate-hide": "已隱藏",
 	"discordnotifications-flow-moderate-unhide": "取消隱藏",
 	"discordnotifications-flow-moderate-suppress": "已監督隱藏",
 	"discordnotifications-flow-moderate-unsuppress": "取消監督隱藏",
