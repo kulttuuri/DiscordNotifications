@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"discordnotifications-block": "блоктоха",
+	"discordnotifications-groups": "тобанаш",
+	"discordnotifications-talk": "дийцар",
+	"discordnotifications-contribs": "къинхьегам",
+	"discordnotifications-edit": "нисйан",
+	"discordnotifications-delete": "дӀайаккха",
+	"discordnotifications-history": "истори",
+	"discordnotifications-diff": "башха",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|байт}}",
+	"discordnotifications-article-saved-edit": "хийцам бина",
+	"discordnotifications-file-namespace": "Файл",
+	"discordnotifications-article-deleted": "❌ $1 {{gender:$1|дӀабаьккхина}} йаззам «$2» Бахьана: $3",
+	"discordnotifications-article-moved": "➡ $1 {{gender:$1|цӀе хийцина}} $2 - $3. Бахьана: $4",
+	"discordnotifications-article-protected": "🔒 $1 ларйина $2 агӀо $3. «$3». Бахьана: $4",
+	"discordnotifications-article-protected-change": "хийцина",
+	"discordnotifications-article-protected-remove": "дӀайаьккхина",
+	"discordnotifications-summary": "Комментари: $1",
+	"discordnotifications-view-user-rights": "Декъашхойн бакъонаш хьажа йа хӀиттайе",
+	"discordnotifications-change-user-groups": "$1 {{gender:$1|хийцина}} {{GENDER:$2|декъашхочун $2}} тобанаш. Керла тобанаш: $3",
+	"discordnotifications-change-user-groups-with-old": "$1 {{gender:$1|хийцина}} декъашхойн тобанаш $2. Хьалхара тобанаш: $3. Керла тобанаш: $4",
+	"discordnotifications-flow-lock-topic-lock": "дӀадерзина",
+	"discordnotifications-flow-lock-topic-unlock": "йуха схьайелла",
+	"discordnotifications-flow-moderate-hide": "къайлайаьккхина",
+	"discordnotifications-flow-moderate-unhide": "гайтина",
+	"discordnotifications-flow-moderate-suppress": "дехкина",
+	"discordnotifications-flow-moderate-unsuppress": "дехкар йухадаьккхина",
+	"discordnotifications-flow-moderate-delete": "дӀайаьккхина",
+	"discordnotifications-flow-moderate-undelete": "меттахӀоттайе"
+}
