@@ -20,6 +20,8 @@
 	"discordnotifications-article-protected": "🔒 $1 ларйина $2 агӀо $3. «$3». Бахьана: $4",
 	"discordnotifications-article-protected-change": "хийцина",
 	"discordnotifications-article-protected-remove": "дӀайаьккхина",
+	"discordnotifications-block-user-reason": "бахьанехь",
+	"discordnotifications-block-user-list": "Массо а блокийн могӀам",
 	"discordnotifications-summary": "Комментари: $1",
 	"discordnotifications-view-user-rights": "Декъашхойн бакъонаш хьажа йа хӀиттайе",
 	"discordnotifications-change-user-groups": "$1 {{gender:$1|хийцина}} {{GENDER:$2|декъашхочун $2}} тобанаш. Керла тобанаш: $3",
