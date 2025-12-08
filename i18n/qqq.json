@@ -4,6 +4,7 @@
 			"Ajeje Brazorf",
 			"Amire80",
 			"McDutchie",
+			"Toliño",
 			"Verdy p"
 		]
 	},
@@ -46,7 +47,7 @@
 	"discordnotifications-flow-moderate-post": "A notification text for when a user moderates a flow post\n\nParameters:\n* $1 - the username\n* $2 - action: {{msg-mw|Discordnotifications-flow-moderate-unhide}}, {{msg-mw|Discordnotifications-flow-moderate-suppress}}, {{msg-mw|Discordnotifications-flow-moderate-unsuppress}}\n* $3 - link of the topic",
 	"discordnotifications-flow-moderate-topic": "A notification text for when a user moderates a flow topic\n\nParameters:\n* $1 - the username\n* $2 - {{msg-mw|Discordnotifications-flow-moderate-unhide}}, {{msg-mw|Discordnotifications-flow-moderate-suppress}}, {{msg-mw|Discordnotifications-flow-moderate-unsuppress}}\n* $3 - link of the topic",
 	"discordnotifications-flow-moderate-hide": "Clause of hiding a flow topic",
-	"discordnotifications-flow-moderate-unhide": "Clause of unhiding a flow topic. Used as $3 in {{msg-mw|Discordnotifications-flow-lock-topic}}, {{msg-mw|Discordnotifications-flow-moderate-post}}, {{msg-mw|Discordnotifications-flow-moderate-topic}}",
+	"discordnotifications-flow-moderate-unhide": "Clause of unhiding a flow topic. Used as $2 in {{msg-mw|Discordnotifications-flow-lock-topic}}, {{msg-mw|Discordnotifications-flow-moderate-post}}, {{msg-mw|Discordnotifications-flow-moderate-topic}}",
 	"discordnotifications-flow-moderate-suppress": "Clause of suppressing a topic. Used as $3 in {{msg-mw|Discordnotifications-flow-lock-topic}}, {{msg-mw|Discordnotifications-flow-moderate-post}}, {{msg-mw|Discordnotifications-flow-moderate-topic}}",
 	"discordnotifications-flow-moderate-unsuppress": "Clause of unsuppressing a topic. Used as $3 in {{msg-mw|Discordnotifications-flow-lock-topic}}, {{msg-mw|Discordnotifications-flow-moderate-post}}, {{msg-mw|Discordnotifications-flow-moderate-topic}}",
 	"discordnotifications-flow-moderate-delete": "Clause of deleting a topic",
