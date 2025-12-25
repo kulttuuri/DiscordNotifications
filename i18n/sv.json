@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -32,7 +33,7 @@
 	"discordnotifications-block-user-list": "Lista över alla blockeringar",
 	"discordnotifications-summary": "Sammanfattning: $1",
 	"discordnotifications-view-user-rights": "Visa eller hantera användarrättigheter",
-	"discordnotifications-change-user-groups": "%s ändrade användargrupper för %s. Nya grupper: %s",
+	"discordnotifications-change-user-groups": "$1 har ändrat användargrupper för $2 . Nya grupper: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 ändrade användargrupper för $2. Gamla grupper: $3. Nya grupper: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 redigerade beskrivningen för ett underforum $2",
 	"discordnotifications-flow-edit-post": "💬 $1 redigerade ett inlägg på $2",
