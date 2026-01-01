@@ -3,7 +3,8 @@
 		"authors": [
 			"FunPL",
 			"Meddle",
-			"Rail"
+			"Rail",
+			"Woytecr"
 		]
 	},
 	"discordnotifications-desc": "Wysyłaj na Discorda powiadomienia o konkretnych akcjach podjętych na stronach MediaWiki.",
@@ -33,7 +34,7 @@
 	"discordnotifications-block-user-list": "Wszystkie blokady",
 	"discordnotifications-summary": "Opis zmian: $1",
 	"discordnotifications-view-user-rights": "Wyświetl lub zarządzaj uprawnieniami użytkowników",
-	"discordnotifications-change-user-groups": "%s zmienił grupy użytkowników dla %s. Nowe grupy: %s",
+	"discordnotifications-change-user-groups": "$1 zmienił grupy użytkowników dla $2. Nowe grupy: $3",
 	"discordnotifications-change-user-groups-with-old": "$1 zmienił(a) grupy użytkownika dla $2. Stare grupy: $3. Nowe grupy: $4",
 	"discordnotifications-flow-moderate-hide": "ukryty",
 	"discordnotifications-flow-moderate-unhide": "odkryty",
