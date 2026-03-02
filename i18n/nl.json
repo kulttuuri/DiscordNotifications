@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Elphie",
 			"Mainframe98",
 			"McDutchie"
 		]
@@ -21,7 +22,7 @@
 	"discordnotifications-article-created": "📄 $1 heeft pagina $2 aangemaakt $3",
 	"discordnotifications-file-namespace": "Bestand",
 	"discordnotifications-article-deleted": "❌ $1 heeft het artikel $2 verwijderd. Reden: $3",
-	"discordnotifications-article-moved": "➡ $1 heeft het artikel $2 hernoemd tot $3. Reden: $4",
+	"discordnotifications-article-moved": "➡ $1 heeft het artikel $2 hernoemd naar $3. Reden: $4",
 	"discordnotifications-article-protected": "🔒 $1 heeft de beveiliging van $2 $3. Reden: $4",
 	"discordnotifications-article-protected-change": "gewijzigd",
 	"discordnotifications-article-protected-remove": "verwijderd",
