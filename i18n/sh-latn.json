@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -17,7 +18,7 @@
 	"discordnotifications-article-saved-minor-edits": "napravio/la je manju izmjenu na",
 	"discordnotifications-article-saved-edit": "uredio/la je",
 	"discordnotifications-file-namespace": "Datoteka",
-	"discordnotifications-article-deleted": "❌ $1 obrisao/la je članak $2. Razlog: $3",
+	"discordnotifications-article-deleted": "❌ $1 izbrisao/la je članak $2. Razlog: $3",
 	"discordnotifications-article-protected-change": "promijenio/la je zaštitu stranice",
 	"discordnotifications-article-protected-remove": "uklonio/la je zaštitu sa stranice",
 	"discordnotifications-new-user": "👥 Upravo je napravljen novi korisnički račun $1 $2"
