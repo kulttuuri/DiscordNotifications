@@ -3,7 +3,8 @@
 		"authors": [
 			"Elphie",
 			"Mainframe98",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"discordnotifications-desc": "Stuurt Discord-meldingen voor geselecteerde handelingen die op uw MediaWiki-sites zijn verricht.",
@@ -33,11 +34,11 @@
 	"discordnotifications-block-user-list": "Lijst met alle blokkades",
 	"discordnotifications-summary": "Samenvatting: $1",
 	"discordnotifications-view-user-rights": "Gebruikerrechten beheren of bekijken",
-	"discordnotifications-change-user-groups": "$1 heeft gebruikersgroepen veranderd voor $2. Nieuwe groepen: $3",
-	"discordnotifications-change-user-groups-with-old": "$1 heeft gebruikersgroepen veranderd voor $2. Oude groepen: $3. Nieuwe groepen: $4",
+	"discordnotifications-change-user-groups": "$1 heeft gebruikersgroepen gewijzigd voor $2. Nieuwe groepen: $3",
+	"discordnotifications-change-user-groups-with-old": "$1 heeft gebruikersgroepen gewijzigd voor $2. Oude groepen: $3. Nieuwe groepen: $4",
 	"discordnotifications-flow-edit-header": "💬 $1 heeft een bordbeschrijving bewerkt $2",
 	"discordnotifications-flow-edit-post": "💬 $1 heeft een artikel bewerkt op $2",
-	"discordnotifications-flow-edit-title": "💬 $1 heeft de onderwerptitel in $2 veranderd op $3",
+	"discordnotifications-flow-edit-title": "💬 $1 heeft de onderwerptitel op $3 gewijzigd naar $2",
 	"discordnotifications-flow-edit-topic-summary": "💬 $1 heeft de onderwerpsamenvatting bewerkt op $2",
 	"discordnotifications-flow-lock-topic": "💬 $1 heeft het thema $3 $2",
 	"discordnotifications-flow-lock-topic-lock": "opgelost",
