@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"discordnotifications-block": "अवरोध",
+	"discordnotifications-groups": "समूह",
+	"discordnotifications-talk": "वार्ता",
+	"discordnotifications-contribs": "योगदान",
+	"discordnotifications-edit": "सम्पादन",
+	"discordnotifications-delete": "हटावथिन",
+	"discordnotifications-history": "इतिहास",
+	"discordnotifications-diff": "अन्तर",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|बाइट}}",
+	"discordnotifications-article-saved": "$1 मे $2 लेख हे $3 $4",
+	"discordnotifications-article-saved-minor-edits": "एकरामे छोट सम्पादन कैलन",
+	"discordnotifications-article-saved-edit": "सम्पादन कैलन",
+	"discordnotifications-file-namespace": "सञ्चिका",
+	"discordnotifications-summary": "सारांश: $1"
+}
