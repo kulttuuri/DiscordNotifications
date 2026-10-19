@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Albinfo"
+		]
+	},
+	"discordnotifications-talk": "discussiun",
+	"discordnotifications-contribs": "contribuziuns",
+	"discordnotifications-edit": "modifitgar",
+	"discordnotifications-delete": "stizzar",
+	"discordnotifications-history": "cronologia",
+	"discordnotifications-diff": "diff",
+	"discordnotifications-bytes": "$1 {{PLURAL:$1|byte|bytes}}",
+	"discordnotifications-article-saved": "$1 ha $2 l'artitgel $3 $4",
+	"discordnotifications-article-saved-minor-edits": "ha fatg ina pitschna elavuraziun en",
+	"discordnotifications-article-saved-edit": "ha elavurà",
+	"discordnotifications-article-created": "$1 ha creà l'artitgel $2 $3",
+	"discordnotifications-file-namespace": "Datoteca",
+	"discordnotifications-article-deleted": "❌ $1 ha stizzà l'artitgel $2 cun l'argumentaziun: $3",
+	"discordnotifications-article-moved": "➡ $1 ha spustà l'artigel $2 a $3. Argumentaziun: $4",
+	"discordnotifications-article-protected": "🔒 $1 ha $2 'artigel $3. Argumentaziun: $4",
+	"discordnotifications-article-protected-change": "ha midà la protecziun"
+}
